@@ -1,0 +1,50 @@
+.contactWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    color: white;
+
+    background-color: #856957;
+
+    .contactDetails {
+        display: flex;
+        width: 100%;
+
+        /* background-color: #856957; */
+        align-items: center;
+        margin: 0 140px 0 140px;
+        justify-content: space-between;
+
+        .contactIcons {
+            display: flex;
+
+            ul {
+                display: flex;
+                gap: 16px;
+                li {
+                    cursor: pointer;
+                    list-style: none;
+
+                    .icons {
+                        width: 24px;
+                        height: 24px;
+                        &:hover {
+                            color: rgba(234, 225, 225);
+                        }
+                    }
+                }
+            }
+        }
+        .contactItem {
+            display: flex;
+            align-items: center;
+            a:hover {
+                color: rgba(234, 225, 225);
+            }
+            a:nth-child(2) {
+                margin: 0 36px;
+            }
+        }
+    }
+}

@@ -3,67 +3,38 @@
     text-decoration: none;
     color: white;
   }
+
   .constacts {
-    height: 135px;
+    height: auto;
 
-    .contactWrapper {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 45px;
-      color: white;
-
-      background-color: #856957;
-      .contactDetails {
-        display: flex;
-        width: 100%;
-
-        /* background-color: #856957; */
-        align-items: center;
-        margin: 0 140px 0 140px;
-        justify-content: space-between;
-
-        .contactIcons {
-          display: flex;
-
-          ul {
-            display: flex;
-            gap: 16px;
-            li {
-              cursor: pointer;
-              list-style: none;
-              .icons {
-                width: 24px;
-                height: 24px;
-              }
-            }
-          }
-        }
-        .contactItem {
-          display: flex;
-          align-items: center;
-          a:nth-child(2) {
-            margin: 0 36px;
-          }
-        }
-      }
-    }
     .header {
-      margin: 31px 140px 31px 140px;
       display: flex;
       color: #292929;
       font-size: 15px;
       font-weight: 300;
-      img {
-        object-fit: contain;
-        cursor: pointer;
-      }
+
       nav {
+        border-bottom: 0.5px solid rgba(220, 220, 220, 1);
+        @keyframes scrollDown {
+          from {
+            top: 60px;
+          }
+          to {
+            top: 0px;
+          }
+        }
+
+        padding: 0 140px;
+        height: 90px;
+        z-index: 11;
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        border-color: white;
+        background-color: white;
       }
+
       .navList {
         list-style: none;
         display: flex;
@@ -72,11 +43,23 @@
           cursor: pointer;
         }
       }
+
       .login {
+        color: #000;
         cursor: pointer;
         width: 381px;
         display: flex;
         justify-content: flex-end;
+      }
+    }
+
+    .fixedScrolled {
+      nav {
+        border-bottom: 0.5px solid rgba(220, 220, 220, 1);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        animation: scrollDown 0.3s forwards;
       }
     }
   }

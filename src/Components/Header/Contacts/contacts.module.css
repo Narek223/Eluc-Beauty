@@ -1,0 +1,44 @@
+.contactWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  color: white;
+  background-color: #856957;
+}
+.contactWrapper .contactDetails {
+  display: flex;
+  width: 100%;
+  /* background-color: #856957; */
+  align-items: center;
+  margin: 0 140px 0 140px;
+  justify-content: space-between;
+}
+.contactWrapper .contactDetails .contactIcons {
+  display: flex;
+}
+.contactWrapper .contactDetails .contactIcons ul {
+  display: flex;
+  gap: 16px;
+}
+.contactWrapper .contactDetails .contactIcons ul li {
+  cursor: pointer;
+  list-style: none;
+}
+.contactWrapper .contactDetails .contactIcons ul li .icons {
+  width: 24px;
+  height: 24px;
+}
+.contactWrapper .contactDetails .contactIcons ul li .icons:hover {
+  color: rgb(234, 225, 225);
+}
+.contactWrapper .contactDetails .contactItem {
+  display: flex;
+  align-items: center;
+}
+.contactWrapper .contactDetails .contactItem a:hover {
+  color: rgb(234, 225, 225);
+}
+.contactWrapper .contactDetails .contactItem a:nth-child(2) {
+  margin: 0 36px;
+}/*# sourceMappingURL=contacts.module.css.map */

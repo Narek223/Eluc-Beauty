@@ -3,63 +3,33 @@
   color: white;
 }
 .headerContainer .constacts {
-  height: 135px;
-}
-.headerContainer .constacts .contactWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 45px;
-  color: white;
-  background-color: #856957;
-}
-.headerContainer .constacts .contactWrapper .contactDetails {
-  display: flex;
-  width: 100%;
-  /* background-color: #856957; */
-  align-items: center;
-  margin: 0 140px 0 140px;
-  justify-content: space-between;
-}
-.headerContainer .constacts .contactWrapper .contactDetails .contactIcons {
-  display: flex;
-}
-.headerContainer .constacts .contactWrapper .contactDetails .contactIcons ul {
-  display: flex;
-  gap: 16px;
-}
-.headerContainer .constacts .contactWrapper .contactDetails .contactIcons ul li {
-  cursor: pointer;
-  list-style: none;
-}
-.headerContainer .constacts .contactWrapper .contactDetails .contactIcons ul li .icons {
-  width: 24px;
-  height: 24px;
-}
-.headerContainer .constacts .contactWrapper .contactDetails .contactItem {
-  display: flex;
-  align-items: center;
-}
-.headerContainer .constacts .contactWrapper .contactDetails .contactItem a:nth-child(2) {
-  margin: 0 36px;
+  height: auto;
 }
 .headerContainer .constacts .header {
-  margin: 31px 140px 31px 140px;
   display: flex;
   color: #292929;
   font-size: 15px;
   font-weight: 300;
 }
-.headerContainer .constacts .header img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  cursor: pointer;
-}
 .headerContainer .constacts .header nav {
+  border-bottom: 0.5px solid rgb(220, 220, 220);
+  padding: 0 140px;
+  height: 90px;
+  z-index: 11;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  border-color: white;
+  background-color: white;
+}
+@keyframes scrollDown {
+  from {
+    top: 60px;
+  }
+  to {
+    top: 0px;
+  }
 }
 .headerContainer .constacts .header .navList {
   list-style: none;
@@ -70,8 +40,16 @@
   cursor: pointer;
 }
 .headerContainer .constacts .header .login {
+  color: #000;
   cursor: pointer;
   width: 381px;
   display: flex;
   justify-content: flex-end;
+}
+.headerContainer .constacts .fixedScrolled nav {
+  border-bottom: 0.5px solid rgb(220, 220, 220);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  animation: scrollDown 0.3s forwards;
 }/*# sourceMappingURL=header.module.css.map */
