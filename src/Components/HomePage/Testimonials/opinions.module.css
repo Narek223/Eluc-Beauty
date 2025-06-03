@@ -1,0 +1,51 @@
+.conteiner {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteiner .textslide {
+  display: flex;
+  max-width: 1000px;
+}
+.conteiner .textslide .text {
+  width: 650px;
+  height: 400px;
+  padding: 10px;
+}
+.conteiner .textslide .text .title {
+  font-weight: 400;
+  display: flex;
+  margin: 0 0 16px 0;
+}
+.conteiner .textslide .text .title h1 {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+.conteiner .textslide .text .title h1:nth-child(2) {
+  font-size: 64px;
+  color: red;
+  font-family: "MyCustomFont", sans-serif;
+}
+.conteiner .textslide .text .textSlider {
+  width: 100%;
+}
+.conteiner .textslide .text .textSlider .textContent p {
+  color: #625e5c;
+  font-weight: 300;
+  font-size: 18px;
+}
+.conteiner .textslide .text .textSlider .textContent h2 {
+  padding: 14px 0 0 0;
+  color: #171412;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.swiper-pagination {
+  bottom: -30px !important;
+  position: absolute;
+}/*# sourceMappingURL=opinions.module.css.map */

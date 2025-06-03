@@ -1,11 +1,19 @@
+.homepageContainer {
+  height: 100%;
+}
 .homepageContainer .homepagewrapper {
   width: 100%;
   height: 100%;
+}
+.homepageContainer .homepagewrapper .homepageContent .homeSlide {
+  height: calc(100vh - 70px);
 }
 .homepageContainer .homepagewrapper .homepageContent img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
 }

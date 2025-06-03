@@ -37,7 +37,28 @@
   gap: 40px;
 }
 .headerContainer .constacts .header .navList li {
+  position: relative;
   cursor: pointer;
+  padding: 5px 0;
+  font-weight: 400;
+}
+.headerContainer .constacts .header .navList li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #292929;
+  transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+.headerContainer .constacts .header .navList li:hover {
+  font-weight: 500;
+}
+.headerContainer .constacts .header .navList li:hover::after {
+  width: 100%;
 }
 .headerContainer .constacts .header .login {
   color: #000;

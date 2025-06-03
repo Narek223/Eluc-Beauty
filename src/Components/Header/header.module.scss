@@ -15,15 +15,6 @@
 
       nav {
         border-bottom: 0.5px solid rgba(220, 220, 220, 1);
-        @keyframes scrollDown {
-          from {
-            top: 60px;
-          }
-          to {
-            top: 0px;
-          }
-        }
-
         padding: 0 140px;
         height: 90px;
         z-index: 11;
@@ -33,14 +24,45 @@
         width: 100%;
         border-color: white;
         background-color: white;
+
+        @keyframes scrollDown {
+          from {
+            top: 60px;
+          }
+          to {
+            top: 0px;
+          }
+        }
       }
 
       .navList {
         list-style: none;
         display: flex;
         gap: 40px;
+
         li {
+          position: relative;
           cursor: pointer;
+          padding: 5px 0;
+          font-weight: 400;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            background-color: #292929;
+            transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+            transform: translateX(-50%);
+            font-weight: 600;
+          }
+          &:hover {
+            font-weight: 500;
+          }
+          &:hover::after {
+            width: 100%;
+          }
         }
       }
 
