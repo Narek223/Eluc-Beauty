@@ -33,6 +33,9 @@
 .conteiner .textslide .text .textSlider {
   width: 100%;
 }
+.conteiner .textslide .text .textSlider .textContent {
+  height: 150px;
+}
 .conteiner .textslide .text .textSlider .textContent p {
   color: #625e5c;
   font-weight: 300;

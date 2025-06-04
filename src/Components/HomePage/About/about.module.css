@@ -1,0 +1,80 @@
+.aboutContainer {
+  height: 1157px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutContainer .aboutWrapper {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutContainer .aboutText {
+  padding: 0 10px;
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.aboutContainer .aboutText p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #625e5c;
+  line-height: 35px;
+  font-family: "Manrope", sans-serif;
+}
+.aboutContainer .aboutText button {
+  font-size: 18px;
+  color: #896e58;
+  width: 196px;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  background-color: inherit;
+  border: 1px solid #896e58;
+  cursor: pointer;
+}
+.aboutContainer .aboutText button:hover {
+  box-shadow: 0 0 10px rgba(207, 203, 203, 0.5);
+}
+.aboutContainer .aboutText .aboutTitle {
+  display: flex;
+  align-items: center;
+}
+.aboutContainer .aboutText .aboutTitle h1:nth-child(1) {
+  line-height: 68px;
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 52px;
+}
+.aboutContainer .aboutText .aboutTitle h1:nth-child(2) {
+  font-weight: 400;
+  line-height: 35px;
+  font-size: 64px;
+  color: red;
+  font-family: "MyCustomFont", sans-serif;
+}
+.aboutContainer .aboutText h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #171412;
+  font-family: "Manrope", sans-serif;
+}
+.aboutContainer .aboutImages {
+  width: 100%;
+  display: flex;
+  padding: 0 140px;
+  justify-content: space-around;
+  margin: 100px 0 0 0;
+  max-height: 110px;
+}
+.aboutContainer .aboutImages img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=about.module.css.map */

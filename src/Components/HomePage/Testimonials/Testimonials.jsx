@@ -24,6 +24,7 @@ export default function Opinions() {
           <div className={styles.textSlider}>
             <Swiper
           
+            speed={900}
             loop={true}
               autoplay={{
                 delay: 2500,
