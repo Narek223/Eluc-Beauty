@@ -1,0 +1,33 @@
+.experienceCounterContainer {
+  height: 300px;
+  width: 100%;
+  background-image: url("../../../assets/HomePage/88ca81a2776d4cbede659345e40460fa5c769394.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid #e21818;
+}
+.experienceCounterContainer .experienceCounterWrapper {
+  padding: 30px 140px;
+  height: 100%;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.experienceCounterContainer .experienceCounterWrapper div {
+  border: 1px solid #000;
+  width: 340px;
+  height: 200px;
+  display: flex;
+}
+.experienceCounterContainer .experienceCounterWrapper div h1 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+}
+.experienceCounterContainer .experienceCounterWrapper div p {
+  font-size: 128px;
+  font-weight: 300;
+  font-family: "Manrope", sans-serif;
+}/*# sourceMappingURL=ExperienceCounter.module.css.map */

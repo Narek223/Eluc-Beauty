@@ -1,0 +1,80 @@
+.serviceContainer {
+  height: 700px;
+  width: 100%;
+}
+.serviceContainer .serviceWrapper {
+  margin: 45px 0;
+  padding: 45px 140px;
+  height: 479px;
+}
+.serviceContainer .serviceWrapper .serviceHeader h1 {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+.serviceContainer .serviceWrapper .serviceHeader h1 span {
+  font-family: "MyCustomFont", sans-serif;
+  font-weight: 400;
+  line-height: 35px;
+  font-size: 64px;
+  color: red;
+}
+.serviceContainer .serviceWrapper .serviceHeader p {
+  margin: 24px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #525252;
+}
+.serviceContainer .serviceWrapper .service {
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
+}
+.serviceContainer .serviceWrapper .service .serviceItem {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.serviceContainer .serviceWrapper .service .serviceItem .name {
+  font-size: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-right: 10px;
+  font-family: "Manrope", sans-serif;
+}
+.serviceContainer .serviceWrapper .service .serviceItem p {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #7C7C7C;
+}
+.serviceContainer .serviceWrapper .dots {
+  width: 100%;
+  flex-grow: 1;
+  height: 1px;
+  border-bottom: 1px dashed #ccc;
+  margin: 0 10px;
+}
+.serviceContainer .serviceWrapper .price {
+  white-space: nowrap;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+.serviceContainer .serviceWrapper .price .price:nth-child(1) {
+  text-decoration: line-through;
+}
+.serviceContainer .serviceWrapper .newprice {
+  white-space: nowrap;
+  margin: 0 10px;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background-color: red;
+}/*# sourceMappingURL=service.module.css.map */

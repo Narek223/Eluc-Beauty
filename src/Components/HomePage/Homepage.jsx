@@ -13,6 +13,9 @@ import Testimonials from "./Testimonials/Testimonials.jsx";
 import Book from "./BookPage/Book.jsx";
 import Subscribe from "./Subscribe/Subscribe.jsx";
 import About from "../HomePage/About/About.jsx";
+import Service from "../HomePage/PricingService/Service.jsx";
+import ExperienceCounter from "./ExperienceCounter/ExperienceCounter.jsx";
+
 
 export default function Homepage() {
   return (
@@ -47,8 +50,10 @@ export default function Homepage() {
         <div className={styles.vectors}>
           <img src={vector} />
         </div>
-
+ <Service/>
+      <ExperienceCounter/>
         <About />
+  
         <Book />
         <Testimonials />
         <Subscribe />
