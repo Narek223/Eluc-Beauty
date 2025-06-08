@@ -5,26 +5,27 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 1px solid #e21818;
 }
 .experienceCounterContainer .experienceCounterWrapper {
   padding: 30px 140px;
   height: 100%;
-  border: 1px solid #000;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
 }
 .experienceCounterContainer .experienceCounterWrapper div {
-  border: 1px solid #000;
   width: 340px;
   height: 200px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .experienceCounterContainer .experienceCounterWrapper div h1 {
   font-size: 18px;
   font-weight: 600;
   font-family: "Manrope", sans-serif;
+  width: 30%;
+  line-height: 32px;
 }
 .experienceCounterContainer .experienceCounterWrapper div p {
   font-size: 128px;

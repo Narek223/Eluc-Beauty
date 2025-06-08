@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./homepage.module.scss";
 import homeimg from "../../assets/HomePage/HeroWallpaper1.png";
-import vector from "../../assets/HomePage/Vector.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,7 +14,7 @@ import Subscribe from "./Subscribe/Subscribe.jsx";
 import About from "../HomePage/About/About.jsx";
 import Service from "../HomePage/PricingService/Service.jsx";
 import ExperienceCounter from "./ExperienceCounter/ExperienceCounter.jsx";
-
+import Services from "./OurServices/Services.jsx";
 
 export default function Homepage() {
   return (
@@ -47,9 +46,7 @@ export default function Homepage() {
             ))}
           </Swiper>
         </div>
-        <div className={styles.vectors}>
-          <img src={vector} />
-        </div>
+    <Services/>
  <Service/>
       <ExperienceCounter/>
         <About />

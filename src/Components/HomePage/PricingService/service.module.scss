@@ -70,13 +70,11 @@
       color: white;
       padding: 3px 8px;
       border-radius: 4px;
-      .price:nth-child(1){
-           text-decoration:    line-through;
-    }
+     
+ 
    
     }
-   
-   
+ 
     .newprice{
           white-space: nowrap;
       margin: 0 10px;
@@ -86,4 +84,7 @@
       background-color: red;
     }
   }
+  .service .price:first-of-type {
+  text-decoration: line-through;
+}
 }
