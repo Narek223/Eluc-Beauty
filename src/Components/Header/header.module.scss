@@ -39,7 +39,9 @@
         list-style: none;
         display: flex;
         gap: 40px;
-
+.activeLink{
+  text-decoration: underline;
+}
         li {
           position: relative;
           cursor: pointer;
@@ -64,6 +66,58 @@
             width: 100%;
           }
         }
+        .link{
+          display: flex;
+          align-items: center;
+text-decoration: none;
+color:black;
+        }
+        .navlink{
+   
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            background-color: #292929;
+            transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+            transform: translateX(-50%);
+            font-weight: 600;
+          }
+          &:hover {
+            font-weight: 500;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+        }
+
+.activeLink{
+position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #292929;
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateX(-50%);
+    font-weight: 600;
+  }
+  &:hover {
+    font-weight: 500;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
       }
 
       .login {

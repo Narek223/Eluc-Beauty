@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./about.module.scss";
 import img from "../../../assets/HomePage/Button.png";
 import { about } from "../../../Services/Date/HomePage/about.js";
+import { NavLink } from "react-router-dom";
+
 
 export default function About() {
   return (
@@ -26,7 +28,8 @@ export default function About() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <button>Explore more</button>
+          <NavLink to="/About">   <button>Explore more</button></NavLink>
+     
         </div>
       </div>
       <div className={styles.aboutImages}>

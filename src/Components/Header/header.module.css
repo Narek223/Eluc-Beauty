@@ -36,6 +36,9 @@
   display: flex;
   gap: 40px;
 }
+.headerContainer .constacts .header .navList .activeLink {
+  text-decoration: underline;
+}
 .headerContainer .constacts .header .navList li {
   position: relative;
   cursor: pointer;
@@ -58,6 +61,54 @@
   font-weight: 500;
 }
 .headerContainer .constacts .header .navList li:hover::after {
+  width: 100%;
+}
+.headerContainer .constacts .header .navList .link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.headerContainer .constacts .header .navList .navlink {
+  position: relative;
+}
+.headerContainer .constacts .header .navList .navlink::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #292929;
+  transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+.headerContainer .constacts .header .navList .navlink:hover {
+  font-weight: 500;
+}
+.headerContainer .constacts .header .navList .navlink:hover::after {
+  width: 100%;
+}
+.headerContainer .constacts .header .navList .activeLink {
+  position: relative;
+}
+.headerContainer .constacts .header .navList .activeLink::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #292929;
+  transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+.headerContainer .constacts .header .navList .activeLink:hover {
+  font-weight: 500;
+}
+.headerContainer .constacts .header .navList .activeLink:hover::after {
   width: 100%;
 }
 .headerContainer .constacts .header .login {

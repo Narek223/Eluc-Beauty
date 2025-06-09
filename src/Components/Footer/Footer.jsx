@@ -43,8 +43,8 @@ const Footer = () => {
         <p>
           © COPYRIGHT 2024 EluX. Experience luxury and rejuvenation with our
           expert beauty treatments. Follow us on social media for the latest
-          updates and exclusive offers. Contact Us | Privacy Policy | Terms of
-          Service | FAQs
+          updates and exclusive offers.<span> Contact Us </span> |<span>Privacy Policy </span>  | <span>Terms of
+          Service</span> |<span> FAQs </span> 
         </p>
       </div>
     </footer>

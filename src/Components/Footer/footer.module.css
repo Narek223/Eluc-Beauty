@@ -1,6 +1,6 @@
 .mapSection {
   position: relative;
-  height: 600px;
+  height: 500px;
   display: flex;
   align-items: flex-end;
 }
@@ -8,6 +8,38 @@
   width: 100%;
   height: 360px;
   filter: grayscale(100%) brightness(90%);
+}
+
+.contactBox {
+  position: absolute;
+  top: 180px;
+  left: 140px;
+  background: white;
+  padding: 16px;
+  max-height: 270px;
+  border-radius: 16px;
+  max-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contactBox h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.contactBox div {
+  margin: 8px 0;
+}
+.contactBox div a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.contactBox div a span {
+  color: rgb(135, 107, 84);
+}
+.contactBox div span {
+  color: rgb(135, 107, 84);
 }
 
 :global(.leaflet-control-attribution) {
@@ -21,8 +53,14 @@
   justify-content: center;
 }
 .footerBottom p {
+  color: rgb(124, 124, 124);
   width: 55%;
   text-align: center;
   padding: 25px 0;
   font-size: 14px;
+}
+.footerBottom p span {
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
 }/*# sourceMappingURL=footer.module.css.map */

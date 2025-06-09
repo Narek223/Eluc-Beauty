@@ -33,6 +33,7 @@
   justify-content: center;
 }
 .servicesContainer .servicesWrapper .button button {
+  font-size: 18px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -40,7 +41,7 @@
   border: 1px solid rgb(137, 110, 88);
   height: 46px;
   width: 200px;
-  color: rgb(135, 107, 84);
+  color: #896e58;
 }
 .servicesContainer .servicesWrapper .button button:hover {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
@@ -51,10 +52,44 @@
   gap: 20px;
   margin: 50px 0;
 }
-.servicesContainer .servicesWrapper .servicesImages img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 245px;
+.servicesContainer .servicesWrapper .servicesImages .imageWrapper {
+  position: relative;
+  width: 20%;
   height: 300px;
   border-radius: 12px;
+  overflow: hidden;
+}
+.servicesContainer .servicesWrapper .servicesImages .imageWrapper .img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+}
+.servicesContainer .servicesWrapper .servicesImages .imageWrapper .hoverimg {
+  transition: 0.3s ease-in-out;
+  background-color: linear-gradient(0deg, #D9D9D9, #D9D9D9), linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+}
+.servicesContainer .servicesWrapper .servicesImages .imageWrapper .hoverButton {
+  cursor: pointer;
+  width: 100%;
+  height: 57px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-radius: 0 12px;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: rgb(230, 100, 69);
+  color: white;
+  border: none;
+  opacity: 0.9;
+  transition: 0.3s;
 }/*# sourceMappingURL=services.module.css.map */

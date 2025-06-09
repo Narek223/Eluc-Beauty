@@ -1,0 +1,39 @@
+.pathConteiner {
+  height: 216px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.pathConteiner .pathWrapper {
+  padding: 0 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(221, 207, 196, 0.85);
+  height: 144px;
+  width: 100%;
+}
+.pathConteiner .pathWrapper .titles h1 {
+  font-family: "Italiana", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+.pathConteiner .pathWrapper .titles h1 span {
+  font-family: "MyCustomFont", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: rgb(230, 100, 69);
+}
+.pathConteiner .pathWrapper .pathTrace ul {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.pathConteiner .pathWrapper .pathTrace ul .link {
+  text-decoration: none;
+  color: #000;
+}
+.pathConteiner .pathWrapper .pathTrace ul li {
+  cursor: pointer;
+  list-style: none;
+}/*# sourceMappingURL=pathTrace.module.css.map */
