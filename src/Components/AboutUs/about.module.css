@@ -1,7 +1,48 @@
 .AboutComponent .aboutContent {
-  margin: 144px 0;
+  margin: 144px 0 0 0;
   width: 100%;
   padding: 0 144px;
+}
+.AboutComponent .aboutContent .aboutText {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 0 0 148px 0;
+}
+.AboutComponent .aboutContent .aboutText h1 {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 68px;
+  color: rgb(41, 41, 41);
+  margin: 0 0 44px 0;
+  width: 62.931034%;
+}
+.AboutComponent .aboutContent .aboutText .content {
+  margin: 30px 0;
+  display: flex;
+  align-items: flex-start;
+  height: auto;
+  gap: 15px;
+}
+.AboutComponent .aboutContent .aboutText .content .iconimg img {
+  border: 1px solid rgb(152, 152, 152);
+  border-radius: 50%;
+  padding: 5px;
+}
+.AboutComponent .aboutContent .aboutText .content .textItem h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.AboutComponent .aboutContent .aboutText .content .textItem p {
+  margin: 8px 0;
+  width: 82.236842%;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  color: rgb(124, 124, 124);
+  font-weight: 400px;
 }
 .AboutComponent .aboutContent .aboutWrapper {
   height: 550px;
@@ -52,11 +93,19 @@
   border: 1px solid rgb(189, 189, 189);
 }
 .AboutComponent .aboutContent .counterWrapper .counter h1 {
+  margin: 10px 0;
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 26px;
   color: rgb(61, 61, 61);
   border: 1px underline rgb(8, 1, 1);
+}
+.AboutComponent .aboutContent .counterWrapper .counter .counterText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .AboutComponent .aboutContent .counterWrapper .counter p {
   font-family: "Manrope", sans-serif;
