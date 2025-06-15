@@ -1,0 +1,43 @@
+.errorConteiner {
+  width: 100%;
+  height: 100vh;
+}
+.errorConteiner .errorWrapper {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+.errorConteiner .errorWrapper h1:nth-child(1) {
+  font-size: 140px;
+  color: red;
+  font-weight: 400;
+}
+.errorConteiner .errorWrapper h1:nth-child(2) {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: rgb(70, 70, 70);
+}
+.errorConteiner .errorWrapper P {
+  color: rgb(124, 124, 124);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+}
+.errorConteiner .errorWrapper button {
+  border: 1px solid rgb(137, 110, 88);
+  cursor: pointer;
+  background-color: inherit;
+  color: rgb(137, 110, 88);
+  font-size: 18px;
+  margin: 10px 0 0 0;
+  width: 196px;
+  height: 48px;
+  border-radius: 4px;
+  cursor: pointer;
+}/*# sourceMappingURL=Error.module.css.map */

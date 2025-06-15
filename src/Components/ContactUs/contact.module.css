@@ -1,0 +1,90 @@
+.contactConteiner {
+  width: 100%;
+  height: auto;
+}
+.contactConteiner .ContactWrapper {
+  padding: 0 140px 0 0;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.contactConteiner .ContactWrapper .img {
+  height: 100%;
+}
+.contactConteiner .ContactWrapper .formPart {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.contactConteiner .ContactWrapper .formPart h1 {
+  text-align: center;
+  margin: 0 0 56px 0;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+}
+.contactConteiner .ContactWrapper .formPart p {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(101, 101, 101);
+}
+.contactConteiner .ContactWrapper .formPart .formWrapper {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contactConteiner .ContactWrapper .formPart .formWrapper input {
+  border-radius: 4px;
+  padding: 13px;
+  border: 2.5px solid rgb(152, 152, 152);
+  margin: 5px 0 24px 0;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  gap: 24px;
+}
+.contactConteiner .ContactWrapper .formPart .formWrapper .error {
+  color: rgb(185, 0, 0);
+  font-size: 12px;
+  font-family: "Manrope", sans-serif;
+  margin-top: -15px;
+}
+.contactConteiner .ContactWrapper .formPart .formWrapper .error:nth-child(4) {
+  margin: 0;
+}
+.contactConteiner .ContactWrapper .formPart .formWrapper textarea {
+  border-radius: 4px;
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 13px;
+  border: 2.5px solid rgb(152, 152, 152);
+}
+.contactConteiner .ContactWrapper .formPart .formWrapper .submitButton {
+  border-radius: 4px;
+  background-color: rgb(212, 163, 115);
+  color: white;
+  width: 100%;
+  height: 56px;
+  cursor: pointer;
+  border: none;
+  margin: 15px 0 0 0;
+}
+.contactConteiner .ContactWrapper .formPart .formWrapper .submitButtonDisabled {
+  border-radius: 4px;
+  background-color: rgb(224, 224, 224);
+  color: rgb(152, 152, 152);
+  cursor: not-allowed;
+  width: 100%;
+  height: 56px;
+  border: none;
+  margin: 15px 0 0 0;
+}
+.contactConteiner .ContactWrapper .formPart .formWrapper .submitButtonDisabled:active {
+  transform: scale(1);
+}/*# sourceMappingURL=contact.module.css.map */

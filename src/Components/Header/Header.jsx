@@ -32,9 +32,10 @@ export default function Header() {
               <li>Services</li>
               <li>Experts</li>
               <NavLink
-          
                 className={({ isActive }) =>
-                  `${styles.link} ${isActive ? styles.activeLink : styles.navlink}`
+                  `${styles.link} ${
+                    isActive ? styles.activeLink : styles.navlink
+                  }`
                 }
                 to="/About"
                 style={{ color: "black" }}
@@ -43,7 +44,18 @@ export default function Header() {
               </NavLink>
 
               <li>Blog</li>
-              <li>Contact Us</li>
+
+              <NavLink
+                className={({ isActive }) =>
+                  `${styles.link} ${
+                    isActive ? styles.activeLink : styles.navlink
+                  }`
+                }
+                to="/ContactUs"
+                style={{ color: "black" }}
+              >
+                Contact Us
+              </NavLink>
             </ul>
             <NavLink to="/" style={{ textDecoration: "none" }}>
               {" "}

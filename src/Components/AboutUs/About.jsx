@@ -8,6 +8,8 @@ import iconimg from "../../assets/About/Container.png";
 import firsimg from "../../assets/About/Tooltip.png";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
+import { choose } from "../../Services/Date/About/choose";
+import nextimg from '../../assets/About/Switch.png'
 
 export default function About() {
   const [ref, inView] = useInView({
@@ -16,30 +18,30 @@ export default function About() {
   });
 
   const getCountUpProps = (numStr) => {
-    if (numStr.includes('%')) {
+    if (numStr.includes("%")) {
       return {
         end: parseFloat(numStr),
-        suffix: '%',
-        decimals: numStr.includes('.') ? 1 : 0
+        suffix: "%",
+        decimals: numStr.includes(".") ? 1 : 0,
       };
     }
-    if (numStr.includes('M')) {
+    if (numStr.includes("M")) {
       return {
         end: parseFloat(numStr),
-        suffix: ' M',
-        decimals: numStr.includes('.') ? 1 : 0
+        suffix: " M",
+        decimals: numStr.includes(".") ? 1 : 0,
       };
     }
-    if (numStr.includes('+')) {
+    if (numStr.includes("+")) {
       return {
         end: parseFloat(numStr),
-        suffix: '+',
-        decimals: 0
+        suffix: "+",
+        decimals: 0,
       };
     }
     return {
       end: parseFloat(numStr),
-      decimals: 0
+      decimals: 0,
     };
   };
 
@@ -108,12 +110,12 @@ export default function About() {
                     {inView ? (
                       <CountUp
                         end={countUpProps.end}
-                        suffix={countUpProps.suffix || ''}
+                        suffix={countUpProps.suffix || ""}
                         duration={2}
                         decimals={countUpProps.decimals}
                       />
                     ) : (
-                      `0${countUpProps.suffix || ''}`
+                      `0${countUpProps.suffix || ""}`
                     )}
                   </h2>
                   <p>{item.text}</p>
@@ -121,6 +123,29 @@ export default function About() {
               </div>
             );
           })}
+        </div>
+        <div className={styles.Choose}>
+          <div className={styles.Choosewrapper}>
+           
+            <div className={styles.title}>
+              <h1>Why Choose EluX Beauty Salon?</h1>
+              <h1> Beauty</h1>
+            </div>
+             {choose.map((elem) => (
+              <div key={elem.id} className={styles.contentconteiner}>
+                <div className={styles.iconimges}>
+                  <img src={iconimg} alt="icon" />
+                </div>
+                <div className={styles.Choosetext}>
+                  <h2>{elem.title}</h2>
+                  <p>{elem.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className={styles.img}>
+            <img src={nextimg}/>
+</div>
         </div>
       </div>
     </div>

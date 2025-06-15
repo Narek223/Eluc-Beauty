@@ -1,0 +1,92 @@
+.contactConteiner {
+  width: 100%;
+  height: auto;
+  .ContactWrapper {
+    padding: 0 140px 0 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    .img {
+      height: 100%;
+    }
+    .formPart {
+      h1 {
+        text-align: center;
+        margin: 0 0 56px 0;
+        font-size: 32px;
+        font-weight: 500;
+        font-family: "Manrope", sans-serif;
+      }
+      p {
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(101, 101, 101, 1);
+      }
+      width: 100%;
+      height: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .formWrapper {
+        width: 500px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        input {
+          border-radius: 4px;
+          padding: 13px;
+          border: 2.5px solid rgba(152, 152, 152, 1);
+          margin: 5px 0 24px 0;
+          width: 100%;
+          height: 45px;
+          display: flex;
+          gap: 24px;
+        }
+        .error{
+            color:rgba(185, 0, 0, 1);
+            font-size: 12px;
+                    font-family: "Manrope", sans-serif;
+                          margin-top: -15px;
+                          &:nth-child(4){
+                            margin: 0;
+                          }
+        }
+        textarea {
+          border-radius: 4px;
+          resize: none;
+          width: 100%;
+          height: 120px;
+          padding: 13px;
+          border: 2.5px solid rgba(152, 152, 152, 1);
+        }
+        .submitButton{
+            border-radius: 4px;
+            background-color: rgba(212, 163, 115, 1);
+            color: white;
+            width: 100%;
+            height: 56px;
+            cursor: pointer;
+            border: none;
+            margin: 15px 0 0 0;
+        }
+        .submitButtonDisabled{
+            border-radius: 4px;
+ background-color: rgba(224, 224, 224, 1);
+ color:rgba(152, 152, 152, 1);
+ cursor:not-allowed;
+    width: 100%;
+            height: 56px;
+    
+            border: none;
+            margin: 15px 0 0 0;
+            &:active{
+           transform: scale(1);
+            }
+        }
+      }
+    }
+  }
+}

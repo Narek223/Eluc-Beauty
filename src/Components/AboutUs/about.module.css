@@ -116,4 +116,49 @@
 .AboutComponent .aboutContent .counterWrapper .counter h2 {
   font-weight: 700;
   font-size: 24px;
+}
+.AboutComponent .aboutContent .Choose {
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.AboutComponent .aboutContent .Choose .Choosewrapper .title {
+  display: flex;
+  margin: 0 0 44px 0;
+}
+.AboutComponent .aboutContent .Choose .Choosewrapper .title h1:nth-child(1) {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 60px;
+  color: rgb(41, 41, 41);
+}
+.AboutComponent .aboutContent .Choose .Choosewrapper .title h1:nth-child(2) {
+  font-family: "MyCustomFont", sans-serif;
+  font-weight: 400;
+  line-height: 35px;
+  font-size: 64px;
+  color: red;
+}
+.AboutComponent .aboutContent .Choose .Choosewrapper .contentconteiner {
+  display: flex;
+  gap: 15px;
+}
+.AboutComponent .aboutContent .Choose .Choosewrapper .contentconteiner .Choosetext h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.AboutComponent .aboutContent .Choose .Choosewrapper .contentconteiner .Choosetext p {
+  margin: 8px 0;
+  width: 82.236842%;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  color: rgb(124, 124, 124);
+  font-weight: 400px;
 }/*# sourceMappingURL=about.module.css.map */
