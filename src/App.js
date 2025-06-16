@@ -13,10 +13,15 @@ import About from "./Components/AboutUs/About";
 import Scroll from "./Components/ScrollToTop/Scroll";
 import ErrorPage from "./Components/404/ErrorPage";
 import Contact from "./Components/ContactUs/Contact";
+import Blog from "./Components/Blog/Blog";
 
 function App() {
   const location = useLocation();
-  const is404 = location.pathname !== "/" && location.pathname !== "/About" && location.pathname !== "/ContactUs" ;
+  const is404 =
+    location.pathname !== "/" &&
+    location.pathname !== "/About" &&
+    location.pathname !== "/ContactUs"&&
+    location.pathname !== "/Blog";
 
   return (
     <div className="App">
@@ -27,6 +32,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/About" element={<About />} />
         <Route path="/ContactUs" element={<Contact />} />
+        <Route path="/Blog" element={<Blog />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       {!is404 && <Footer />}

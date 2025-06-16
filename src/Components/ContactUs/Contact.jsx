@@ -20,7 +20,7 @@ export default function Contact() {
       ),
     Phonenumber: Yup.string()
       .required("Please enter your phone number")
-      .matches(/^\d+$/, "Phone number must contain only digits"),
+      .matches(/^(\+49|0)[1-9][0-9\s\-()]{7,}$/, "Enter a valid phone number"),
     message: Yup.string()
       .required("Please enter your message")
       .min(10, "Message must be at least 10 characters"),
@@ -36,6 +36,7 @@ export default function Contact() {
   const handleSubmit = (values, { resetForm }) => {
     resetForm();
     setSent(true);
+    console.log(values);
   };
 
   return (
@@ -57,13 +58,16 @@ export default function Contact() {
               validationSchema={validationSchema}
               onSubmit={handleSubmit}
             >
-              {({ isValid, dirty, isSubmitting }) => (
+              {({ isValid, dirty, isSubmitting, touched, errors }) => (
                 <Form className={styles.form}>
                   <Field
                     type="text"
                     name="FullName"
                     id="username"
                     placeholder="*FullName "
+                    className={` ${
+                      touched.FullName && errors.FullName ? styles.inputError : ""
+                    }`}
                   />
                   <ErrorMessage
                     name="FullName"
@@ -76,6 +80,9 @@ export default function Contact() {
                     name="mail"
                     id="password"
                     placeholder="*Email Address "
+                    className={` ${
+                      touched.mail && errors.mail ? styles.inputError : ""
+                    }`}
                   />
                   <ErrorMessage
                     name="mail"
@@ -88,6 +95,9 @@ export default function Contact() {
                     name="Phonenumber"
                     id="password"
                     placeholder="*Phone number "
+                    className={` ${
+                      touched.Phonenumber && errors.Phonenumber ? styles.inputError : ""
+                    }`}
                   />
                   <ErrorMessage
                     name="Phonenumber"
@@ -98,6 +108,9 @@ export default function Contact() {
                     as="textarea"
                     name="message"
                     placeholder="*Your Message"
+                    className={` ${
+                      touched.message && errors.message ? styles.inputError : ""
+                    }`}
                   />
                   <ErrorMessage
                     name="message"
@@ -113,7 +126,7 @@ export default function Contact() {
                     }
                     disabled={isSubmitting || !(isValid && dirty)}
                   >
-                    {sent ? "Message sent" : "Send Message"}
+                    Send Message
                   </button>
                 </Form>
               )}

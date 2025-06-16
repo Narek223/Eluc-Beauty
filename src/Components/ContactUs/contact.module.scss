@@ -45,14 +45,17 @@
           display: flex;
           gap: 24px;
         }
-        .error{
-            color:rgba(185, 0, 0, 1);
-            font-size: 12px;
-                    font-family: "Manrope", sans-serif;
-                          margin-top: -15px;
-                          &:nth-child(4){
-                            margin: 0;
-                          }
+        .inputError {
+          border: 2.5px solid red;
+        }
+        .error {
+          color: rgba(185, 0, 0, 1);
+          font-size: 12px;
+          font-family: "Manrope", sans-serif;
+          margin-top: -15px;
+          &:last-of-type {
+            margin-top: 0;
+          }
         }
         textarea {
           border-radius: 4px;
@@ -62,29 +65,29 @@
           padding: 13px;
           border: 2.5px solid rgba(152, 152, 152, 1);
         }
-        .submitButton{
-            border-radius: 4px;
-            background-color: rgba(212, 163, 115, 1);
-            color: white;
-            width: 100%;
-            height: 56px;
-            cursor: pointer;
-            border: none;
-            margin: 15px 0 0 0;
+        .submitButton {
+          border-radius: 4px;
+          background-color: rgba(212, 163, 115, 1);
+          color: white;
+          width: 100%;
+          height: 56px;
+          cursor: pointer;
+          border: none;
+          margin: 15px 0 0 0;
         }
-        .submitButtonDisabled{
-            border-radius: 4px;
- background-color: rgba(224, 224, 224, 1);
- color:rgba(152, 152, 152, 1);
- cursor:not-allowed;
-    width: 100%;
-            height: 56px;
-    
-            border: none;
-            margin: 15px 0 0 0;
-            &:active{
-           transform: scale(1);
-            }
+        .submitButtonDisabled {
+          border-radius: 4px;
+          background-color: rgba(224, 224, 224, 1);
+          color: rgba(152, 152, 152, 1);
+          cursor: not-allowed;
+          width: 100%;
+          height: 56px;
+
+          border: none;
+          margin: 15px 0 0 0;
+          &:active {
+            transform: scale(1);
+          }
         }
       }
     }

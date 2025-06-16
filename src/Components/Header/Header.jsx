@@ -5,6 +5,7 @@ import logo from "../../assets/Logo/Paragraph container.png";
 import { useSelector, useDispatch } from "react-redux";
 import * as headerSlice from "../../Redux/Slices/Header/headerSclice";
 import { NavLink } from "react-router-dom";
+import { links } from "../../Services/Date/Header/links";
 
 export default function Header() {
   const dispatch = useDispatch();
@@ -31,31 +32,20 @@ export default function Header() {
             <ul className={styles.navList}>
               <li>Services</li>
               <li>Experts</li>
-              <NavLink
-                className={({ isActive }) =>
-                  `${styles.link} ${
-                    isActive ? styles.activeLink : styles.navlink
-                  }`
-                }
-                to="/About"
-                style={{ color: "black" }}
-              >
-                About
-              </NavLink>
-
-              <li>Blog</li>
-
-              <NavLink
-                className={({ isActive }) =>
-                  `${styles.link} ${
-                    isActive ? styles.activeLink : styles.navlink
-                  }`
-                }
-                to="/ContactUs"
-                style={{ color: "black" }}
-              >
-                Contact Us
-              </NavLink>
+              {links.map((elem) => (
+                <NavLink
+                  key={elem.id}
+                  to={elem.link}
+                  className={({ isActive }) =>
+                    `${styles.link} ${
+                      isActive ? styles.activeLink : styles.navlink
+                    }`
+                  }
+                  style={{ color: "black" }}
+                >
+                  {elem.btntext}
+                </NavLink>
+              ))}
             </ul>
             <NavLink to="/" style={{ textDecoration: "none" }}>
               {" "}

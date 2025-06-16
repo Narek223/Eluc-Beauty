@@ -48,14 +48,17 @@
   display: flex;
   gap: 24px;
 }
+.contactConteiner .ContactWrapper .formPart .formWrapper .inputError {
+  border: 2.5px solid red;
+}
 .contactConteiner .ContactWrapper .formPart .formWrapper .error {
   color: rgb(185, 0, 0);
   font-size: 12px;
   font-family: "Manrope", sans-serif;
   margin-top: -15px;
 }
-.contactConteiner .ContactWrapper .formPart .formWrapper .error:nth-child(4) {
-  margin: 0;
+.contactConteiner .ContactWrapper .formPart .formWrapper .error:last-of-type {
+  margin-top: 0;
 }
 .contactConteiner .ContactWrapper .formPart .formWrapper textarea {
   border-radius: 4px;
