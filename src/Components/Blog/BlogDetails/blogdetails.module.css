@@ -1,0 +1,32 @@
+.blogDetails .banner img {
+  width: 100%;
+  height: 640px;
+  background-size: contain;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogDetails .banner .overlay {
+  display: flex;
+  flex-direction: column;
+  padding: 0 140px;
+  color: rgb(61, 61, 61);
+}
+.blogDetails .contentWrapper {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+.blogDetails .contentWrapper h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.blogDetails .contentWrapper h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #888;
+}
+.blogDetails .contentWrapper .content p {
+  margin-bottom: 16px;
+  line-height: 1.7;
+}/*# sourceMappingURL=blogdetails.module.css.map */

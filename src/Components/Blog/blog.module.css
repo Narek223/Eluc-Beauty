@@ -14,6 +14,10 @@
   font-family: "Italiana", sans-serif;
   font-weight: 400;
   font-size: 32px;
+  color: rgb(41, 41, 41);
+}
+.conteiner .conteinerWrapper a {
+  text-decoration: none;
 }
 .conteiner .conteinerWrapper .newPost {
   margin: 32px 0 0 0;
@@ -80,22 +84,26 @@
   width: auto;
   height: 430px;
 }
-.conteiner .recentPost .postsConteiner .posts img {
+.conteiner .recentPost .postsConteiner .posts a {
+  text-decoration: none;
+}
+.conteiner .recentPost .postsConteiner .posts a img {
   width: 100%;
   height: 250px;
   border-radius: 12px;
 }
-.conteiner .recentPost .postsConteiner .posts p {
+.conteiner .recentPost .postsConteiner .posts a p {
   font-family: "Manrope", sans-serif;
   color: rgb(230, 100, 69);
   font-size: 14px;
 }
-.conteiner .recentPost .postsConteiner .posts h1 {
+.conteiner .recentPost .postsConteiner .posts a h1 {
+  color: rgb(82, 82, 82);
   height: 60px;
   font-size: 24px;
   font-family: "Manrope", sans-serif;
 }
-.conteiner .recentPost .postsConteiner .posts p:nth-of-type(2) {
+.conteiner .recentPost .postsConteiner .posts a p:nth-of-type(2) {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -105,14 +113,14 @@
   font-family: "Manrope", sans-serif;
   font-size: 14px;
 }
-.conteiner .recentPost .postsConteiner .posts .date {
+.conteiner .recentPost .postsConteiner .posts a .date {
   display: flex;
   justify-content: space-between;
 }
-.conteiner .recentPost .postsConteiner .posts .date p {
+.conteiner .recentPost .postsConteiner .posts a .date p {
   font-size: 12px;
 }
-.conteiner .recentPost .postsConteiner .posts .date p:nth-of-type(1) {
+.conteiner .recentPost .postsConteiner .posts a .date p:nth-of-type(1) {
   color: rgb(61, 61, 61);
   font-size: 12px;
 }/*# sourceMappingURL=blog.module.css.map */
