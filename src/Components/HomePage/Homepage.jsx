@@ -7,7 +7,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { images } from "../../Services/Date/HomePage/slider.js";
-import { Slider } from "@mui/material";
 import Testimonials from "./Testimonials/Testimonials.jsx";
 import Book from "./BookPage/Book.jsx";
 import Subscribe from "./Subscribe/Subscribe.jsx";
@@ -15,6 +14,7 @@ import About from "../HomePage/About/About.jsx";
 import Service from "../HomePage/PricingService/Service.jsx";
 import ExperienceCounter from "./ExperienceCounter/ExperienceCounter.jsx";
 import Services from "./OurServices/Services.jsx";
+import Experts from "./Experts/Experts.jsx";
 
 export default function Homepage() {
   return (
@@ -52,6 +52,7 @@ export default function Homepage() {
         <About />
   
         <Book />
+        <Experts/>
         <Testimonials />
         <Subscribe />
       </div>

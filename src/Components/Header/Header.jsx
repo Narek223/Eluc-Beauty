@@ -31,7 +31,6 @@ export default function Header() {
           <nav>
             <ul className={styles.navList}>
               <li>Services</li>
-              <li>Experts</li>
               {links.map((elem) => (
                 <NavLink
                   key={elem.id}
