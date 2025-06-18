@@ -21,21 +21,20 @@ function App() {
   const is404 =
     location.pathname !== "/" &&
     location.pathname !== "/About" &&
-    location.pathname !== "/ContactUs"&&
+    location.pathname !== "/ContactUs" &&
     location.pathname !== "/Blog" &&
     !location.pathname.startsWith("/Blog/");
 
   return (
     <div className="App">
       {!is404 && <Header />}
-
       <Scroll />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/About" element={<About />} />
         <Route path="/ContactUs" element={<Contact />} />
         <Route path="/Blog" element={<Blog />} />
-            <Route path="/Blog/:id" element={<BlogDetails />} />
+        <Route path="/Blog/:id" element={<BlogDetails />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       {!is404 && <Footer />}
