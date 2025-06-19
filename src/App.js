@@ -15,29 +15,36 @@ import ErrorPage from "./Components/404/ErrorPage";
 import Contact from "./Components/ContactUs/Contact";
 import Blog from "./Components/Blog/Blog";
 import BlogDetails from "./Components/Blog/BlogDetails/BlogDetails";
+import ExpertsPage from "./Components/Experts/ExpertsPage";
+import ExpertsDetalis from "./Components/HomePage/Experts/ExpertsDetalis/ExpertsDetalis";
+
 
 function App() {
   const location = useLocation();
-  const is404 =
-    location.pathname !== "/" &&
-    location.pathname !== "/About" &&
-    location.pathname !== "/ContactUs" &&
-    location.pathname !== "/Blog" &&
-    !location.pathname.startsWith("/Blog/");
+  const validPaths = ["/", "/About", "/ContactUs", "/Blog","/Expert"];
+
+const isValidPath =
+  validPaths.includes(location.pathname) ||
+  /^\/Blog\/[0-9]+/.test(location.pathname) ||
+  /^\/Expert\/[0-9]+/.test(location.pathname);
 
   return (
     <div className="App">
-      {!is404 && <Header />}
+      {isValidPath && <Header />}
+
       <Scroll />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/About" element={<About />} />
         <Route path="/ContactUs" element={<Contact />} />
         <Route path="/Blog" element={<Blog />} />
-        <Route path="/Blog/:id" element={<BlogDetails />} />
+          <Route path="/Blog/:id" element={<BlogDetails />} />
+        <Route path="/Expert" element={<ExpertsPage />} />
+            <Route path="/Expert/:id" element={<ExpertsDetalis />} />
+      
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      {!is404 && <Footer />}
+      {isValidPath && <Footer />}
     </div>
   );
 }

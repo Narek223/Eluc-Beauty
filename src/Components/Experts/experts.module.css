@@ -1,0 +1,69 @@
+.ExpertConteiner .BodyConteiner .BodyWrapper {
+  display: flex;
+  margin: 140px 0;
+  width: 100%;
+  height: 540px;
+  justify-content: center;
+}
+.ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent {
+  width: 800px;
+  margin: 22px 55px;
+}
+.ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .title .titleWrapper {
+  display: flex;
+}
+.ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .title .titleWrapper h1:nth-child(1) {
+  width: 50%;
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+.ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .title .titleWrapper h1:nth-child(2) {
+  font-family: "MyCustomFont", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  color: rgb(230, 100, 69);
+  letter-spacing: 0;
+}
+.ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .title p {
+  font-style: 25px;
+  font-weight: 500;
+  color: rgb(82, 82, 82);
+  font-family: "Manrope", sans-serif;
+}
+.ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .Content {
+  width: 70%;
+  margin: 24px 0 0 0;
+}
+.ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .Content p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-style: 16px;
+  color: rgb(124, 124, 124);
+}
+.ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .count {
+  display: flex;
+  gap: 110px;
+}
+.ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .count .happyclients {
+  display: flex;
+  align-items: center;
+}
+.ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .count .procedures {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+.ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .count p {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  color: rgb(82, 82, 82);
+  font-weight: 400;
+}
+.ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .count h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 128px;
+  color: rgb(124, 124, 124);
+}/*# sourceMappingURL=experts.module.css.map */

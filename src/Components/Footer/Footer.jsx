@@ -40,7 +40,6 @@ const Footer = () => {
             <div>
               <p>Contact</p>
               <a href="tel:+000 000-00-000">
-                {" "}
                 <span> +000 000-00-000</span>
               </a>
             </div>

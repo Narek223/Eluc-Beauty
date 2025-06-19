@@ -1,0 +1,145 @@
+.expertsprofile {
+  width: 100%;
+}
+.expertsprofile .profileContent {
+  margin: 60px 0 0 0;
+  padding: 0 140px;
+}
+.expertsprofile .profileContent .profile {
+  background-image: url("../../../../assets/Experts/Text input.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 20px;
+  height: 450px;
+  border-radius: 12px;
+}
+.expertsprofile .profileContent .profile .img {
+  border-radius: 12px;
+  height: 100%;
+  width: 500px;
+}
+.expertsprofile .profileContent .profile .img img {
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+  height: 100%;
+}
+.expertsprofile .profileContent .profile .text {
+  margin: 20px 0;
+  width: 58%;
+  height: 100%;
+}
+.expertsprofile .profileContent .profile .text .experienceWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-family: sans-serif;
+}
+.expertsprofile .profileContent .profile .text .experienceWrapper .year {
+  font-size: 14px;
+  color: #777;
+}
+.expertsprofile .profileContent .profile .text .experienceWrapper .lineWrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin: 0 10px;
+  position: relative;
+}
+.expertsprofile .profileContent .profile .text .experienceWrapper .lineWrapper .line {
+  height: 1px;
+  background-color: #f77a2f;
+  flex: 1;
+}
+.expertsprofile .profileContent .profile .text .experienceWrapper .lineWrapper .title {
+  font-family: "Manrope", sans-serif;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  background-color: #faf7f2;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+}
+.expertsprofile .profileContent .profile .text .experienceWrapper .lineWrapper .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #f77a2f;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.expertsprofile .profileContent .profile .text .experienceWrapper .lineWrapper .leftDot {
+  left: 0;
+}
+.expertsprofile .profileContent .profile .text .experienceWrapper .lineWrapper .rightDot {
+  right: 0;
+}
+.expertsprofile .profileContent .profile .text h1 {
+  font-weight: 300;
+  font-size: 32px;
+  font-family: "Manrope", sans-serif;
+  color: rgb(41, 41, 41);
+}
+.expertsprofile .profileContent .profile .text p {
+  margin: 48px 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(124, 124, 124);
+}
+.expertsprofile .profileContent .worksConteiner {
+  margin: 144px 0 90px 0;
+}
+.expertsprofile .profileContent .worksConteiner h1 {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+}
+.expertsprofile .profileContent .worksConteiner .myworks {
+  margin: 36px 0 0 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.expertsprofile .profileContent .worksConteiner .myworks .worksWrapper {
+  cursor: pointer;
+}
+.expertsprofile .profileContent .worksConteiner .myworks .worksWrapper img {
+  border-radius: 6px;
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.expertsprofile .profileContent .modal {
+  width: 100%;
+  height: 100%;
+}
+.expertsprofile .profileContent .modal .imgmodal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 100%;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.expertsprofile .profileContent .modal .imgmodal img {
+  border-radius: 6px;
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=expertdetalis.module.css.map */

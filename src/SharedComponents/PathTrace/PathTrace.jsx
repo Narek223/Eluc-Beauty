@@ -3,7 +3,8 @@ import styles from "./pathTrace.module.scss";
 import { IoMdArrowDropright } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 
-export default function PathTrace({ title, nextitle, currentPage, oldPage }) {
+
+export default function PathTrace({ title, nextitle, breadcrumbs = [] }) {
   return (
     <div className={styles.pathConteiner}>
       <div className={styles.pathWrapper}>
@@ -15,16 +16,23 @@ export default function PathTrace({ title, nextitle, currentPage, oldPage }) {
         </div>
         <div className={styles.pathTrace}>
           <ul>
-            <NavLink className={styles.link} to="/">
-              <li>{oldPage}</li>
-            </NavLink>
-
-            <IoMdArrowDropright />
-
-            <li>{currentPage}</li>
+            {breadcrumbs.map((item, index) => (
+              <React.Fragment key={index}>
+                {item.to ? (
+                  <NavLink className={styles.link} to={item.to}>
+                    <li>{item.name}</li>
+                  </NavLink>
+                ) : (
+                  <li>{item.name}</li> 
+                )}
+                {index < breadcrumbs.length - 1 && <IoMdArrowDropright />}
+              </React.Fragment>
+            ))}
           </ul>
         </div>
       </div>
     </div>
   );
 }
+
+
