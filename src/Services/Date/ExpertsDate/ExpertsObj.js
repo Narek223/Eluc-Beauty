@@ -12,13 +12,13 @@ export const ExpertsObj = [
       "I am a professional hair specialist with over 10 years of experience in the industry. My expertise includes a wide range of hair treatments, cuts, coloring techniques, and styling trends. I am dedicated to staying updated with the latest advancements in hair care to provide my clients with exceptional service. I am a professional hair specialist with over 10 years of experience in the industry. My expertise includes a wide range of hair treatments, cuts, coloring techniques, and styling ",
     MyWorks: [
       { id: 1, img: imgone },
-      { id: 2, img: imgone },
+      { id: 2, img: imgtwo },
       { id: 3, img: imgone },
       { id: 4, img: imgone },
       { id: 5, img: imgone },
       { id: 6, img: imgone },
       { id: 7, img: imgone },
-      { id: 8, img: imgone },
+      { id: 8, img: imgthree },
     ],
     MyCertificates: [
       { id: 1, img: imgone },
