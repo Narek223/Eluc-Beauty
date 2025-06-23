@@ -1,3 +1,75 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.parentModal {
+  display: flex;
+  justify-content: center;
+}
+.parentModal .SeeMore {
+  border: none;
+  background-color: rgb(212, 163, 115);
+  width: 199px;
+  height: 48px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.modalWrapper {
+  position: relative;
+  max-width: 700px;
+  width: 90vw;
+  border-radius: 16px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalImageCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modalImage {
+  border-radius: 8px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.arrowLeft,
+.arrowRight {
+  display: flex;
+  font-size: 32px;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 2;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
 .expertsprofile {
   width: 100%;
 }
@@ -121,34 +193,30 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.expertsprofile .profileContent .modal {
+.expertsprofile .profileContent .Certificates .Dotwo {
+  margin: 80px 0;
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  position: relative;
-  opacity: 0;
+  height: 1px;
+  background-color: rgb(217, 217, 217);
 }
-.expertsprofile .profileContent .modal .modalwrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  height: 100%;
-  border: none;
-  box-shadow: none;
-  outline: none;
-  background-color: #333;
+.expertsprofile .profileContent .Certificates .CertificatesWrapper h1 {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
 }
-.expertsprofile .profileContent .modal .modalwrapper img {
-  border-radius: 6px;
+.expertsprofile .profileContent .Certificates .CertificatesWrapper .imgCont {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.expertsprofile .profileContent .Certificates .CertificatesWrapper .imgCont .img {
   width: 100%;
-  height: 275px;
+  margin: 32px 0;
+}
+.expertsprofile .profileContent .Certificates .CertificatesWrapper .imgCont .img img {
+  border-radius: 12px;
+  width: 270px;
+  height: 200px;
+  gap: 10px;
   -o-object-fit: cover;
      object-fit: cover;
 }/*# sourceMappingURL=expertdetalis.module.css.map */

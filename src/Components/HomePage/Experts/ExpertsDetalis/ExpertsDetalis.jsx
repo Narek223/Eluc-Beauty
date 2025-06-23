@@ -32,9 +32,7 @@ export default function ExpertsDetalis() {
 
   useEffect(() => {
     if (selectedIndex !== null) {
-      dispatch(
-        ExpertSlice.setSelectedWork(Experts.MyWorks[selectedIndex])
-      );
+      dispatch(ExpertSlice.setSelectedWork(Experts.MyWorks[selectedIndex]));
     }
   }, [selectedIndex, Experts.MyWorks]);
 
@@ -114,6 +112,23 @@ export default function ExpertsDetalis() {
               )}
             </Box>
           </Modal>
+          <button className={styles.SeeMore}>See More</button>
+        </div>
+        <div className={styles.Certificates}>
+          <div className={styles.Dotwo}></div>
+          <div className={styles.CertificatesWrapper}>
+            <h1>MY CERTIFICATES</h1>
+            <div className={styles.imgCont}>
+
+           
+            {Experts.MyCertificates.map((elem) => (
+              <div key={elem.id} className={styles.img}>
+                <img src={elem.img} />
+              </div>
+            ))}
+             </div>
+            <div className={styles.Dotwo}></div>
+          </div>
         </div>
       </div>
     </div>
