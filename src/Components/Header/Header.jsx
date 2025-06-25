@@ -50,8 +50,10 @@ export default function Header() {
               {" "}
               <img src={logo} />
             </NavLink>
-
-            <p className={styles.login}>LogIn / SignUp</p>
+            <NavLink to="/SignIn" style={{ textDecoration: "none" }}>
+              <p className={styles.login}>LogIn / SignUp</p>
+            </NavLink>
+       
           </nav>
         </header>
       </div>

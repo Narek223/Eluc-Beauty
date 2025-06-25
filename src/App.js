@@ -17,16 +17,16 @@ import Blog from "./Components/Blog/Blog";
 import BlogDetails from "./Components/Blog/BlogDetails/BlogDetails";
 import ExpertsPage from "./Components/Experts/ExpertsPage";
 import ExpertsDetalis from "./Components/HomePage/Experts/ExpertsDetalis/ExpertsDetalis";
-
+import SignIn from "./Components/SignInSignUp/SignIn";
 
 function App() {
   const location = useLocation();
-  const validPaths = ["/", "/About", "/ContactUs", "/Blog","/Expert"];
+  const validPaths = ["/", "/About", "/ContactUs", "/Blog", "/Expert","/SignIn"];
 
-const isValidPath =
-  validPaths.includes(location.pathname) ||
-  /^\/Blog\/[0-9]+/.test(location.pathname) ||
-  /^\/Expert\/[0-9]+/.test(location.pathname);
+  const isValidPath =
+    validPaths.includes(location.pathname) ||
+    /^\/Blog\/[0-9]+/.test(location.pathname) ||
+    /^\/Expert\/[0-9]+/.test(location.pathname);
 
   return (
     <div className="App">
@@ -38,10 +38,11 @@ const isValidPath =
         <Route path="/About" element={<About />} />
         <Route path="/ContactUs" element={<Contact />} />
         <Route path="/Blog" element={<Blog />} />
-          <Route path="/Blog/:id" element={<BlogDetails />} />
+        <Route path="/Blog/:id" element={<BlogDetails />} />
         <Route path="/Expert" element={<ExpertsPage />} />
-            <Route path="/Expert/:id" element={<ExpertsDetalis />} />
-      
+        <Route path="/Expert/:id" element={<ExpertsDetalis />} />
+        <Route path="/SignIn" element={<SignIn />} />
+
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       {isValidPath && <Footer />}
