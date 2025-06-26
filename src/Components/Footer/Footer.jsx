@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer>
-      {location.pathname !== "/ContactUs" || location.pathname !== "/SignIn" && (
+      {location.pathname !== "/ContactUs" && location.pathname !== "/SignIn" && (
         <div className={styles.mapSection}>
           <MapContainer
             center={[50.8019, 8.7665]}

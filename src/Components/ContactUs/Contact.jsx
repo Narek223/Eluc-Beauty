@@ -3,9 +3,11 @@ import styles from "./contact.module.scss";
 import ContactImg from "../../assets/ContactUs/Image.png";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { validationSchema } from "../Utils/validation";
+
+
+
 export default function Contact() {
   const [sent, setSent] = useState(false);
-
 
   const initialValues = {
     FullName: "",
@@ -47,7 +49,9 @@ export default function Contact() {
                     id="username"
                     placeholder="*FullName "
                     className={` ${
-                      touched.FullName && errors.FullName ? styles.inputError : ""
+                      touched.FullName && errors.FullName
+                        ? styles.inputError
+                        : ""
                     }`}
                   />
                   <ErrorMessage
@@ -77,7 +81,9 @@ export default function Contact() {
                     id="password"
                     placeholder="*Phone number "
                     className={` ${
-                      touched.Phonenumber && errors.Phonenumber ? styles.inputError : ""
+                      touched.Phonenumber && errors.Phonenumber
+                        ? styles.inputError
+                        : ""
                     }`}
                   />
                   <ErrorMessage
