@@ -8,6 +8,7 @@ import {
   Routes,
   Route,
   useLocation,
+  useParams,
 } from "react-router-dom";
 import About from "./Components/AboutUs/About";
 import Scroll from "./Components/ScrollToTop/Scroll";
@@ -18,15 +19,15 @@ import BlogDetails from "./Components/Blog/BlogDetails/BlogDetails";
 import ExpertsPage from "./Components/Experts/ExpertsPage";
 import ExpertsDetalis from "./Components/HomePage/Experts/ExpertsDetalis/ExpertsDetalis";
 import SignIn from "./Components/SignInSignUp/SignIn";
+import { links } from "./Services/Date/Header/links";
 
 function App() {
   const location = useLocation();
-  const validPaths = ["/", "/About", "/ContactUs", "/Blog", "/Expert","/SignIn"];
 
-  const isValidPath =
-    validPaths.includes(location.pathname) ||
-    /^\/Blog\/[0-9]+/.test(location.pathname) ||
-    /^\/Expert\/[0-9]+/.test(location.pathname);
+  const validPaths = ["/", ...links.map((item) => item.link), "/sign,'/expert"];
+  const isValidPath = validPaths.includes(
+    "/" + location.pathname.split("/")[1]
+  );
 
   return (
     <div className="App">
@@ -35,13 +36,13 @@ function App() {
       <Scroll />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/ContactUs" element={<Contact />} />
-        <Route path="/Blog" element={<Blog />} />
-        <Route path="/Blog/:id" element={<BlogDetails />} />
-        <Route path="/Expert" element={<ExpertsPage />} />
-        <Route path="/Expert/:id" element={<ExpertsDetalis />} />
-        <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contacts" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/expert" element={<ExpertsPage />} />
+        <Route path="/expert/:id" element={<ExpertsDetalis />} />
+        <Route path="/sign" element={<SignIn />} />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>

@@ -1,22 +1,22 @@
 export const links = [
   {
     id: 0,
-    link: "/Expert",
-    btntext: "Experts",
+    link: "/expert",
+    btntext: "header.experts",
   },
   {
     id: 1,
-    link: "/About",
-    btntext: "About",
+    link: "/about",
+    btntext: "header.about",
   },
   {
     id: 2,
-    link: "/Blog",
-    btntext: "Blog",
+    link: "/blog",
+    btntext: "header.blog",
   },
   {
     id: 3,
-    link: "/ContactUs",
-    btntext: "Contact Us",
+    link: "/contacts",
+    btntext: "header.contacts",
   },
 ];

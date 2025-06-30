@@ -3,10 +3,10 @@ import styles from "./services.module.scss";
 import { serviceImages } from "../../../Services/Date/HomePage/serviceImages";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import { useTranslation } from "react-i18next";
 export default function Services() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-
+  const { t } = useTranslation();
   AOS.init({
     duration: 800,
     easing: "ease-in-out",
@@ -22,7 +22,7 @@ export default function Services() {
 
       <div className={styles.servicesWrapper}>
         <h1 data-aos="fade-right">
-          Our Services <span>Awesome Services</span>
+        {t("services.ourServices")} <span>{t("services.span")}</span>
         </h1>
         <div className={styles.servicesImages}>
           {serviceImages.map((img, index) => (
@@ -40,13 +40,13 @@ export default function Services() {
                 alt={`Service ${index + 1}`}
               />
               {hoveredIndex === index && (
-                <button className={styles.hoverButton}>Header</button>
+                <button className={styles.hoverButton}> {t("services.header")}</button>
               )}
             </div>
           ))}
         </div>
         <div className={styles.button}>
-          <button>Explore more</button>
+          <button>  {t("services.btn")}</button>
         </div>
       </div>
     </div>

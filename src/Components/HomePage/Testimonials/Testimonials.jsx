@@ -18,7 +18,7 @@ export default function Opinions() {
         </div>
         <div className={styles.text}>
           <div className={styles.title}>
-            <h1>What Our Customers says about US</h1>
+            <h1> WHAT OUR CUSTOMERS SAYS ABOUT US</h1>
             <h1>Testimonials</h1>
           </div>
           <div className={styles.textSlider}>

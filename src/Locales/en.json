@@ -1,0 +1,52 @@
+{
+  "header": {
+    "services": "Services",
+    "experts": "Experts",
+    "about": "About",
+    "blog": "Blog",
+    "contacts": "Contact Us",
+    "login": "Login",
+    "signUp": "SignUp"
+  },
+  "headerinfo": {
+    "address": "Address"
+  },
+  "services": {
+    "ourServices": "Our Services",
+    "span": "Awesome Services",
+    "btn": "Explore more",
+    "header": "Header"
+  },
+  "pricingServices": {
+    "pricing": "Pricing for service",
+    "span": "Prices",
+    "p": "The best jobs at the best prices only with us, Elux Beauty Salon.",
+    "service": {
+      "hairExtension": "Hair Extension",
+      "bridesToBe": "Brides-to-be",
+      "braidsForChildren": "Braids for Children",
+      "individualMakeup": "Individual makeup Services",
+      "hairCare": "Hair care",
+      "desc": "Lorem ipsum dolor sit amet"
+    }
+  },
+  "counter": {
+    "experience": "years of experience ",
+    "clients": "happy clients",
+    "procedures": "we made beauty procedures"
+  },
+  "aboutPage": {
+  "titleLine1": "Awesome warm words about ELUX studio",
+  "titleLine2": "About",
+  "subtitle": "In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat vo",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "button": "Explore more"
+},
+"bookSection": {
+  "title": "Feel better & better with ELUX studio",
+  "description": "Where elegance meets expertise. Our dedicated team of professionals is here to pamper you with personalized treatments, transforming your look and enhancing your natural beauty.",
+  "button": "Book Now"
+}
+
+
+}

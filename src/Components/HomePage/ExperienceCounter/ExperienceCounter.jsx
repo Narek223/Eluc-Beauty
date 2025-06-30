@@ -3,9 +3,15 @@ import styles from "./ExperienceCounter.module.scss";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { count } from "../../../Services/Date/HomePage/counter";
-
+import { useTranslation } from "react-i18next";
 
 export default function ExperienceCounter() {
+
+
+
+
+  const { t } = useTranslation();
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -18,7 +24,7 @@ export default function ExperienceCounter() {
       <div className={styles.experienceCounterWrapper} ref={ref}>
         {count.map((item) => (
           <div key={item.id}>
-            <h1>{item.title}</h1>
+            <h1>{t(item.title)}</h1>
             <p>
               <CountUp
                 start={0}

@@ -1,27 +1,22 @@
 import React from "react";
 import styles from "./book.module.scss";
-
+import { useTranslation } from "react-i18next";
 
 
 
 export default function Book() {
+  const { t } = useTranslation();
+  
   return (
     <div className={styles.bookContainer}>
       <div className={styles.bookWrapper}>
         <div className={styles.bookContent}>
-          <h1>Feel better & better with ELUX studio</h1>
-          <p>
-            Where elegance meets expertise. Our dedicated team of professionals
-            is here to pamper you with personalized treatments, transforming
-            your look and enhancing your natural beauty.
-          </p>
-          <button>Book Now</button>
+        <h1>{t("bookSection.title")}</h1>
+          <p>{t("bookSection.description")}</p>
+          <button>{t("bookSection.button")}</button>
         </div>
       </div>
-      <div>
-  
      
-            </div>
     </div>
   );
 }

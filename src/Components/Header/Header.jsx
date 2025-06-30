@@ -5,11 +5,16 @@ import logo from "../../assets/Logo/Paragraph container.png";
 import { useSelector, useDispatch } from "react-redux";
 import * as headerSlice from "../../Redux/Slices/Header/headerSclice";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { links } from "../../Services/Date/Header/links";
 
 export default function Header() {
   const dispatch = useDispatch();
   const { isScrolled } = useSelector((state) => state.header);
+  const { t } = useTranslation();
+
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,7 +35,7 @@ export default function Header() {
         >
           <nav>
             <ul className={styles.navList}>
-              <li>Services</li>
+              <li>{t("header.services")}</li>
               {links.map((elem) => (
                 <NavLink
                   key={elem.id}
@@ -42,7 +47,7 @@ export default function Header() {
                   }
                   style={{ color: "black" }}
                 >
-                  {elem.btntext}
+                  {t(elem.btntext)}
                 </NavLink>
               ))}
             </ul>
@@ -50,8 +55,8 @@ export default function Header() {
               {" "}
               <img src={logo} />
             </NavLink>
-            <NavLink to="/SignIn" style={{ textDecoration: "none" }}>
-              <p className={styles.login}>LogIn / SignUp</p>
+            <NavLink to="/sign" style={{ textDecoration: "none" }}>
+              <p className={styles.login}>{t("header.login")} / {t("header.signUp")}</p>
             </NavLink>
        
           </nav>

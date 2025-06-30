@@ -1,13 +1,20 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { MenuItem, FormControl, Select } from "@mui/material";
 import { useSelector, useDispatch } from "react-redux";
 import * as leaderActions from "../../../Redux/Slices/Header/language";
+import i18n from "../../../i18n";
 
 export default function Language() {
   const dispatch = useDispatch();
   const { language } = useSelector((state) => state.language);
 
+
+  useEffect(() => {
+   dispatch(leaderActions.setLanguage(i18n.language === "de" ? "De" : "Eng"));
+  }, [i18n.language]);
+
+  
   return (
     <div>
       <FormControl size="small">
@@ -42,10 +49,10 @@ export default function Language() {
               },
             },
           }}
-          onChange={(e) => dispatch(leaderActions.setLanguage(e.target.value))}
+          onChange={(e) => dispatch(leaderActions.handleLanguageChange(e.target.value))}
         >
           <MenuItem value="Eng">Eng</MenuItem>
-          <MenuItem value="Arm">Arm</MenuItem>
+          <MenuItem value="De">De</MenuItem>
         </Select>
       </FormControl>
     </div>

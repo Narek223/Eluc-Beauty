@@ -4,9 +4,12 @@ import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import Language from "../Changelanguage/Language";
+import { useTranslation } from "react-i18next";
 
 
 export default function ContactsInfo() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className={styles.contactWrapper}>
@@ -50,7 +53,7 @@ export default function ContactsInfo() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p> Address: Marburg, marburg</p>
+              <p> {t("headerinfo.address")}: Marburg, marburg</p>
             </a>
             <Language />
           </div>
