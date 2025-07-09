@@ -3,13 +3,15 @@ import "leaflet/dist/leaflet.css";
 import styles from "./footer.module.scss";
 import { useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next"; 
 
 const Footer = () => {
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <footer>
-      {location.pathname !== "/ContactUs" && location.pathname !== "/SignIn" && (
+      {location.pathname !== "/contacts" && location.pathname !== "/sign" && (
         <div className={styles.mapSection}>
           <MapContainer
             center={[50.8019, 8.7665]}
@@ -22,25 +24,25 @@ const Footer = () => {
             />
           </MapContainer>
           <div className={styles.contactBox}>
-            <h1>Contact</h1>
+            <h1>{t("footer.contact")}</h1>
             <div>
-              <p>Address</p>
+              <p>{t("footer.address")}</p>
               <a
                 href="https://www.google.com/maps/place/40.179186,44.478342,14"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>Marburg, Marburg 10</span>
+                <span>{t("footer.addressValue")}</span>
               </a>
             </div>
             <div>
-              <p>Open Time</p>
-              <span>09:00 - 19:00</span>
+              <p>{t("footer.openTime")}</p>
+              <span>{t("footer.openTimeValue")}</span>
             </div>
             <div>
-              <p>Contact</p>
-              <a href="tel:+000 000-00-000">
-                <span> +000 000-00-000</span>
+              <p>{t("footer.contactPhone")}</p>
+              <a href={`tel:${t("footer.phoneValue")}`}>
+                <span> {t("footer.phoneValue")}</span>
               </a>
             </div>
           </div>
@@ -48,15 +50,14 @@ const Footer = () => {
       )}
       <div className={styles.footerBottom}>
         <p>
-          © COPYRIGHT 2024 EluX. Experience luxury and rejuvenation with our
-          expert beauty treatments. Follow us on social media for the latest
-          updates and exclusive offers.{" "}
-          <NavLink to="/ContactUs" style={{ color: "black",textDecoration:" none" }}>
-            <span> Contact Us </span>
+          {t("footer.copyright")}{" "}
+          <NavLink to="/ContactUs" style={{ color: "black", textDecoration: "none" }}>
+            <span> {t("footer.contactUs")} </span>
           </NavLink>{" "}
-           |
-          <span>Privacy Policy </span>  | <span>Terms of Service</span> |
-          <span> FAQs </span> 
+           | 
+          <span>{t("footer.privacy")}</span>  | 
+          <span>{t("footer.terms")}</span> | 
+          <span>{t("footer.faqs")}</span> 
         </p>
       </div>
     </footer>

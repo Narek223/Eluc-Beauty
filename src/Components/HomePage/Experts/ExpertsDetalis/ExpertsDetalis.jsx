@@ -43,7 +43,7 @@ export default function ExpertsDetalis() {
         nextitle="Awesome Team"
         breadcrumbs={[
           { name: "Home", to: "/" },
-          { name: "Expert", to: "/Expert" },
+          { name: "Expert", to: "/expert" },
           { name: "Single Expert" },
         ]}
       />

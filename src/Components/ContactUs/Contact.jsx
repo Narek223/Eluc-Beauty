@@ -3,11 +3,11 @@ import styles from "./contact.module.scss";
 import ContactImg from "../../assets/ContactUs/Image.png";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { validationSchema } from "../Utils/validation";
-
-
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
+  const { t } = useTranslation(); 
 
   const initialValues = {
     FullName: "",
@@ -30,11 +30,8 @@ export default function Contact() {
         </div>
         <div className={styles.formPart}>
           <div className={styles.formWrapper}>
-            <h1>Contact US</h1>
-            <p>
-              Whether you have questions, feedback, or need assistance, our team
-              is ready to support you. 
-            </p>
+            <h1>{t("contact.title")}</h1>
+            <p>{t("contact.subtitle")}</p>
 
             <Formik
               initialValues={initialValues}
@@ -47,7 +44,7 @@ export default function Contact() {
                     type="text"
                     name="FullName"
                     id="username"
-                    placeholder="*FullName "
+                    placeholder={t("contact.fullName")}
                     className={` ${
                       touched.FullName && errors.FullName
                         ? styles.inputError
@@ -64,7 +61,7 @@ export default function Contact() {
                     type="mail"
                     name="mail"
                     id="password"
-                    placeholder="*Email Address "
+                    placeholder={t("contact.email")}
                     className={` ${
                       touched.mail && errors.mail ? styles.inputError : ""
                     }`}
@@ -79,7 +76,7 @@ export default function Contact() {
                     type="tel"
                     name="Phonenumber"
                     id="password"
-                    placeholder="*Phone number "
+                    placeholder={t("contact.phone")}
                     className={` ${
                       touched.Phonenumber && errors.Phonenumber
                         ? styles.inputError
@@ -94,7 +91,7 @@ export default function Contact() {
                   <Field
                     as="textarea"
                     name="message"
-                    placeholder="*Your Message"
+                    placeholder={t("contact.message")}
                     className={` ${
                       touched.message && errors.message ? styles.inputError : ""
                     }`}
@@ -113,7 +110,7 @@ export default function Contact() {
                     }
                     disabled={isSubmitting || !(isValid && dirty)}
                   >
-                    Send Message
+                    {t("contact.send")}
                   </button>
                 </Form>
               )}

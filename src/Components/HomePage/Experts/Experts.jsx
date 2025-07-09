@@ -6,14 +6,19 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
+
 
 export default function Experts() {
-  
+    const { t } = useTranslation();
+
+
   return (
     <div className={styles.expertsConteiner}>
       <div className={styles.ExpertsTitle}>
-        <h1>MEET THE BEST TEAM EVER </h1>
-        <h1>Team</h1>
+        <h1> {t("Experts.team")}  </h1>
+        <h1>{t("Experts.team-two")}</h1>
       </div>
       <div className={styles.experts}>
         <Swiper
@@ -39,11 +44,11 @@ export default function Experts() {
                 }}
               >
                    <NavLink
-              to={`/Expert/${elem.id}`}
+              to={`/expert/${elem.id}`}
               key={elem.id}
               className={styles.View}
             >
-                <p>View</p>
+                <p>{t("Experts.view")}</p>
                 </NavLink>
               </SwiperSlide>
           

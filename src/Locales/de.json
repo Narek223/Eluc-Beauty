@@ -47,6 +47,43 @@
   "title": "Fühlen Sie sich besser und besser mit ELUX Studio",
   "description": "Wo Eleganz auf Expertise trifft. Unser engagiertes Team von Fachleuten verwöhnt Sie mit personalisierten Behandlungen, verwandelt Ihr Aussehen und betont Ihre natürliche Schönheit.",
   "button": "Jetzt buchen"
+},
+"Experts":{
+  "team":"DAS BESTE TEAM ALLER ZEITEN",
+  "team-two":"Team",
+  "view":"siehe"
+},
+"testimonials": {
+  "sectionTitle": "WAS UNSERE KUNDEN ÜBER UNS SAGEN",
+  "title": "Zeugnisse"
+},
+"subscribe": {
+  "title": "ABONNIEREN ",
+  "span": "Elux",
+  "description": "Abonnieren Sie unseren Newsletter für Expertentipps und Salon-News",
+  "placeholder": "*E-Mail-Adresse",
+  "button": "Abonnieren"
+},"footer": {
+  "contact": "Kontakt",
+  "address": "Adresse",
+  "addressValue": "Marburg, Marburg 10",
+  "openTime": " Offene Zeit",
+  "openTimeValue": "09:00 - 19:00",
+  "contactPhone": "Kontakt",
+  "phoneValue": "+000 000-00-000",
+  "copyright": "© COPYRIGHT 2024 EluX. Erleben Sie Luxus und Erholung mit unseren professionellen Schönheitsbehandlungen. Folgen Sie uns in den sozialen Medien für die neuesten Updates und exklusive Angebote.",
+  "contactUs": "Kontakt",
+  "privacy": "Datenschutzrichtlinie",
+  "terms": "Bedingungen der Dienstleistung",
+  "faqs": "FAQs"
+},"contact": {
+  "title": "Kontakt US",
+  "subtitle": "Ob Sie Fragen, Feedback oder Unterstützung benötigen, unser Team ist bereit, Ihnen zu helfen.",
+  "fullName": "*Vollständiger Name",
+  "email": "*E-Mail-Adresse",
+  "phone": "*Telefonnummer",
+  "message": "*Ihre Nachricht",
+  "send": "Nachricht senden"
 }
 
 

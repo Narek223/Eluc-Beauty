@@ -46,6 +46,41 @@
   "title": "Feel better & better with ELUX studio",
   "description": "Where elegance meets expertise. Our dedicated team of professionals is here to pamper you with personalized treatments, transforming your look and enhancing your natural beauty.",
   "button": "Book Now"
+},
+"Experts":{
+  "team":"MEET THE BEST TEAM EVER",
+  "team-two":"Team",
+  "view":"view"
+},"testimonials": {
+  "sectionTitle": "WHAT OUR CUSTOMERS SAYS ABOUT US",
+  "title": "Testimonials"
+},"subscribe": {
+  "title": "SUBSCRIBE ",
+  "span":"Eluc",
+  "description": "Subscribe to our newsletter for expert beauty tips and salon news",
+  "placeholder": "*Email Address",
+  "button": "Subscribe"
+},"footer": {
+  "contact": "Contact",
+  "address": "Address",
+  "addressValue": "Marburg, Marburg 10",
+  "openTime": "Open Time",
+  "openTimeValue": "09:00 - 19:00",
+  "contactPhone": "Contact",
+  "phoneValue": "+000 000-00-000",
+  "copyright": "© COPYRIGHT 2024 EluX. Experience luxury and rejuvenation with our expert beauty treatments. Follow us on social media for the latest updates and exclusive offers.",
+  "contactUs": "Contact Us",
+  "privacy": "Privacy Policy",
+  "terms": "Terms of Service",
+  "faqs": "FAQs"
+},"contact": {
+  "title": "Contact US",
+  "subtitle": "Whether you have questions, feedback, or need assistance, our team is ready to support you.",
+  "fullName": "*Full Name",
+  "email": "*Email Address",
+  "phone": "*Phone number",
+  "message": "*Your Message",
+  "send": "Send Message"
 }
 
 

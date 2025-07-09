@@ -8,8 +8,10 @@ import "swiper/css/navigation";
 import { Pagination, Navigation,Autoplay } from "swiper/modules";
 import { Slider } from "@mui/material";
 import {text} from "../../../Services/Date/HomePage/textslider.js";
+import { useTranslation } from "react-i18next";
 
 export default function Opinions() {
+    const { t } = useTranslation();
   return (
     <div className={styles.conteiner}>
       <div className={styles.textslide}>
@@ -18,8 +20,8 @@ export default function Opinions() {
         </div>
         <div className={styles.text}>
           <div className={styles.title}>
-            <h1> WHAT OUR CUSTOMERS SAYS ABOUT US</h1>
-            <h1>Testimonials</h1>
+            <h1> {t("testimonials.sectionTitle")}</h1>
+            <h1>{t("testimonials.title")}</h1>
           </div>
           <div className={styles.textSlider}>
             <Swiper
