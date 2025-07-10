@@ -1,22 +1,22 @@
 export const choose = [
   {
     id: 1,
-    title: "Expertise",
-    text: "Our team is composed of experienced professionals who are passionate about beauty and dedicated to their craft.",
+    title: "aboutPagetwo.choose.title",
+    text: "aboutPagetwo.choose.text",
   },
   {
     id: 2,
-    title: "Innovation",
-    text: "We stay updated with the latest industry trends and technologies to offer you cutting-edge services.",
+    title: "aboutPagetwo.choose.title2",
+    text: "aboutPagetwo.choose.text2",
   },
   {
     id: 3,
-    title: "Personalized Care",
-    text: "We believe in providing customized treatments that cater to your specific needs and preferences.",
+    title: "aboutPagetwo.choose.title3",
+    text: "aboutPagetwo.choose.text3",
   },
   {
     id: 4,
-    title: "Luxurious",
-    text: "From the moment you step into our salon, you will be enveloped in an atmosphere of elegance and relaxation.",
+    title: "aboutPagetwo.choose.title4",
+    text: "aboutPagetwo.choose.text4",
   },
 ];

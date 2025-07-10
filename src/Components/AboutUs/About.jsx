@@ -10,13 +10,14 @@ import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { choose } from "../../Services/Date/About/choose";
 import nextimg from '../../assets/About/Switch.png'
+import { useTranslation } from "react-i18next";
 
 export default function About() {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
-
+  const { t } = useTranslation();
   const getCountUpProps = (numStr) => {
     if (numStr.includes("%")) {
       return {
@@ -48,23 +49,23 @@ export default function About() {
   return (
     <div className={styles.AboutComponent}>
       <PathTrace
-        title={"About us"}
-        nextitle={"AwesomeBeauty salon"}
-        oldPage={"Home"}
-        currentPage={"About"}
+        title={t("aboutPagetwo.titleLine2")}
+        nextitle={t("aboutPagetwo.titleLine1")}
+        oldPage={t("headertwo.services")}
+        currentPage={t("aboutPagetwo.titleLine2")}
       />
       <div className={styles.aboutContent}>
         <div className={styles.aboutText}>
           <div>
-            <h1>BEAUTY SALON ELUX OFFERS A RANGE OF SERVICES</h1>
+            <h1>{t("aboutPagetwo.mainTitle")}</h1>
             {text.map((elem) => (
               <div key={elem.id} className={styles.content}>
                 <div className={styles.iconimg}>
                   <img src={iconimg} alt="icon" />
                 </div>
                 <div className={styles.textItem}>
-                  <h2>{elem.title}</h2>
-                  <p>{elem.text}</p>
+                  <h2>{t(elem.title)}</h2>
+                  <p>{t(elem.text)}</p>
                 </div>
               </div>
             ))}
@@ -78,25 +79,10 @@ export default function About() {
             <img src={abotimg} alt="About ELUX" />
           </div>
           <div className={styles.text}>
-            <h1>FULL RANGE OF SERVICES FROM ELUX</h1>
-            <p>
-              EluX Beauty Salon is a premier beauty destination founded on the
-              principles of luxury, innovation, and personalized care. Our team
-              of experienced professionals is passionate about helping you look
-              and feel your best.
-            </p>
-            <p>
-              At EluX Beauty Salon, our mission is to deliver a premium beauty
-              experience that combines high-quality products, exceptional
-              service, and a serene atmosphere. We are committed to creating a
-              space where you can relax, rejuvenate, and transform your look.
-            </p>
-            <p>
-              EluX Beauty Salon is a premier beauty destination founded on the
-              principles of luxury, innovation, and personalized care. Our team
-              of experienced professionals is passionate about helping you look
-              and feel your best.
-            </p>
+            <h1>{t("aboutPagetwo.fullRangeTitle")}</h1>
+            <p>{t("aboutPagetwo.desc1")}</p>
+            <p>{t("aboutPagetwo.desc2")}</p>
+            <p>{t("aboutPagetwo.desc3")}</p>
           </div>
         </div>
         <div ref={ref} className={styles.counterWrapper}>
@@ -104,7 +90,7 @@ export default function About() {
             const countUpProps = getCountUpProps(item.number);
             return (
               <div key={item.id} className={styles.counter}>
-                <h1>{item.title}</h1>
+                <h1>{t(item.title)}</h1>
                 <div className={styles.counterText}>
                   <h2>
                     {inView ? (
@@ -118,18 +104,17 @@ export default function About() {
                       `0${countUpProps.suffix || ""}`
                     )}
                   </h2>
-                  <p>{item.text}</p>
+                  <p>{t(item.text)}</p>
                 </div>
               </div>
             );
           })}
         </div>
         <div className={styles.Choose}>
-          <div className={styles.Choosewrapper}>
-           
+          <div className={styles.Choosewrapper}>   
             <div className={styles.title}>
-              <h1>Why Choose EluX Beauty Salon?</h1>
-              <h1> Beauty</h1>
+            <h1>{t("aboutPagetwo.whyChooseTitle1")}</h1>
+              <h1>{t("aboutPagetwo.whyChooseTitle2")}</h1>
             </div>
              {choose.map((elem) => (
               <div key={elem.id} className={styles.contentconteiner}>
@@ -137,15 +122,15 @@ export default function About() {
                   <img src={iconimg} alt="icon" />
                 </div>
                 <div className={styles.Choosetext}>
-                  <h2>{elem.title}</h2>
-                  <p>{elem.text}</p>
+                  <h2>{t(elem.title)}</h2>
+                  <p>{t(elem.text)}</p>
                 </div>
               </div>
             ))}
           </div>
           <div className={styles.img}>
             <img src={nextimg}/>
-</div>
+    </div>
         </div>
       </div>
     </div>

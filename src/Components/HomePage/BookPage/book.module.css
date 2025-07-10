@@ -27,6 +27,7 @@
   font-weight: 400;
   font-size: 54px;
   font-family: "Italiana", sans-serif;
+  text-align: center;
 }
 .bookContainer .bookWrapper .bookContent p {
   margin: 20px 0;

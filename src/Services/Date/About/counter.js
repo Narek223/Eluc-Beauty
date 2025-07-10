@@ -1,26 +1,26 @@
  export const count = [
     {
       id: 1,
-      title: "Years of Experience",
+      title: "aboutPagetwo.counter.title",
       number: "10+",
-      text: "Hair Extensions",
+      text:  "aboutPagetwo.counter.title",
     },
     {
       id: 2,
-      title: "Quality Assurance",
+      title:"aboutPagetwo.counter.title2",
       number: "99.9%",
-      text: "Top-notch Services",
+      text:  "aboutPagetwo.counter.title2",
     },
     {
       id: 3,
-      title: "Satisfied Clients",
+      title: "aboutPagetwo.counter.title3",
       number: "1.5 M",
-      text: "Happy Customers",
+      text:"aboutPagetwo.counter.title3",
     },
     {
       id: 4,
-      title: "Professional Staff",
+      title: "aboutPagetwo.counter.title4",
       number: "500",
-      text: "Certified Experts",
+      text: "aboutPagetwo.counter.title4",
     },
   ];

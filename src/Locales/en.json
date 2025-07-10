@@ -36,52 +36,100 @@
     "procedures": "we made beauty procedures"
   },
   "aboutPage": {
-  "titleLine1": "Awesome warm words about ELUX studio",
-  "titleLine2": "About",
-  "subtitle": "In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat vo",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "button": "Explore more"
-},
-"bookSection": {
-  "title": "Feel better & better with ELUX studio",
-  "description": "Where elegance meets expertise. Our dedicated team of professionals is here to pamper you with personalized treatments, transforming your look and enhancing your natural beauty.",
-  "button": "Book Now"
-},
-"Experts":{
-  "team":"MEET THE BEST TEAM EVER",
-  "team-two":"Team",
-  "view":"view"
-},"testimonials": {
-  "sectionTitle": "WHAT OUR CUSTOMERS SAYS ABOUT US",
-  "title": "Testimonials"
-},"subscribe": {
-  "title": "SUBSCRIBE ",
-  "span":"Eluc",
-  "description": "Subscribe to our newsletter for expert beauty tips and salon news",
-  "placeholder": "*Email Address",
-  "button": "Subscribe"
-},"footer": {
-  "contact": "Contact",
-  "address": "Address",
-  "addressValue": "Marburg, Marburg 10",
-  "openTime": "Open Time",
-  "openTimeValue": "09:00 - 19:00",
-  "contactPhone": "Contact",
-  "phoneValue": "+000 000-00-000",
-  "copyright": "© COPYRIGHT 2024 EluX. Experience luxury and rejuvenation with our expert beauty treatments. Follow us on social media for the latest updates and exclusive offers.",
-  "contactUs": "Contact Us",
-  "privacy": "Privacy Policy",
-  "terms": "Terms of Service",
-  "faqs": "FAQs"
-},"contact": {
-  "title": "Contact US",
-  "subtitle": "Whether you have questions, feedback, or need assistance, our team is ready to support you.",
-  "fullName": "*Full Name",
-  "email": "*Email Address",
-  "phone": "*Phone number",
-  "message": "*Your Message",
-  "send": "Send Message"
-}
+    "titleLine1": "Awesome warm words about ELUX studio",
+    "titleLine2": "About",
+    "subtitle": "In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat vo",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "button": "Explore more"
+  },
+  "bookSection": {
+    "title": "Feel better & better with ELUX studio",
+    "description": "Where elegance meets expertise. Our dedicated team of professionals is here to pamper you with personalized treatments, transforming your look and enhancing your natural beauty.",
+    "button": "Book Now"
+  },
+  "Experts": {
+    "team": "MEET THE BEST TEAM EVER",
+    "team-two": "Team",
+    "view": "view"
+  },
+  "testimonials": {
+    "sectionTitle": "WHAT OUR CUSTOMERS SAYS ABOUT US",
+    "title": "Testimonials"
+  },
+  "subscribe": {
+    "title": "SUBSCRIBE ",
+    "span": "Eluc",
+    "description": "Subscribe to our newsletter for expert beauty tips and salon news",
+    "placeholder": "*Email Address",
+    "button": "Subscribe"
+  },
+  "footer": {
+    "contact": "Contact",
+    "address": "Address",
+    "addressValue": "Marburg, Marburg 10",
+    "openTime": "Open Time",
+    "openTimeValue": "09:00 - 19:00",
+    "contactPhone": "Contact",
+    "phoneValue": "+000 000-00-000",
+    "copyright": "© COPYRIGHT 2024 EluX. Experience luxury and rejuvenation with our expert beauty treatments. Follow us on social media for the latest updates and exclusive offers.",
+    "contactUs": "Contact Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "faqs": "FAQs"
+  },
+  "contact": {
+    "title": "Contact US",
+    "subtitle": "Whether you have questions, feedback, or need assistance, our team is ready to support you.",
+    "fullName": "*Full Name",
+    "email": "*Email Address",
+    "phone": "*Phone number",
+    "message": "*Your Message",
+    "send": "Send Message"
+  },
+  "aboutPagetwo": {
+    "titleLine1": " Awesome Beauty salon",
+    "titleLine2": "ABOUT US",
+    "mainTitle": "BEAUTY SALON ELUX OFFERS A RANGE OF SERVICES",
+    "fullRangeTitle": "FULL RANGE OF SERVICES FROM ELUX",
+    "desc1": "EluX Beauty Salon is a premier beauty destination founded on the principles of luxury, innovation, and personalized care. Our team of experienced professionals is passionate about helping you look and feel your best.",
+    "desc2": "At EluX Beauty Salon, our mission is to deliver a premium beauty experience that combines high-quality products, exceptional service, and a serene atmosphere. We are committed to creating a space where you can relax, rejuvenate, and transform your look.",
+    "desc3": "EluX Beauty Salon is a premier beauty destination founded on the principles of luxury, innovation, and personalized care. Our team of experienced professionals is passionate about helping you look and feel your best.",
+    "whyChooseTitle1": "Why Choose EluX Beauty Salon?",
+    "whyChooseTitle2": "Beauty",
 
+    
+    "text": {
+      "titleLine1": "Hair Extensions and Hair Care",
+      "text1": " Our expert stylists specialize in high-quality hair extensions and advanced hair care solutions to give you the luscious locks you've always dreamed of.",
+      "titleLine2": "Wedding Hairstyles",
+      "text2": " Brides-to-be can trust our talented team to create stunning and elegant hairstyles for their special day, ensuring you look perfect as you walk down the aisle.",
+      "titleLine3": "Children's Braids",
+      "text3": "We offer unique and stylish braiding services for children, making sure they leave our salon with a smile and a beautiful, age-appropriate hairstyle.",
+      "titleLine4": "Makeup Services",
+      "text4": "Whether it's for a special occasion or everyday glamour, our makeup artists will enhance your natural beauty with professional techniques and high-quality products."
+    },
+     "counter": {
+      "title": "years of experience",
+      "text": "Hair Extensions",
+      "title2": "Quality Assurance",
+      "text2": "Top-notch Servicess",
+      "title3": "Satisfied Clients",
+      "text3": "Happy Customers",
+      "title4": "Professional Staff",
+      "text4": "Certified Experts"
+    },
+    "choose":{
+      "title":"Expertise",
+      "text":" Our team is composed of experienced professionals who are passionate about beauty and dedicated to their craft. ",
+      "title2":"Innovation",
+      "text2":"We stay updated with the latest industry trends and technologies to offer you cutting-edge services. ",
+      "title3":"Personalized Care",
+      "text3": "We believe in providing customized treatments that cater to your specific needs and preferences.",
+      "title4":"Luxurious Experience",
+      "text4": "From the moment you step into our salon, you will be enveloped in an atmosphere of elegance and relaxation."
+  }
+    }
 
-}
+   
+  }
+
