@@ -13,7 +13,7 @@ height: 100%;
       font-size: 140px;
       color: red;
 
-    //   font-family: "MyCustomFont", sans-serif;
+    //font-family: "MyCustomFont", sans-serif;
       font-weight: 400;
     }
     h1:nth-child(2){
@@ -38,10 +38,34 @@ height: 100%;
 margin: 10px 0 0 0;
       width: 196px;
       height: 48px;
- 
+ position: relative;
       border-radius: 4px;
 
       cursor: pointer;
+
+
+       &::before {
+          content: "";
+          position: absolute;
+          background: #de5b35;
+          height: 100%;
+          width: 0;
+          left: 0;
+          top: 0;
+          z-index: -1;
+          transition: 0.4s ease;
+        }
+
+        &:hover {
+          color: #fff;
+          &::before {
+            width: 100%;
+          }
+        }
+
+        &:active {
+          transform: scale(0.97);
+        }
     }
   }
 }

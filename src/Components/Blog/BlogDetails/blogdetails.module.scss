@@ -10,7 +10,7 @@
 
     .overlay {
       display: flex;
-          flex-direction: column;
+      flex-direction: column;
       padding: 0 140px;
       color: rgba(61, 61, 61, 1);
     }
@@ -35,6 +35,88 @@
     .content p {
       margin-bottom: 16px;
       line-height: 1.7;
+    }
+  }
+  .blognotfound {
+    background-color: #fdfaf6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      height: calc(100vh - 130px);
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 550px;
+      margin: 0 auto;
+
+      display: flex;
+      gap: 10px;
+
+      flex-direction: column;
+      justify-content: center;
+      .code {
+        font-size: 140px;
+        color: red;
+
+        font-weight: 400;
+      }
+
+      .title {
+        font-family: "Italiana", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        color: rgba(70, 70, 70, 1);
+      }
+
+      .description {
+        color: rgba(124, 124, 124, 1);
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "Manrope", sans-serif;
+      }
+
+      button {
+        width: 196px;
+    display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #de5b35;
+  border: 1px solid #de5b35;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+
+        &::before {
+          content: "";
+          position: absolute;
+          background: #de5b35;
+          height: 100%;
+          width: 0;
+          left: 0;
+          top: 0;
+          z-index: -1;
+          transition: 0.4s ease;
+        }
+
+        &:hover {
+          color: #fff;
+          &::before {
+            width: 100%;
+          }
+        }
+
+        &:active {
+          transform: scale(0.97);
+        }
+      }
     }
   }
 }

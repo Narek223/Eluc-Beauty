@@ -38,6 +38,27 @@
   margin: 10px 0 0 0;
   width: 196px;
   height: 48px;
+  position: relative;
   border-radius: 4px;
   cursor: pointer;
+}
+.errorConteiner .errorWrapper button::before {
+  content: "";
+  position: absolute;
+  background: #de5b35;
+  height: 100%;
+  width: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+.errorConteiner .errorWrapper button:hover {
+  color: #fff;
+}
+.errorConteiner .errorWrapper button:hover::before {
+  width: 100%;
+}
+.errorConteiner .errorWrapper button:active {
+  transform: scale(0.97);
 }/*# sourceMappingURL=Error.module.css.map */
