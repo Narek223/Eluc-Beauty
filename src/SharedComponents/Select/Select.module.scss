@@ -1,0 +1,19 @@
+.formControl {
+    width: 248px;
+    border: none;
+}
+.select {
+    height: 100%;
+    border: none;
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 24px;
+        width: 1px;
+        background-color: #ddd;
+    }
+    .iconimg {
+        margin-right: 14px;
+    }
+}

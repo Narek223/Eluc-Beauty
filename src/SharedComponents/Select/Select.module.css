@@ -1,0 +1,20 @@
+.formControl {
+  width: 248px;
+  border: none;
+}
+
+.select {
+  height: 100%;
+  border: none;
+}
+.select::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 24px;
+  width: 1px;
+  background-color: #ddd;
+}
+.select .iconimg {
+  margin-right: 14px;
+}/*# sourceMappingURL=Select.module.css.map */

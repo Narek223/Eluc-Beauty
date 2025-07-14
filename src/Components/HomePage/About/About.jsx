@@ -23,7 +23,7 @@ export default function About() {
 
           <p>{t("aboutPage.description")}</p>
 
-          <NavLink to="/About">
+          <NavLink to="/about">
             <button>{t("aboutPage.button")}</button>
           </NavLink>
         </div>

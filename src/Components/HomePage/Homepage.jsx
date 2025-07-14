@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./homepage.module.scss";
-import homeimg from "../../assets/HomePage/HeroWallpaper1.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,6 +14,7 @@ import Service from "../HomePage/PricingService/Service.jsx";
 import ExperienceCounter from "./ExperienceCounter/ExperienceCounter.jsx";
 import Services from "./OurServices/Services.jsx";
 import Experts from "./Experts/Experts.jsx";
+import FastBooking from "./FastBooking/FastBooking.jsx";
 
 export default function Homepage() {
   return (
@@ -22,7 +22,7 @@ export default function Homepage() {
       <div className={styles.homepagewrapper}>
         <div className={styles.homepageContent}>
           <Swiper
-                speed={900}
+            speed={900}
             loop={true}
             autoplay={{
               delay: 2500,
@@ -45,14 +45,17 @@ export default function Homepage() {
               </SwiperSlide>
             ))}
           </Swiper>
+          <div>
+            <FastBooking />
+          </div>
         </div>
-    <Services/>
- <Service/>
-      <ExperienceCounter/>
+        <Services />
+        <Service />
+        <ExperienceCounter />
         <About />
-  
+
         <Book />
-        <Experts/>
+        <Experts />
         <Testimonials />
         <Subscribe />
       </div>

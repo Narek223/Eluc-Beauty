@@ -6,9 +6,9 @@
   height: 100%;
 }
 .homepageContainer .homepagewrapper .homepageContent .homeSlide {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 135px);
 }
-.homepageContainer .homepagewrapper .homepageContent img {
+.homepageContainer .homepagewrapper .homepageContent .homeImage {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
