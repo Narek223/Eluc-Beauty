@@ -3,14 +3,14 @@ import styles from "./Select.module.scss";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { IoIosArrowDown } from "react-icons/io";
-import { IoPersonOutline } from "react-icons/io5";
+
 
 import MenuItem from "@mui/material/MenuItem";
 
 export default function InputSelect({value,onChange,state,label,iconimg}) {
   return (
     <div>
-      <FormControl className={styles.formControl}>
+      <FormControl fullWidth className={styles.formControl}>
         <Select
           className={styles.select}
           value={value}

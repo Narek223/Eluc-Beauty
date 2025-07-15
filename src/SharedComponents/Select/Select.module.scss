@@ -1,5 +1,5 @@
 .formControl {
-    width: 248px;
+
     border: none;
 }
 .select {
@@ -15,5 +15,11 @@
     }
     .iconimg {
         margin-right: 14px;
+    }
+    span{
+        display: flex;
+        align-items: center;
+     object-fit: cover;
+    
     }
 }

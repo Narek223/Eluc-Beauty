@@ -1,0 +1,47 @@
+.formControl {
+  border: none;
+}
+.select {
+  height: 100%;
+  border: none;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 24px;
+    width: 1px;
+    background-color: #ddd;
+  }
+&::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 24px;
+    width: 1px;
+    background-color: #ddd;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+  }
+  .menuItem {
+    background-color: black;
+  }
+}
+.timeSelect {
+  width: 100%;
+  height: 100%;
+  .timeButton {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+        align-items: center;
+        cursor: pointer;
+    .iconimg {
+      margin-right: 14px;
+    }
+  }
+}

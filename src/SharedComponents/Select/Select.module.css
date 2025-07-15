@@ -1,5 +1,4 @@
 .formControl {
-  width: 248px;
   border: none;
 }
 
@@ -17,4 +16,10 @@
 }
 .select .iconimg {
   margin-right: 14px;
+}
+.select span {
+  display: flex;
+  align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=Select.module.css.map */

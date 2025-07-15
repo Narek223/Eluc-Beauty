@@ -5,30 +5,67 @@ import * as fastBooking from "../../../Redux/Slices/FastBooking/FastbookSlice";
 import iconimg from "../../../assets/HomePage/Container (1).png";
 import Select from "../../../SharedComponents/Select/InputSelect";
 import { IoPersonOutline } from "react-icons/io5";
-import icon from "../../../assets/HomePage/Icon.png"
+import icon from "../../../assets/HomePage/Icon.png";
+import Calendar from "../../../SharedComponents/Calendar/Calendar";
+
+import TimeSelect from "../../../SharedComponents/Select/timeselect/Time";
+
+
 export default function FastBooking() {
   const dispatch = useDispatch();
-  const { services, experts } = useSelector((state) => state.FastBook);
+  const { services, experts, date, time } = useSelector(
+    (state) => state.FastBook
+  );
+
+  const fields = [
+    {
+      value: services,
+      action: fastBooking.setservice,
+      label: "Service",
+      icon: iconimg,
+    },
+    {
+      value: experts,
+      action: fastBooking.setexperts,
+      label: "Expert",
+      icon: icon,
+    },
+  ];
 
   return (
     <div className={styles.bookingCont}>
       <div className={styles.boogkingWrapper}>
         <div className={styles.inputPicker}>
-          <Select
-            value={services}
-            onChange={(e) => dispatch(fastBooking.setservice(e.target.value))}
-            state={services}
-            label={"Service"}
-            iconimg={iconimg}
+          {fields.map((f, i) => (
+            <div key={i} className={styles.inputWrapper}>
+              <Select
+                key={i}
+                value={f.value}
+                onChange={(e) => dispatch(f.action(e.target.value))}
+                state={f.value}
+                label={f.label}
+                iconimg={f.icon}
+              />
+            </div>
+          ))}
+
+          <Calendar
+            setDate={(date) => dispatch(fastBooking.setdate(date))}
+            value={date}
           />
-          <Select
-            value={experts}
-            onChange={(e) => dispatch(fastBooking.setexperts(e.target.value))}
-            state={experts}
-            label={"Expert"}
-            iconimg={icon}
-          />
-          <button>Book</button>
+<div className={styles.time}>
+ <TimeSelect
+  value={time}
+  onChange={(e) => dispatch(fastBooking.settime(e.target.value))}
+  // state={time}
+  // label="Any time"
+  // iconimg={timeicon}
+/>
+
+
+</div>
+        
+          <button className={styles.bookbutton}>Book</button>
         </div>
       </div>
     </div>
