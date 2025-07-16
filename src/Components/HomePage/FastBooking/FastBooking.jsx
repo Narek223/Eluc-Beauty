@@ -48,7 +48,6 @@ export default function FastBooking() {
               />
             </div>
           ))}
-
           <Calendar
             setDate={(date) => dispatch(fastBooking.setdate(date))}
             value={date}

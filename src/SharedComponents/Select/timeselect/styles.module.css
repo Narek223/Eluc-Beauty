@@ -1,42 +1,9 @@
-.formControl {
-  border: none;
-}
-
-.select {
-  height: 100%;
-  border: none;
-}
-.select::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  height: 24px;
-  width: 1px;
-  background-color: #ddd;
-}
-.select::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  height: 24px;
-  width: 1px;
-  background-color: #ddd;
-}
-.select span {
-  display: flex;
-  align-items: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.select .menuItem {
-  background-color: black;
-}
-
 .timeSelect {
   width: 100%;
   height: 100%;
 }
 .timeSelect .timeButton {
+  position: relative;
   border: none;
   background-color: transparent;
   width: 100%;
@@ -47,4 +14,12 @@
 }
 .timeSelect .timeButton .iconimg {
   margin-right: 14px;
+}
+.timeSelect .timeButton::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 24px;
+  width: 1px;
+  background-color: #ddd;
 }/*# sourceMappingURL=styles.module.css.map */

@@ -17,6 +17,9 @@ export default function InputSelect({value,onChange,state,label,iconimg}) {
           onChange={ onChange}
           IconComponent={IoIosArrowDown}
           displayEmpty
+           MenuProps={{
+    disableScrollLock: true,
+  }}
           renderValue={
             state !== ""
               ? undefined
