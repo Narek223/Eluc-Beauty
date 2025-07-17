@@ -32,6 +32,7 @@
 }
 .bookingCont .boogkingWrapper .inputPicker .time {
   width: 23%;
+  height: 100%;
 }
 .bookingCont .boogkingWrapper .inputPicker .bookbutton {
   background: rgb(212, 163, 115);

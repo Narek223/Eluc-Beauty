@@ -24,7 +24,7 @@ import { links } from "./Services/Date/Header/links";
 function App() {
   const location = useLocation();
 
-  const validPaths = ["/", ...links.map((item) => item.link), "/sign,'/expert"];
+  const validPaths = ["/", ...links.map((item) => item.link), "/sign","/expert"];
   const isValidPath = validPaths.includes(
     "/" + location.pathname.split("/")[1]
   );

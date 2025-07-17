@@ -3,6 +3,7 @@
   width: 100%;
   height: 100%;
   .timeButton {
+    font-size: 16px;
     position: relative;
     border: none;
     background-color: transparent;
@@ -25,5 +26,9 @@
 
   }
    
-
+.btn{
+  :active{
+    background-color: black;
+  }
+}
 }

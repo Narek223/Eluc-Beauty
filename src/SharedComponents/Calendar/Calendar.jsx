@@ -30,6 +30,7 @@ export default function Calendar({ setDate, value }) {
           textField: {
             placeholder: "Any date",
             variant: "standard",
+            color:"black",
             InputProps: {
               disableUnderline: true,
            
@@ -39,6 +40,7 @@ export default function Calendar({ setDate, value }) {
               position: "end",
             },
             sx: {
+              
               backgroundColor: "transparent",
               fontSize: "16px",
               py: "8px",

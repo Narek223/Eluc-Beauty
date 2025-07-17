@@ -55,7 +55,7 @@ export default function FastBooking() {
 <div className={styles.time}>
  <TimeSelect
   value={time}
-  onChange={(e) => dispatch(fastBooking.settime(e.target.value))}
+ onChange={(val) => dispatch(fastBooking.settime(val))}
   // state={time}
   // label="Any time"
   // iconimg={timeicon}

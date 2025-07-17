@@ -3,6 +3,7 @@
   height: 100%;
 }
 .timeSelect .timeButton {
+  font-size: 16px;
   position: relative;
   border: none;
   background-color: transparent;
@@ -22,4 +23,7 @@
   height: 24px;
   width: 1px;
   background-color: #ddd;
+}
+.timeSelect .btn :active {
+  background-color: black;
 }/*# sourceMappingURL=styles.module.css.map */
