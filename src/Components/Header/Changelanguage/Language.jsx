@@ -23,6 +23,7 @@ export default function Language() {
           id="demo-select-small"
           value={language}
           label="Language"
+           
           IconComponent={IoMdArrowDropdown}
           sx={{
              color: "white",
@@ -42,6 +43,7 @@ export default function Language() {
             },
           }}
           MenuProps={{
+             disableScrollLock: true,
             PaperProps: {
               sx: {
                 backgroundColor: "#98896c",

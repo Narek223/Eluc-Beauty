@@ -27,8 +27,7 @@ export default function Blog() {
         <PathTrace
           title="BLOG"
           nextitle="Articles"
-          oldPage="Home"
-          currentPage="Blog"
+         breadcrumbs={[{ name: "Home", to: "/" }, { name: "Blog" }]}
         />
       </div>
       <div className={styles.conteinerWrapper}>

@@ -1,16 +1,20 @@
 import React, { useRef, useState } from "react";
 import styles from "./Confirm.module.scss";
+import { useTranslation } from "react-i18next";
+
 
 export default function PhoneVerification() {
   const [code, setCode] = useState(["", "", "", "", ""]);
   const inputsRef = useRef([]);
 
+  const { t } = useTranslation();
+
  
 
   return (
     <div className={styles.confirmContainer}>
-      <h2>Confirm Your Phone Number</h2>
-      <p>To complete the registration, please enter the 5-digit code sent to your phone number.</p>
+      <h2>{t("ConfirmPhone.title")}</h2>
+      <p>{t("ConfirmPhone.subtitle")}  </p>
       <div className={styles.codeinputs}>
         {code.map((digit, index) => (
           <input
@@ -21,11 +25,11 @@ export default function PhoneVerification() {
         ))}
       </div>
       <p className={styles.resendtext}>
-        If you haven’t received the code within two minutes, click{" "}
-        <span className={styles.resendlink}>“Resend Code”.</span>
+       {t("ConfirmPhone.codeInput")} {" "}
+        <span className={styles.resendlink}> {t("ConfirmPhone.resendCode")}.</span>
       </p>
       <button className={styles.confirmbtn}  disabled={code.includes("")}>
-        Confirm
+        {t("ConfirmPhone.submit")}
       </button>
     </div>
   );

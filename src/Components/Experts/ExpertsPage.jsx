@@ -6,8 +6,10 @@ import Experts from "../HomePage/Experts/Experts";
 import Subscribe from "../HomePage/Subscribe/Subscribe";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
+import { useTranslation } from "react-i18next";
 
 export default function ExpertsPage() {
+  const { t } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -16,59 +18,43 @@ export default function ExpertsPage() {
   return (
     <div className={styles.ExpertConteiner}>
       <PathTrace
-        title="EXPERT"
-        nextitle="Awesome Team"
-        breadcrumbs={[{ name: "Home", to: "/" }, { name: "Expert" }]}
+        title={t("experts.pathTitle")}
+        nextitle={t("experts.pathSubtitle")}
+        breadcrumbs={[
+          { name: t("breadcrumbs.home"), to: "/" },
+          { name: t("breadcrumbs.expert") },
+        ]}
       />
 
-    
       <div className={styles.BodyConteiner}>
         <div className={styles.BodyWrapper}>
           <div className={styles.img}>
-            <img src={expertimg} />
+            <img src={expertimg} alt="expert" />
           </div>
           <div className={styles.ExpertsContent}>
             <div className={styles.title}>
               <div className={styles.titleWrapper}>
-                <h1>BEATY BEGINS HERE MEET THE TEAM</h1>
-                <h1>Creative Team</h1>
+                <h1>{t("experts.mainTitle1")}</h1>
+                <h1>{t("experts.mainTitle2")}</h1>
               </div>
+              <p>{t("experts.subtitle")}</p>
+            </div>
 
-              <p> Ut enim ad minim veniam, quis nostrud exercitation</p>
-            </div>
             <div className={styles.Content}>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit .
-              </p>
+              <p>{t("experts.description")}</p>
             </div>
+
             <div className={styles.count} ref={ref}>
               <div className={styles.happyclients}>
-                <p>happy clients</p>
-
+                <p>{t("experts.happyClients")}</p>
                 <h1>
-                  <CountUp
-                    start={0}
-                    end={inView ? 2 : 0}
-                    duration={2}
-                    deley={2}
-                  />
-                  k
+                  <CountUp start={0} end={inView ? 2 : 0} duration={2} delay={2} />k
                 </h1>
               </div>
               <div className={styles.procedures}>
-                <p>we made beauty procedures</p>
+                <p>{t("experts.beautyProcedures")}</p>
                 <h1>
-                  <CountUp
-                    start={0}
-                    end={inView ? 5 : 0}
-                    duration={2}
-                    deley={2}
-                  />
-                  b
+                  <CountUp start={0} end={inView ? 5 : 0} duration={2} delay={2} />b
                 </h1>
               </div>
             </div>

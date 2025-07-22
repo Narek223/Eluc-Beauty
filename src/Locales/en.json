@@ -97,7 +97,6 @@
     "whyChooseTitle1": "Why Choose EluX Beauty Salon?",
     "whyChooseTitle2": "Beauty",
 
-    
     "text": {
       "titleLine1": "Hair Extensions and Hair Care",
       "text1": " Our expert stylists specialize in high-quality hair extensions and advanced hair care solutions to give you the luscious locks you've always dreamed of.",
@@ -108,7 +107,7 @@
       "titleLine4": "Makeup Services",
       "text4": "Whether it's for a special occasion or everyday glamour, our makeup artists will enhance your natural beauty with professional techniques and high-quality products."
     },
-     "counter": {
+    "counter": {
       "title": "years of experience",
       "text": "Hair Extensions",
       "title2": "Quality Assurance",
@@ -118,18 +117,51 @@
       "title4": "Professional Staff",
       "text4": "Certified Experts"
     },
-    "choose":{
-      "title":"Expertise",
-      "text":" Our team is composed of experienced professionals who are passionate about beauty and dedicated to their craft. ",
-      "title2":"Innovation",
-      "text2":"We stay updated with the latest industry trends and technologies to offer you cutting-edge services. ",
-      "title3":"Personalized Care",
+    "choose": {
+      "title": "Expertise",
+      "text": " Our team is composed of experienced professionals who are passionate about beauty and dedicated to their craft. ",
+      "title2": "Innovation",
+      "text2": "We stay updated with the latest industry trends and technologies to offer you cutting-edge services. ",
+      "title3": "Personalized Care",
       "text3": "We believe in providing customized treatments that cater to your specific needs and preferences.",
-      "title4":"Luxurious Experience",
+      "title4": "Luxurious Experience",
       "text4": "From the moment you step into our salon, you will be enveloped in an atmosphere of elegance and relaxation."
-  }
     }
+  },
+ 
 
-   
+
+  "experts": {
+    "pathTitle": "EXPERT",
+    "pathSubtitle": "Awesome Team",
+    "mainTitle1": "BEAUTY BEGINS HERE MEET THE TEAM",
+    "mainTitle2": "Creative Team",
+    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.",
+    "happyClients": "happy clients",
+    "beautyProcedures": "we made beauty procedures"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "expert": "Expert"
+  },
+  
+  "signin": {
+    "title": "Sign In / Sign Up",
+    "subtitle": "Enter your details below to continue!",
+    "fullName": "*Full Name",
+    "phone": "*Phone Number",
+    "keepSignedIn": "Keep me signed in details",
+    "submit": "Sign In"
+  },
+  "ConfirmPhone": {
+    "title": "Confirm Your Phone Number",
+    "subtitle": "To complete the registration, please enter the 5-digit code sent to your phone number.",
+    "codeInput": "If you haven’t received the code within two minutes, click",
+    "resendCode": "Resend Code",
+    "submit": "Confirm"
   }
+}
+
+
 

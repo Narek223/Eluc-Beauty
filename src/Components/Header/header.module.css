@@ -16,7 +16,7 @@
   border-bottom: 0.5px solid rgb(220, 220, 220);
   padding: 0 140px;
   height: 90px;
-  z-index: 1500;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -122,6 +122,7 @@
 .headerContainer .constacts .fixedScrolled nav {
   border-bottom: 0.5px solid rgb(220, 220, 220);
   position: fixed;
+  z-index: 1200;
   top: 0;
   width: 100%;
   animation: scrollDown 0.3s forwards;

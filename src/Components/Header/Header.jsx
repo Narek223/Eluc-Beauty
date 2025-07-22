@@ -35,7 +35,7 @@ export default function Header() {
         >
           <nav>
             <ul className={styles.navList}>
-              <li>{t("header.services")}</li>
+        
               {links.map((elem) => (
                 <NavLink
                   key={elem.id}
@@ -47,7 +47,7 @@ export default function Header() {
                   }
                   style={{ color: "black" }}
                 >
-                  {t(elem.btntext)}
+                 <li>  {t(elem.btntext)}</li>
                 </NavLink>
               ))}
             </ul>

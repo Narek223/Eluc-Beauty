@@ -20,7 +20,7 @@ import ExpertsPage from "./Components/Experts/ExpertsPage";
 import ExpertsDetalis from "./Components/HomePage/Experts/ExpertsDetalis/ExpertsDetalis";
 import SignIn from "./Components/SignInSignUp/SignIn";
 import { links } from "./Services/Date/Header/links";
-
+import Services from "./Components/Services/Services";
 function App() {
   const location = useLocation();
 
@@ -43,7 +43,7 @@ function App() {
         <Route path="/expert" element={<ExpertsPage />} />
         <Route path="/expert/:id" element={<ExpertsDetalis />} />
         <Route path="/sign" element={<SignIn />} />
-
+    <Route path="/services" element={<Services />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       {isValidPath && <Footer />}

@@ -6,16 +6,18 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import ConfirmPhone from "./ConfirmPhone/Confirm";
+import { useTranslation } from "react-i18next";
 
 export default function SignIn() {
   const [isConfirmedStep, setIsConfirmedStep] = useState(false);
+  const { t } = useTranslation();
 
   const initialValues = {
     FullName: "",
     Phonenumber: "",
   };
+
   const handleSubmit = (values) => {
-  
     setIsConfirmedStep(true);
   };
 
@@ -26,90 +28,88 @@ export default function SignIn() {
           {isConfirmedStep ? (
             <ConfirmPhone />
           ) : (
-    <>
-             <h1>Sign In / Sign Up</h1>
-                <div className={styles.LoginPart}>
-               
-              <p>Enter your details below to continue !</p>
-              <Formik
-                initialValues={initialValues}
-                validationSchema={validation}
-                onSubmit={handleSubmit}
-              >
-                {({ isValid, dirty, isSubmitting, touched, errors }) => (
-                  <Form className={styles.form}>
-                    <div className={styles.formWrapper}>
-                      <Field
-                        type="text"
-                        name="FullName"
-                        id="username"
-                        placeholder="*Full Name "
-                        className={` ${
-                          touched.FullName && errors.FullName
-                            ? styles.inputError
-                            : ""
-                        }`}
-                      />
-                      <ErrorMessage
-                        name="FullName"
-                        component="div"
-                        className={styles.error}
-                      />
+            <>
+              <h1>{t("signin.title")}</h1>
+              <div className={styles.LoginPart}>
+                <p>{t("signin.subtitle")}</p>
+                <Formik
+                  initialValues={initialValues}
+                  validationSchema={validation}
+                  onSubmit={handleSubmit}
+                >
+                  {({ isValid, dirty, isSubmitting, touched, errors }) => (
+                    <Form className={styles.form}>
+                      <div className={styles.formWrapper}>
+                        <Field
+                          type="text"
+                          name="FullName"
+                          id="username"
+                          placeholder={t("signin.fullName")}
+                          className={` ${
+                            touched.FullName && errors.FullName
+                              ? styles.inputError
+                              : ""
+                          }`}
+                        />
+                        <ErrorMessage
+                          name="FullName"
+                          component="div"
+                          className={styles.error}
+                        />
 
-                      <Field
-                        type="tel"
-                        name="Phonenumber"
-                        id="password"
-                        placeholder="*Phone Number "
-                        className={` ${
-                          touched.Phonenumber && errors.Phonenumber
-                            ? styles.inputError
-                            : ""
-                        }`}
-                      />
-                      <ErrorMessage
-                        name="Phonenumber"
-                        component="div"
-                        className={styles.error}
-                      />
-                    </div>
-                    <FormGroup>
-                      <FormControlLabel
-                        control={<Checkbox />}
-                        label="Keep me signed in details"
-                        sx={{
-                          "& .MuiFormControlLabel-label": {
-                            color: "#222",
-                            fontSize: "12px",
-                            fontFamily: "Manrope, sans-serif",
-                            fontWeight: 500,
-                            color: "rgba(124, 124, 124, 1)",
-                          },
-                        }}
-                      />
-                    </FormGroup>
+                        <Field
+                          type="tel"
+                          name="Phonenumber"
+                          id="password"
+                          placeholder={t("signin.phone")}
+                          className={` ${
+                            touched.Phonenumber && errors.Phonenumber
+                              ? styles.inputError
+                              : ""
+                          }`}
+                        />
+                        <ErrorMessage
+                          name="Phonenumber"
+                          component="div"
+                          className={styles.error}
+                        />
+                      </div>
 
-                    <button
-                      type="submit"
-                      className={
-                        !isValid || !dirty || isSubmitting
-                          ? styles.submitButtonDisabled
-                          : styles.submitButton
-                      }
-                  disabled={isSubmitting || !(isValid && dirty)}
-                    >
-                      Sign In
-                    </button>
-                  </Form>
-                )}
-              </Formik>
-            </div>
+                      <FormGroup>
+                        <FormControlLabel
+                          control={<Checkbox />}
+                          label={t("signin.keepSignedIn")}
+                          sx={{
+                            "& .MuiFormControlLabel-label": {
+                              color: "#222",
+                              fontSize: "12px",
+                              fontFamily: "Manrope, sans-serif",
+                              fontWeight: 500,
+                              color: "rgba(124, 124, 124, 1)",
+                            },
+                          }}
+                        />
+                      </FormGroup>
 
-    </>
-         
+                      <button
+                        type="submit"
+                        className={
+                          !isValid || !dirty || isSubmitting
+                            ? styles.submitButtonDisabled
+                            : styles.submitButton
+                        }
+                        disabled={isSubmitting || !(isValid && dirty)}
+                      >
+                        {t("signin.submit")}
+                      </button>
+                    </Form>
+                  )}
+                </Formik>
+              </div>
+            </>
           )}
-        
         </div>
+
         <div className={styles.imgbox}>
           <div className={styles.img}></div>
         </div>

@@ -17,7 +17,7 @@
         border-bottom: 0.5px solid rgba(220, 220, 220, 1);
         padding: 0 140px;
         height: 90px;
-        z-index: 1500;
+        z-index: 100;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -133,6 +133,7 @@ position: relative;
       nav {
         border-bottom: 0.5px solid rgba(220, 220, 220, 1);
         position: fixed;
+        z-index: 1200;
         top: 0;
         width: 100%;
         animation: scrollDown 0.3s forwards;

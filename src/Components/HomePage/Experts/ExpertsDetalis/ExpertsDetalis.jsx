@@ -11,17 +11,15 @@ import * as ExpertSlice from "../../../../Redux/Slices/ExpertDetalis/Expert";
 
 export default function ExpertsDetalis() {
   const dispatch = useDispatch();
+  
   const { selectedWork, open, selectedIndex } = useSelector(
     (state) => state.Expert
   );
 
   const { id } = useParams();
   const Experts = ExpertsObj.find((item) => item.id.toString() === id);
-
   const worksLength = Experts.MyWorks.length;
-
   const handleClose = () => dispatch(ExpertSlice.close());
-
   const handlePrev = () => {
     dispatch(ExpertSlice.prevWork(worksLength));
   };
@@ -119,14 +117,12 @@ export default function ExpertsDetalis() {
           <div className={styles.CertificatesWrapper}>
             <h1>MY CERTIFICATES</h1>
             <div className={styles.imgCont}>
-
-           
-            {Experts.MyCertificates.map((elem) => (
-              <div key={elem.id} className={styles.img}>
-                <img src={elem.img} />
-              </div>
-            ))}
-             </div>
+              {Experts.MyCertificates.map((elem) => (
+                <div key={elem.id} className={styles.img}>
+                  <img src={elem.img} />
+                </div>
+              ))}
+            </div>
             <div className={styles.Dotwo}></div>
           </div>
         </div>

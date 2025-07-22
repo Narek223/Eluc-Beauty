@@ -21,7 +21,9 @@ export default function Time({ value, onChange }) {
   const open = Boolean(anchorEl);
 
   const handleClick = (event) => {
+      event.preventDefault()
     setAnchorEl(event.currentTarget);
+   
   };
   const handleClose = () => {
     setAnchorEl(null);
@@ -41,6 +43,8 @@ export default function Time({ value, onChange }) {
         anchorEl={anchorEl}
         onClose={handleClose}
         disableScrollLock
+          disableAutoFocus={true}
+  disableEnforceFocus={true}
         anchorOrigin={{
           vertical: "bottom",
           horizontal: "left",

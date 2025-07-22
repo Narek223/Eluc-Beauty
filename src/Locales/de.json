@@ -125,6 +125,42 @@
       "title4":"Luxuriöses Erlebnis",
       "text4": "Von dem Moment an, in dem Sie unseren Salon betreten, werden Sie von einer Atmosphäre der Eleganz und Entspannung umhüllt sein."
   }
+  },
+    "experts": {
+    "pathTitle": "EXPERTE",
+    "pathSubtitle": "Erstaunliches Team",
+    "mainTitle1": "SCHÖNHEIT BEGINNT HIER, LERNEN SIE DAS TEAM KENNEN",
+    "mainTitle2": "Kreatives Team",
+    "subtitle": "Um den Aufwand zu minimieren, verwenden Sie keine Übungen",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.",
+    "happyClients": "Zufriedene Kunden",
+    "beautyProcedures": "Wir haben Schönheitsbehandlungen durchgeführt"
+  },
+  "breadcrumbs": {
+    "home": "Startseite",
+    "expert": "Experte"
+  },
+  
+  "signin": {
+    "title": "Anmelden / Registrieren",
+    "subtitle": "Geben Sie unten Ihre Daten ein, um fortzufahren!",
+    "fullName": "*Vollständiger Name",
+    "phone": "*Telefonnummer",
+    "keepSignedIn": "Angemeldet bleiben",
+    "submit": "Anmelden"
+  },
+  
+  "ConfirmPhone": {
+    "title": "Bestätigen Sie Ihre Rufnummer",
+    "subtitle": "Um die Registrierung abzuschließen, geben Sie bitte den 5-stelligen Code ein, der an Ihre Telefonnummer gesendet wird.",
+    "codeInput": "*Wenn Sie den Code innerhalb von zwei Minuten nicht erhalten haben, klicken Sie auf",
+    "resendCode": "Code erneut senden",
+    "submit": "Bestätigen"
   }
- 
+
+
 }
+
+
+ 
+
