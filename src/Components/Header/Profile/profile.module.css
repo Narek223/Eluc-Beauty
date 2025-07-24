@@ -1,0 +1,16 @@
+.profileContainer p {
+  width: 381px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(41, 41, 41);
+  font-family: "Manrope", sans-serif;
+}
+.profileContainer p .icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}/*# sourceMappingURL=profile.module.css.map */

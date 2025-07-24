@@ -7,9 +7,13 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import ConfirmPhone from "./ConfirmPhone/Confirm";
 import { useTranslation } from "react-i18next";
+import { useSelector, useDispatch } from "react-redux";
+import * as signinActions from "../../Redux/Slices/SignIn/signinSlice";
 
 export default function SignIn() {
-  const [isConfirmedStep, setIsConfirmedStep] = useState(false);
+  const dispatch = useDispatch();
+  const { isConfirmedStep, values } = useSelector((state) => state.signin);
+
   const { t } = useTranslation();
 
   const initialValues = {
@@ -17,9 +21,6 @@ export default function SignIn() {
     Phonenumber: "",
   };
 
-  const handleSubmit = (values) => {
-    setIsConfirmedStep(true);
-  };
 
   return (
     <div className={styles.Login}>
@@ -35,7 +36,7 @@ export default function SignIn() {
                 <Formik
                   initialValues={initialValues}
                   validationSchema={validation}
-                  onSubmit={handleSubmit}
+                  onSubmit={(values)=>dispatch(signinActions.handleSubmit(values))}
                 >
                   {({ isValid, dirty, isSubmitting, touched, errors }) => (
                     <Form className={styles.form}>

@@ -8,12 +8,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+ 
   h2 {
    font-family: "Manrope", sans-serif;
     font-size: 32px;
     font-weight: 500;
     text-align: center;
+    margin: 0 0 24px 0 ;
   }
 
   p {
@@ -28,14 +29,14 @@
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-bottom: 20px;
+    margin: 40px 0 13px 0;
 
     input {
-      width: 50px;
-      height: 50px;
+      width: 48px;
+      height: 48px;
       font-size: 28px;
       text-align: center;
-      border: 1px solid #ccc;
+      border: 1px solid #0f0f0f;
       border-radius: 8px;
       outline: none;
       transition: border-color 0.2s;
@@ -50,6 +51,7 @@
     font-size: 12px;
     color: rgba(124, 124, 124, 1);
    font-family: "Manrope", sans-serif;
+   margin: 0 0 45px 0;
     .resendlink {
       color: #0a75c2;
       cursor: pointer;
@@ -69,7 +71,7 @@
     width: 100%;
 
     &:not(:disabled) {
-      background-color: #333;
+               background-color: rgba(212, 163, 115, 1);
       cursor: pointer;
     }
   }

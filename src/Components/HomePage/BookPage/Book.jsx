@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./book.module.scss";
 import { useTranslation } from "react-i18next";
-
+import { useNavigate } from "react-router-dom";
 
 
 export default function Book() {
+  const navigate = useNavigate();
   const { t } = useTranslation();
   
   return (
@@ -13,7 +14,7 @@ export default function Book() {
         <div className={styles.bookContent}>
         <h1>{t("bookSection.title")}</h1>
           <p>{t("bookSection.description")}</p>
-          <button>{t("bookSection.button")}</button>
+          <button onClick={ ()=>navigate('/services')}>{t("bookSection.button")}</button>
         </div>
       </div>
      

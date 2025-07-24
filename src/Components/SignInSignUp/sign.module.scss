@@ -1,6 +1,6 @@
 .Login {
   width: 100%;
-  height: 100vh;
+  height:calc(100vh - 130px);
   .loginWrapper {
     display: flex;
     .imgbox {
@@ -10,11 +10,11 @@
         background-image: url("../../assets/SignIn/Image.png");
 
         background-repeat: no-repeat;
-        object-fit: cover;
-        background-size: cover;
-        background-position: center;
+ 
+    
+        background-position: right;
         width: 100%;
-        height: 100vh;
+        height:calc(100vh - 130px);
       }
     }
 
@@ -24,6 +24,7 @@
       justify-content: center;
       align-items: center;
       width: 50%;
+      height: calc(100vh - 130px);
       h1 {
         margin: 0 0 50px 0;
         font-family: "Manrope", sans-serif;
@@ -94,7 +95,11 @@
           &:nth-of-type(1) {
             margin: 16px 0 0px 0;
           }
+       
         }
+           .inputError{
+            border: 1.8px solid red;
+          }
       }
     }
   }

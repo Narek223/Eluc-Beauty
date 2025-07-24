@@ -4,7 +4,8 @@ import headerSlice  from "../Slices/Header/headerSclice";
 import  blogSlice  from "../Slices/Blog/blog";
 import expertReducer from "../Slices/ExpertDetalis/Expert";
 import FastBooking from "../Slices/FastBooking/FastbookSlice";
-
+import  signinSlice  from "../Slices/SignIn/signinSlice";
+import verificationSlice from "../Slices/SignIn/verificationSlice";
 
 export const store = configureStore({
   reducer: {
@@ -12,7 +13,9 @@ export const store = configureStore({
     header:headerSlice,
     blog:blogSlice,
     Expert:expertReducer,
-    FastBook:FastBooking
+    FastBook:FastBooking,
+    signin:signinSlice,    
+    verification: verificationSlice
 
   },
 });

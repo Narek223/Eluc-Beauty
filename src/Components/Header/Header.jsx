@@ -7,14 +7,13 @@ import * as headerSlice from "../../Redux/Slices/Header/headerSclice";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { links } from "../../Services/Date/Header/links";
+import Profile from "./Profile/Profile";
 
 export default function Header() {
   const dispatch = useDispatch();
   const { isScrolled } = useSelector((state) => state.header);
+  const boolean = useSelector((state) => state.verification.bool);
   const { t } = useTranslation();
-
-
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +34,6 @@ export default function Header() {
         >
           <nav>
             <ul className={styles.navList}>
-        
               {links.map((elem) => (
                 <NavLink
                   key={elem.id}
@@ -47,7 +45,7 @@ export default function Header() {
                   }
                   style={{ color: "black" }}
                 >
-                 <li>  {t(elem.btntext)}</li>
+                  <li> {t(elem.btntext)}</li>
                 </NavLink>
               ))}
             </ul>
@@ -55,10 +53,15 @@ export default function Header() {
               {" "}
               <img src={logo} />
             </NavLink>
-            <NavLink to="/sign" style={{ textDecoration: "none" }}>
-              <p className={styles.login}>{t("header.login")} / {t("header.signUp")}</p>
-            </NavLink>
-       
+            {boolean ? (
+              <Profile />
+            ) : (
+              <NavLink to="/sign" style={{ textDecoration: "none" }}>
+                <p className={styles.login}>
+                  {t("header.login")} / {t("header.signUp")}
+                </p>
+              </NavLink>
+            )}
           </nav>
         </header>
       </div>
