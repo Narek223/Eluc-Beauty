@@ -21,10 +21,13 @@ import ExpertsDetalis from "./Components/HomePage/Experts/ExpertsDetalis/Experts
 import SignIn from "./Components/SignInSignUp/SignIn";
 import { links } from "./Services/Date/Header/links";
 import Services from "./Components/Services/Services";
+import History from "./Components/Header/Profile/History/History";
+
+
 function App() {
   const location = useLocation();
 
-  const validPaths = ["/", ...links.map((item) => item.link), "/sign","/expert"];
+  const validPaths = ["/", ...links.map((item) => item.link), "/sign","/expert","/history"];
   const isValidPath = validPaths.includes(
     "/" + location.pathname.split("/")[1]
   );
@@ -43,7 +46,8 @@ function App() {
         <Route path="/expert" element={<ExpertsPage />} />
         <Route path="/expert/:id" element={<ExpertsDetalis />} />
         <Route path="/sign" element={<SignIn />} />
-    <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<Services />} />
+         <Route path="/history" element={<History />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       {isValidPath && <Footer />}
