@@ -1,0 +1,35 @@
+.changeName {
+  height: 62px;
+}
+.changeName .nameWrapper input {
+  border: none;
+}
+.changeName .nameWrapper input:focus {
+  outline: none;
+}
+.changeName .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.changeName .buttons button {
+  cursor: pointer;
+}
+.changeName .buttons button:nth-child(1) {
+  width: 71px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: white;
+  color: rgb(135, 107, 84);
+  border: none;
+  border: 1px solid rgb(137, 110, 88);
+}
+.changeName .buttons button:nth-child(2) {
+  width: 71px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: rgb(181, 136, 99);
+  color: white;
+  border: none;
+}/*# sourceMappingURL=styles.module.css.map */

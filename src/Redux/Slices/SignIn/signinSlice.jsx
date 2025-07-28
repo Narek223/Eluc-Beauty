@@ -12,10 +12,16 @@ export const signinSlice = createSlice({
    handleSubmit: (state, action) => {
       state.isConfirmedStep = true;
       state.values = action.payload;
-    }
+    },
+       setFullName: (state, action) => {
+      state.values.FullName = action.payload;
+    },
+      setPhoneNumber: (state, action) => {
+      state.values.Phonenumber = action.payload;
+    },
   },
 });
 
 
-export const {handleSubmit  } = signinSlice.actions;
+export const {handleSubmit,setFullName,setPhoneNumber  } = signinSlice.actions;
 export default signinSlice.reducer;

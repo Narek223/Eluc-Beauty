@@ -6,6 +6,7 @@ import expertReducer from "../Slices/ExpertDetalis/Expert";
 import FastBooking from "../Slices/FastBooking/FastbookSlice";
 import  signinSlice  from "../Slices/SignIn/signinSlice";
 import verificationSlice from "../Slices/SignIn/verificationSlice";
+import profileSlice from "../Slices/Profile/profileSlice";
 
 export const store = configureStore({
   reducer: {
@@ -15,7 +16,8 @@ export const store = configureStore({
     Expert:expertReducer,
     FastBook:FastBooking,
     signin:signinSlice,    
-    verification: verificationSlice
+    verification: verificationSlice,
+    profile: profileSlice,
 
   },
 });

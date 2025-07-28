@@ -1,0 +1,39 @@
+ @mixin btn{
+    width: 71px;
+            height: 24px;
+            border-radius: 4px;
+}
+ 
+ .changeName {
+      height: 62px;
+      .nameWrapper {
+        input {
+          border: none;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        button {
+          cursor: pointer;
+          &:nth-child(1) {
+            @include btn;
+            background-color: white;
+            color: rgba(135, 107, 84, 1);
+            border: none;
+            border: 1px solid rgba(137, 110, 88, 1);
+          }
+          &:nth-child(2) {
+            @include btn; 
+            background-color: rgba(181, 136, 99, 1);
+            color: white;
+            border: none;
+          }
+        }
+      }
+    }

@@ -87,7 +87,7 @@
 .profilewrapper .history {
   border-bottom: 1px solid #000;
 }
-.profilewrapper .history p {
+.profilewrapper .history a {
   cursor: pointer;
   width: 100%;
   display: flex;
@@ -96,8 +96,10 @@
   font-weight: 400;
   font-size: 16px;
   font-family: "Manrope", sans-serif;
+  text-decoration: none;
+  color: black;
 }
-.profilewrapper .history p .icon {
+.profilewrapper .history a .icon {
   margin: 0 10px 0 0;
   width: 24px;
   height: 24px;

@@ -1,3 +1,4 @@
+
 .profileContainer {
   button {
     width: 381px;
@@ -62,6 +63,8 @@
       font-weight: 400;
       font-family: "Manrope", sans-serif;
     }
+
+   
     p {
       font-size: 16px;
     }
@@ -91,7 +94,7 @@
   }
   .history {
     border-bottom: 1px solid #000;
-    a{
+    a {
       cursor: pointer;
       width: 100%;
       display: flex;
@@ -141,17 +144,13 @@
     display: flex;
     align-items: center;
     p {
-   
       font-family: "Manrope", sans-serif;
       font-weight: 500;
       font-size: 15px;
       color: rgba(189, 189, 189, 1);
-      .icon{
+      .icon {
         color: #000;
         width: 24px;
-   
-  
-
       }
     }
   }
