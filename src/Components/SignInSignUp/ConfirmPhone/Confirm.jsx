@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import * as verificationActions from "../../../Redux/Slices/SignIn/verificationSlice";
+import ConfirmPhoneNumber from "../../../SharedComponents/Confirm/ConfirmPhoneNumber";
 
 export default function PhoneVerification() {
   const inputsRef = useRef([]);
@@ -12,16 +13,7 @@ export default function PhoneVerification() {
   const dispatch = useDispatch();
   const {code,bool} = useSelector((state) => state.verification);
 
-  const valuefunc = (e, index) => {
-    const value = e.target.value.replace(/\D/, "");
-    if (!/^\d$/.test(value)) return;
 
-    dispatch(verificationActions.updateCode({ index, value }));
-
-    if (index < code.length - 1) {
-      inputsRef.current[index + 1]?.focus();
-    }
-  };
 
   const resendcode = () => {
     dispatch(verificationActions.resetCode());
@@ -31,23 +23,14 @@ export default function PhoneVerification() {
   const submitfunc = () => {
     navigate("/");
     dispatch(verificationActions.setbool(true));
+        dispatch(verificationActions.resetCode());
   };
 
   return (
     <div className={styles.confirmContainer}>
       <h2>{t("ConfirmPhone.title")}</h2>
       <p>{t("ConfirmPhone.subtitle")}</p>
-      <div className={styles.codeinputs}>
-        {code.map((digit, index) => (
-          <input
-            ref={(el) => (inputsRef.current[index] = el)}
-            onChange={(e) => valuefunc(e, index)}
-            key={index}
-            maxLength={1}
-            value={digit}
-          />
-        ))}
-      </div>
+      <ConfirmPhoneNumber styl={styles.codeinputs} />
       <p className={styles.resendtext} onClick={resendcode}>
         {t("ConfirmPhone.codeInput")}{" "}
         <span className={styles.resendlink}>{t("ConfirmPhone.resendCode")}.</span>

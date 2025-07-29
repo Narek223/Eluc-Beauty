@@ -1,5 +1,33 @@
 .changeName {
-  height: 62px;
+  height: 100%;
+}
+.changeName .nameWrapper .confirmbtn {
+  border: none;
+  border-radius: 4px;
+  width: 72px;
+  height: 24px;
+  cursor: pointer;
+}
+.changeName .nameWrapper .code {
+  display: flex;
+  margin: 8px 0 8px 0;
+  width: 100%;
+}
+.changeName .nameWrapper .code input {
+  text-align: center;
+  margin: 8px 0 8px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 8px 0 0;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid rgb(124, 124, 124);
+}
+.changeName .nameWrapper .code .buttons {
+  display: flex;
+  justify-content: flex-end;
 }
 .changeName .nameWrapper input {
   border: none;

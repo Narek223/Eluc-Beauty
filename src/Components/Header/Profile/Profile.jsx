@@ -11,57 +11,42 @@ import Switch from "@mui/material/Switch";
 import { LuLogOut } from "react-icons/lu";
 import { NavLink } from "react-router-dom";
 import * as nameslice from "../../../Redux/Slices/SignIn/signinSlice";
+import * as profileSlice from "../../../Redux/Slices/Profile/profileSlice";
 import Information from "../../../SharedComponents/ChangeInformation/Information";
 
 export default function Profile() {
   const { values } = useSelector((state) => state.signin);
-
+   const { anchorEl,changename,changenumber,confirm } = useSelector((state) => state.profile);
   const dispatch = useDispatch();
-
-  const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
-  const [changename, setchangename] = useState(false);
-  const [changenumber, setchangnumber] = useState(false);
+
   const [name, setname] = useState(values.FullName);
   const [number, setnumber] = useState(values.Phonenumber);
-  
+
   const label = { inputProps: { "aria-label": "Switch demo" } };
 
-  const handleclick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
 
-  const handleClose = () => {
-    setAnchorEl(null);
-    setchangename(false);
-    setchangnumber(false);
-  };
-
-  const ChangeName = () => {
-    setchangename(true);
-  };
-  const changenum = () => {
-    setchangnumber(true);
-  };
 
   const savename = () => {
     dispatch(nameslice.setFullName(name));
-    setchangename(false);
+    dispatch(profileSlice.ChangeName(false))
   };
 
   const savenumber = () => {
     dispatch(nameslice.setPhoneNumber(number));
-    setchangnumber(true);
+        dispatch(profileSlice.changenum(true))
+    dispatch(profileSlice.isConfirm(true));
+
   };
   return (
     <div className={styles.profileContainer}>
-      <button onClick={handleclick}>
+      <button onClick={(e)=> dispatch(profileSlice.handleclick(e.currentTarget))} >
         Hi {values.FullName} <IoMdContact className={styles.icon} />
       </button>
       <Popover
         anchorEl={anchorEl}
         open={open}
-        onClose={handleClose}
+        onClose={() => dispatch(profileSlice.handleClose())}
         anchorOrigin={{
           vertical: "bottom",
           horizontal: "left",
@@ -79,14 +64,17 @@ export default function Profile() {
             </div>
             <div className={styles.profileContent}>
               {changename ? (
-                <Information
-                  name={"Full Name"}
-                  state={name}
-                  set={setname}
-                  savefunc={savename}
-                  cansel={() => setchangename(false)}
-                  btntext={"Save"}
-                />
+                <div style={{ height: "62px" }}>
+                  <Information
+                    name={"Full Name"}
+                    state={name}
+                    set={setname}
+                    savefunc={savename}
+                    cansel={() => dispatch(profileSlice.ChangeName(false))}
+                    btntext={"Save"}
+                    comfirmphone={false}
+                  />
+                </div>
               ) : (
                 <div className={styles.name}>
                   <div className={styles.fullName}>
@@ -96,21 +84,24 @@ export default function Profile() {
                   <p>
                     <HiOutlineArrowSmRight
                       className={styles.icon}
-                      onClick={ChangeName}
+                      onClick={()=> dispatch(profileSlice.ChangeName(true))}
                     />
                   </p>
                 </div>
               )}
 
               {changenumber ? (
-                <Information
-                  name={"Number"}
-                  state={number}
-                  set={setnumber}
-                  savefunc={savenumber}
-                  cansel={() => setchangnumber(false)}
-                  btntext={"Next"}
-                />
+                <div style={{ height: "auto" }}>
+                  <Information
+                    name={"Number"}
+                    state={number}
+                    set={setnumber}
+                    savefunc={savenumber}
+                    cansel={() => dispatch(profileSlice.changenum(false))}
+                    btntext={"Next"}
+                    comfirmphone={confirm}
+                  />
+                </div>
               ) : (
                 <div className={styles.informationConteiner}>
                   <div className={styles.number}>
@@ -120,14 +111,14 @@ export default function Profile() {
                   <p>
                     <HiOutlineArrowSmRight
                       className={styles.icon}
-                      onClick={changenum}
+                      onClick={() => dispatch(profileSlice.changenum(true))}
                     />
                   </p>
                 </div>
               )}
             </div>
             <div className={styles.history}>
-              <NavLink to="/history" onClick={handleClose}>
+              <NavLink to="/history" onClick={() => dispatch(profileSlice.handleClose())}>
                 <MdOutlineHistory className={styles.icon} />
                 History
               </NavLink>

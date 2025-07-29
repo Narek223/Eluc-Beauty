@@ -1,14 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { useSelector} from "react-redux";
+
 
 const initialState = {
   anchorEl: null,
   changename: false,
   changenumber: false,
+  confirm:false,
 
 };
-
-
 
 export const profileSlice = createSlice({
   name: "profile",
@@ -21,15 +20,19 @@ export const profileSlice = createSlice({
       state.anchorEl = null;
       state.changename = false;
       state.changenumber = false;
+      state.confirm = false;
     },
-    ChangeName: (state) => {
-      state.changename = true;
+    ChangeName: (state,action) => {
+      state.changename = action.payload;
     },
-    changenum: (state) => {
-      state.changenumber = true;
+    changenum: (state,action) => {
+      state.changenumber = action.payload;
     },
+    isConfirm:(state,action)=>{
+ state.confirm = action.payload;
+    }
   },
 });
 
-export const { handleclick,handleClose, ChangeName,changenum} = profileSlice.actions;
+export const { handleclick,handleClose, ChangeName,changenum,isConfirm} = profileSlice.actions;
 export default profileSlice.reducer;
