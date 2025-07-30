@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import styles from "./profile.module.scss";
 import { useSelector, useDispatch } from "react-redux";
 import { IoMdContact } from "react-icons/io";
@@ -13,10 +13,14 @@ import { NavLink } from "react-router-dom";
 import * as nameslice from "../../../Redux/Slices/SignIn/signinSlice";
 import * as profileSlice from "../../../Redux/Slices/Profile/profileSlice";
 import Information from "../../../SharedComponents/ChangeInformation/Information";
+import * as verificationActions from "../../../Redux/Slices/SignIn/verificationSlice";
 
 export default function Profile() {
   const { values } = useSelector((state) => state.signin);
-   const { anchorEl,changename,changenumber,confirm } = useSelector((state) => state.profile);
+  const { anchorEl, changename, changenumber, confirm } = useSelector(
+    (state) => state.profile
+  );
+
   const dispatch = useDispatch();
   const open = Boolean(anchorEl);
 
@@ -25,22 +29,42 @@ export default function Profile() {
 
   const label = { inputProps: { "aria-label": "Switch demo" } };
 
-
+  useEffect(() => {
+    const handleScroll = () => {
+      if (open) {
+        dispatch(profileSlice.handleClose());
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [open, dispatch]);
 
   const savename = () => {
     dispatch(nameslice.setFullName(name));
-    dispatch(profileSlice.ChangeName(false))
+    dispatch(profileSlice.ChangeName(false));
   };
 
-  const savenumber = () => {
-    dispatch(nameslice.setPhoneNumber(number));
-        dispatch(profileSlice.changenum(true))
+  const nextstep = () => {
+    dispatch(profileSlice.changenum(true));
     dispatch(profileSlice.isConfirm(true));
+  };
 
+  const confirmcode = () => {
+    dispatch(nameslice.setPhoneNumber(number));
+    dispatch(profileSlice.isConfirm(false));
+    dispatch(verificationActions.resetCode());
+    dispatch(profileSlice.changenum(false));
   };
   return (
-    <div className={styles.profileContainer}>
-      <button onClick={(e)=> dispatch(profileSlice.handleclick(e.currentTarget))} >
+    <div
+      className={styles.profileContainer}
+      onScroll={() => dispatch(profileSlice.handleClose())}
+    >
+      <button
+        onClick={(e) => dispatch(profileSlice.handleclick(e.currentTarget))}
+      >
         Hi {values.FullName} <IoMdContact className={styles.icon} />
       </button>
       <Popover
@@ -55,7 +79,7 @@ export default function Profile() {
         disableAutoFocus={true}
         disableEnforceFocus={true}
       >
-        <Box sx={{ width: 371, height: 571 }} className={styles.profileBox}>
+        <Box sx={{ width: 371, height: "auto" }} className={styles.profileBox}>
           <div className={styles.profilewrapper}>
             <div className={styles.profileHeader}>
               <h1>
@@ -84,7 +108,7 @@ export default function Profile() {
                   <p>
                     <HiOutlineArrowSmRight
                       className={styles.icon}
-                      onClick={()=> dispatch(profileSlice.ChangeName(true))}
+                      onClick={() => dispatch(profileSlice.ChangeName(true))}
                     />
                   </p>
                 </div>
@@ -96,10 +120,11 @@ export default function Profile() {
                     name={"Number"}
                     state={number}
                     set={setnumber}
-                    savefunc={savenumber}
+                    savefunc={nextstep}
                     cansel={() => dispatch(profileSlice.changenum(false))}
                     btntext={"Next"}
                     comfirmphone={confirm}
+                    confirm={confirmcode}
                   />
                 </div>
               ) : (
@@ -118,7 +143,10 @@ export default function Profile() {
               )}
             </div>
             <div className={styles.history}>
-              <NavLink to="/history" onClick={() => dispatch(profileSlice.handleClose())}>
+              <NavLink
+                to="/history"
+                onClick={() => dispatch(profileSlice.handleClose())}
+              >
                 <MdOutlineHistory className={styles.icon} />
                 History
               </NavLink>

@@ -24,9 +24,13 @@ export const profileSlice = createSlice({
     },
     ChangeName: (state,action) => {
       state.changename = action.payload;
+      state.changenumber = false;
+      state.confirm = false;
     },
     changenum: (state,action) => {
       state.changenumber = action.payload;
+      state.changename = false;
+      state.confirm = false;
     },
     isConfirm:(state,action)=>{
  state.confirm = action.payload;

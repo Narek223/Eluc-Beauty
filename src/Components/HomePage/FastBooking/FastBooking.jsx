@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import styles from "./fast.module.scss";
 import { useSelector, useDispatch } from "react-redux";
 import * as fastBooking from "../../../Redux/Slices/FastBooking/FastbookSlice";
@@ -17,6 +17,10 @@ export default function FastBooking() {
     (state) => state.FastBook
   );
 
+
+
+
+  
   const fields = [
     {
       value: services,
@@ -31,6 +35,9 @@ export default function FastBooking() {
       icon: icon,
     },
   ];
+
+
+
 
   return (
     <div className={styles.bookingCont}>
