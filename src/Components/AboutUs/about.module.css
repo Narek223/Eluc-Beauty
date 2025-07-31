@@ -15,7 +15,7 @@
   font-style: normal;
   font-size: 40px;
   line-height: 68px;
-  color: rgb(41, 41, 41);
+  color: var(--color-text);
   margin: 0 0 44px 0;
   width: 62.931034%;
 }

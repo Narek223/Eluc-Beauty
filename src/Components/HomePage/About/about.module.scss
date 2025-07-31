@@ -23,7 +23,7 @@
     p {
       font-weight: 300;
       font-size: 16px;
-      color: #625e5c;
+      color: var(  --color-text);
       line-height: 35px;
       font-family: "Manrope", sans-serif;
     }
@@ -62,7 +62,7 @@
     h2 {
       font-size: 18px;
       font-weight: 600;
-      color: #171412;
+      color: var(--color-text--secondary);
       font-family: "Manrope", sans-serif;
     }
   }

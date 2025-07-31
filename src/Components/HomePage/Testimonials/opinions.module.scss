@@ -37,13 +37,14 @@
        height: 150px;
           p {
           
-            color: #625e5c;
+            color: var(--color-text--secondary);
             font-weight: 300;
             font-size: 18px;
           }
           h2 {
+            color: var(--color-text);
             padding: 14px 0 0 0;
-            color: #171412;
+    
             font-weight: 400;
             font-size: 18px;
           }

@@ -6,14 +6,24 @@
   border-radius: 4px;
   width: 72px;
   height: 24px;
+  background-color: rgb(224, 224, 224);
+  color: rgb(152, 152, 152);
   cursor: pointer;
 }
-.changeName .nameWrapper .code {
+.changeName .nameWrapper .confirmbtn:not(:disabled) {
+  background-color: rgb(212, 163, 115);
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+.changeName .code {
   display: flex;
   margin: 8px 0 8px 0;
   width: 100%;
 }
-.changeName .nameWrapper .code input {
+.changeName .code input {
+  color: var(--color-text);
+  background-color: transparent;
   text-align: center;
   margin: 8px 0 8px 0;
   display: flex;
@@ -25,26 +35,29 @@
   height: 32px;
   border: 2px solid rgb(124, 124, 124);
 }
-.changeName .nameWrapper .code .buttons {
+.changeName .code .buttons {
   display: flex;
   justify-content: flex-end;
 }
-.changeName .nameWrapper input {
+.changeName input {
+  background-color: transparent;
   border: none;
+  color: var(--color-text);
 }
-.changeName .nameWrapper input:focus {
+.changeName input:focus {
   outline: none;
 }
-.changeName .buttons {
+
+.buttons {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   gap: 8px;
 }
-.changeName .buttons button {
+.buttons button {
   cursor: pointer;
 }
-.changeName .buttons button:nth-child(1) {
+.buttons button:nth-child(1) {
   width: 71px;
   height: 24px;
   border-radius: 4px;
@@ -53,7 +66,7 @@
   border: none;
   border: 1px solid rgb(137, 110, 88);
 }
-.changeName .buttons button:nth-child(2) {
+.buttons button:nth-child(2) {
   width: 71px;
   height: 24px;
   border-radius: 4px;

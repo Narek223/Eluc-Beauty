@@ -36,6 +36,7 @@ export default function Information({
               type="text"
               value={state}
               onChange={(e) => set(e.target.value)}
+              autoFocus
             />
             <div className={styles.buttons}>
               <button onClick={cansel}>Cancel</button>

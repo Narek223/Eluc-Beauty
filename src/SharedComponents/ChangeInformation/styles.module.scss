@@ -32,6 +32,8 @@
 
       width: 100%;
       input {
+        color: var(--color-text);
+        background-color:transparent;
         text-align: center;
         margin: 8px 0 8px 0;
         display: flex;
@@ -50,7 +52,9 @@
       }
     }
     input {
+         background-color:transparent;
       border: none;
+              color: var(--color-text);
       &:focus {
         outline: none;
       }

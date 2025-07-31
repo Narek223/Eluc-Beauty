@@ -1,0 +1,19 @@
+:root {
+  --color-bg: #fff;
+  --color-bg-secondary: #f4f4f4;
+  --color-text: #292929;
+  --color-text-secondary: #7c7c7c;
+  --color-accent: #D4A373;
+  --color-border: #e0e0e0;
+  --input-color:white;
+}
+
+[data-theme=dark] {
+  --color-bg: #18191A;
+  --color-bg-secondary: #242526;
+  --color-text: #E4E6EB;
+  --color-text-secondary: #B0B3B8;
+  --color-accent: #D4A373;
+  --color-border: #3A3B3C;
+  --input-color:#242526 ;
+}/*# sourceMappingURL=theme.css.map */

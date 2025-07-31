@@ -21,6 +21,20 @@ export default function Profile() {
     (state) => state.profile
   );
 
+   const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
+
+
+  useEffect(() => {
+    const theme = darkMode ? "dark" : "light";
+    document.body.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [darkMode]);
+
+  const handleSwitch = (event) => {
+    setDarkMode(event.target.checked);
+  };
   const dispatch = useDispatch();
   const open = Boolean(anchorEl);
 
@@ -159,6 +173,7 @@ export default function Profile() {
                   Notifications{" "}
                 </p>
                 <Switch
+          
                   {...label}
                   sx={{
                     "& .MuiSwitch-switchBase.Mui-checked": {
@@ -176,6 +191,8 @@ export default function Profile() {
                   <VscColorMode className={styles.icon} /> Dark Mode
                 </p>
                 <Switch
+                      checked={darkMode}                   
+    onChange={handleSwitch}
                   {...label}
                   sx={{
                     "& .MuiSwitch-switchBase.Mui-checked": {
