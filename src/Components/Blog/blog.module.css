@@ -6,32 +6,35 @@
   background-position: center;
   background-size: cover;
 }
-.conteiner .conteinerWrapper {
-  margin: 100px 0 0 0;
-  padding: 0 148px;
+.conteiner .blog {
+  margin: 0 148px;
+  border-width: 100%;
 }
-.conteiner .conteinerWrapper h1 {
+.conteiner .blog .conteinerWrapper {
+  margin: 100px 0 0 0;
+}
+.conteiner .blog .conteinerWrapper h1 {
   font-family: "Italiana", sans-serif;
   font-weight: 400;
   font-size: 32px;
   color: var(--color-text);
 }
-.conteiner .conteinerWrapper a {
+.conteiner .blog .conteinerWrapper a {
   text-decoration: none;
 }
-.conteiner .conteinerWrapper .newPost {
+.conteiner .blog .conteinerWrapper .newPost {
   margin: 32px 0 0 0;
   width: 100%;
   height: 540px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 16px;
+  border-radius: 0 0 16px 16px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-.conteiner .conteinerWrapper .newPost .BlogContent {
+.conteiner .blog .conteinerWrapper .newPost .BlogContent {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -42,24 +45,24 @@
   background: rgba(88, 88, 88, 0.4);
   border-radius: 16px;
 }
-.conteiner .conteinerWrapper .newPost .BlogContent h1 {
+.conteiner .blog .conteinerWrapper .newPost .BlogContent h1 {
   font-size: 24px;
   font-weight: 500;
   color: rgb(255, 255, 255);
   font-family: "Manrope", sans-serif;
 }
-.conteiner .conteinerWrapper .newPost .BlogContent h2 {
+.conteiner .blog .conteinerWrapper .newPost .BlogContent h2 {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: rgb(220, 220, 220);
 }
-.conteiner .conteinerWrapper .newPost .BlogContent .date {
+.conteiner .blog .conteinerWrapper .newPost .BlogContent .date {
   margin: 22px 0;
   display: flex;
   justify-content: space-between;
 }
-.conteiner .conteinerWrapper .newPost .BlogContent .date p {
+.conteiner .blog .conteinerWrapper .newPost .BlogContent .date p {
   font-size: 12px;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
@@ -123,4 +126,13 @@
 .conteiner .recentPost .postsConteiner .posts a .date p:nth-of-type(1) {
   color: var(--color-text);
   font-size: 12px;
+}
+.conteiner .popularPosts {
+  margin: 64px 148px;
+}
+.conteiner .popularPosts h1 {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--color-text);
 }/*# sourceMappingURL=blog.module.css.map */

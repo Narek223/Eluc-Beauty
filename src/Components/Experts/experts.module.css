@@ -29,7 +29,7 @@
 .ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .title p {
   font-style: 25px;
   font-weight: 500;
-  color: rgb(82, 82, 82);
+  color: var(--color-text);
   font-family: "Manrope", sans-serif;
 }
 .ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .Content {
@@ -40,7 +40,7 @@
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-style: 16px;
-  color: rgb(124, 124, 124);
+  color: var(--color-text-secondary);
 }
 .ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .count {
   display: flex;
@@ -59,11 +59,12 @@
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   color: rgb(82, 82, 82);
+  color: var(--color-text);
   font-weight: 400;
 }
 .ExpertConteiner .BodyConteiner .BodyWrapper .ExpertsContent .count h1 {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 128px;
-  color: rgb(124, 124, 124);
+  color: var(--color-text);
 }/*# sourceMappingURL=experts.module.css.map */

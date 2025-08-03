@@ -53,4 +53,8 @@
 .bookContainer .bookimg img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+[data-theme=dark] .bookContainer {
+  filter: brightness(0.8) contrast(1.1);
 }/*# sourceMappingURL=book.module.css.map */

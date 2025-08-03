@@ -41,7 +41,7 @@
   width: 82.236842%;
   font-size: 16px;
   font-family: "Manrope", sans-serif;
-  color: rgb(124, 124, 124);
+  color: var(--color-text-secondary);
   font-weight: 400px;
 }
 .AboutComponent .aboutContent .aboutWrapper {
@@ -61,14 +61,14 @@
   font-style: normal;
   font-size: 40px;
   line-height: 68px;
-  color: rgb(41, 41, 41);
+  color: var(--color-text);
   margin: 0 0 44px 0;
 }
 .AboutComponent .aboutContent .aboutWrapper .text p {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: rgb(124, 124, 124);
+  color: var(--color-text-secondary);
   padding: 0 45px 0 0;
   margin: 0 0 24px 0;
   line-height: 35px;
@@ -97,7 +97,7 @@
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 26px;
-  color: rgb(61, 61, 61);
+  color: var(--color-text);
   border: 1px underline rgb(8, 1, 1);
 }
 .AboutComponent .aboutContent .counterWrapper .counter .counterText {
@@ -111,7 +111,7 @@
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: rgb(124, 124, 124);
+  color: var(--color-text-secondary);
 }
 .AboutComponent .aboutContent .counterWrapper .counter h2 {
   font-weight: 700;
@@ -136,7 +136,7 @@
   font-style: normal;
   font-size: 40px;
   line-height: 60px;
-  color: rgb(41, 41, 41);
+  color: var(--color-text);
 }
 .AboutComponent .aboutContent .Choose .Choosewrapper .title h1:nth-child(2) {
   font-family: "MyCustomFont", sans-serif;
@@ -159,6 +159,6 @@
   width: 82.236842%;
   font-size: 16px;
   font-family: "Manrope", sans-serif;
-  color: rgb(124, 124, 124);
+  color: var(--color-text-secondary);
   font-weight: 400px;
 }/*# sourceMappingURL=about.module.css.map */

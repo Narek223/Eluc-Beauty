@@ -67,7 +67,7 @@ flex-direction: column;
 outline: none;
         &::placeholder {
             color: #E8E8E8;
-            opacity: 0.7; // Adjust opacity for placeholder
+            opacity: 0.7; 
         }
     }
 
@@ -75,4 +75,7 @@ outline: none;
 }
    
   }
+}
+  [data-theme="dark"] .subscribeContainer {
+  filter: brightness(0.8) contrast(1.1);
 }

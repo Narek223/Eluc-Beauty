@@ -29,6 +29,11 @@
   h1 {
     font-size: 24px;
     font-weight: 400;
+    color: black;
+ 
+  }
+  p{
+          color: black;
   }
   div {
     margin: 8px 0;
@@ -54,16 +59,20 @@
   justify-content: center;
 
   p {
-    color: rgba(124, 124, 124, 1);
 
+  color:var(--color-text);
     width: 55%;
     text-align: center;
     padding: 25px 0;
     font-size: 14px;
     span {
-      color: #000;
+        color:var(--color-text-secondary);
+
       cursor: pointer;
       font-weight: 600;
     }
   }
+}
+  [data-theme="dark"] .mapSection{
+  filter: brightness(0.8) contrast(1.1);
 }

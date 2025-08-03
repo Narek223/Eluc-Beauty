@@ -1,0 +1,14 @@
+.popularPosts {
+  margin: 64px 148px;
+  border-top: 1px solid black;
+}
+[data-theme=dark] .popularPosts {
+  border-top: 1px solid white;
+}
+.popularPosts .popularPostsWrapper h1 {
+  margin: 60px 0 0 0;
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--color-text);
+}/*# sourceMappingURL=popularposts.module.css.map */

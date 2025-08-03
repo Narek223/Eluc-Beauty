@@ -142,9 +142,14 @@
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 15px;
+  display: flex;
+  align-items: center;
   color: rgb(189, 189, 189);
 }
+[data-theme=dark] .profilewrapper .log p {
+  color: white;
+}
 .profilewrapper .log p .icon {
-  color: #000;
+  color: var(--color-text);
   width: 24px;
 }/*# sourceMappingURL=profile.module.css.map */

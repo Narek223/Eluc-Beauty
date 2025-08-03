@@ -24,6 +24,7 @@ export default function PhoneVerification() {
     navigate("/");
     dispatch(verificationActions.setbool(true));
         dispatch(verificationActions.resetCode());
+
   };
 
   return (

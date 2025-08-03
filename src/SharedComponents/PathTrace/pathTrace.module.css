@@ -13,6 +13,9 @@
   height: 144px;
   width: 100%;
 }
+[data-theme=dark] .pathConteiner .pathWrapper {
+  background-color: rgba(221, 207, 196, 0.2);
+}
 .pathConteiner .pathWrapper .titles h1 {
   font-family: "Italiana", sans-serif;
   font-size: 48px;
@@ -36,4 +39,5 @@
 .pathConteiner .pathWrapper .pathTrace ul li {
   cursor: pointer;
   list-style: none;
+  color: var(--color-text);
 }/*# sourceMappingURL=pathTrace.module.css.map */

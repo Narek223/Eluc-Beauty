@@ -25,7 +25,9 @@
         margin: 24px 0;
         font-size: 18px;
         font-weight: 500;
-        color: #525252;
+   
+  color: var(--pricing-text-color);
+
       }
     }
     .service {
@@ -51,7 +53,7 @@
                font-family: "Manrope", sans-serif;
                font-size: 14px;
                 font-weight: 300;
-                color: #7C7C7C;
+                color: var(--pricing-text-color);
         }
       }
     }

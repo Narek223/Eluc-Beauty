@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { blogData } from "../../../Services/Date/Blog/blog";
 import styles from "./blogdetails.module.scss";
+import Popularposts from "../PopularPosts/Popularposts";
 
 export default function BlogDetails() {
   const { id } = useParams();
@@ -20,6 +21,9 @@ export default function BlogDetails() {
               </p>
             </div>
           </div>
+          <div className={styles.blogDetailsWrapper}>
+
+       
           <div className={styles.contentWrapper}>
             <h1>{blog.title}</h1>
             <h2>{blog.subtitle}</h2>
@@ -30,7 +34,10 @@ export default function BlogDetails() {
                   elem.trim() ? <p key={i}>{elem.trim()}</p> : <br key={i} />
                 )}
             </div>
+     
           </div>
+                 <Popularposts />
+             </div>
         </>
       ) : (
         <div className={styles.blognotfound}>

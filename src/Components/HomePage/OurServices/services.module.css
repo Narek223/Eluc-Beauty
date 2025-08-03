@@ -6,6 +6,9 @@
   background-position: left;
   background-repeat: no-repeat;
 }
+.servicesContainer [data-theme=dark] .img {
+  filter: brightness(0.8) contrast(1.1);
+}
 .servicesContainer .servicesWrapper {
   padding: 45px 140px;
   width: 100%;

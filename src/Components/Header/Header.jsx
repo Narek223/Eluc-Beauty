@@ -15,6 +15,9 @@ export default function Header() {
   const boolean = useSelector((state) => state.verification.bool);
   const { t } = useTranslation();
 
+
+
+
   useEffect(() => {
     const handleScroll = () => {
       dispatch(headerSlice.setIsScrolled(window.scrollY > 0));

@@ -16,7 +16,9 @@
         object-fit: cover;
         height: 100%;
         width: 100%;
+     
       }
+       
     }
   }
   .vectors {
@@ -24,4 +26,7 @@
     height: 100vh;
     background-color: rgba(221, 207, 196, 0.45);
   }
+}
+  [data-theme="dark"] img{
+  filter: brightness(0.8) contrast(1.1);
 }

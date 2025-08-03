@@ -3,17 +3,23 @@
   --color-bg-secondary: #f4f4f4;
   --color-text: #292929;
   --color-text-secondary: #7c7c7c;
-  --color-accent: #D4A373;
+  --color-accent: #d4a373;
   --color-border: #e0e0e0;
-  --input-color:white;
+  --input-color: white;
+  --header-bg: #856957;
+  --pricing-text-color: #525252;
+  --pricing-second-text: #7c7c7c;
 }
 
 [data-theme=dark] {
-  --color-bg: #18191A;
+  --color-bg: #18191a;
   --color-bg-secondary: #242526;
-  --color-text: #E4E6EB;
-  --color-text-secondary: #B0B3B8;
-  --color-accent: #D4A373;
-  --color-border: #3A3B3C;
-  --input-color:#242526 ;
+  --color-text: #e4e6eb;
+  --color-text-secondary: #b0b3b8;
+  --color-accent: #d4a373;
+  --color-border: #3a3b3c;
+  --input-color: #242526;
+  --header-bg: #121212;
+  --pricing-text-color: #e4e6eb;
+  --pricing-second-text: #b0b3b8;
 }/*# sourceMappingURL=theme.css.map */

@@ -1,44 +1,47 @@
 .pathConteiner {
-    height: 216px;
-    width: 100%;
+  height: 216px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  .pathWrapper {
+    padding: 0 140px;
     display: flex;
-    align-items: flex-end;
-    .pathWrapper {
-        padding: 0 140px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(221, 207, 196, 0.85);
+    height: 144px;
+    width: 100%;
+    [data-theme='dark'] & {
+      background-color: rgba(221, 207, 196, 0.2);
+    }
+    .titles {
+      h1 {
+        font-family: "Italiana", sans-serif;
+        font-size: 48px;
+        font-weight: 400;
+        span {
+          font-family: "MyCustomFont", sans-serif;
+          font-size: 40px;
+          font-weight: 400;
+          color: rgba(230, 100, 69, 1);
+        }
+      }
+    }
+    .pathTrace {
+      ul {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        background-color: rgba(221, 207, 196, 0.85);
-        height: 144px;
-        width: 100%;
-        .titles {
-            h1 {
-                font-family: "Italiana", sans-serif;
-                font-size: 48px;
-                font-weight: 400;
-                span {
-                    font-family: "MyCustomFont", sans-serif;
-                    font-size: 40px;
-                    font-weight: 400;
-                    color: rgba(230, 100, 69, 1);
-                }
-            }
+        gap: 5px;
+        .link {
+          text-decoration: none;
+          color: #000;
         }
-        .pathTrace {
-          
-            ul{
-                display: flex;
-                align-items: center;
-                gap:5px ;
-                .link{
-                    text-decoration: none;
-                    color: #000;
-                }
-                li{
-                    cursor: pointer;
-                    list-style: none;
-                }
-            }
+        li {
+          cursor: pointer;
+          list-style: none;
+          color:var(--color-text);
         }
+      }
     }
+  }
 }

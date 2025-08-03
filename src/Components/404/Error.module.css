@@ -2,6 +2,9 @@
   width: 100%;
   height: 100vh;
 }
+[data-theme=dark] .errorConteiner {
+  background-color: #1a1a1a;
+}
 .errorConteiner .errorWrapper {
   display: flex;
   gap: 10px;

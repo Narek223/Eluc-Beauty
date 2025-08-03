@@ -150,9 +150,14 @@
       font-family: "Manrope", sans-serif;
       font-weight: 500;
       font-size: 15px;
+      display: flex;
+    align-items: center;
       color: rgba(189, 189, 189, 1);
+      [data-theme="dark"] & {
+        color: white;
+      }
       .icon {
-        color: #000;
+        color: var(--color-text);
         width: 24px;
       }
     }

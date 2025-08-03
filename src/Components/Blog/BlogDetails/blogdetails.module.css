@@ -12,21 +12,24 @@
   padding: 0 140px;
   color: rgb(61, 61, 61);
 }
-.blogDetails .contentWrapper {
+[data-theme=dark] .blogDetails .banner .overlay {
+  color: white;
+}
+.blogDetails .blogDetailsWrapper .contentWrapper {
   padding: 40px 20px;
   max-width: 800px;
   margin: auto;
 }
-.blogDetails .contentWrapper h1 {
+.blogDetails .blogDetailsWrapper .contentWrapper h1 {
   font-size: 2.2rem;
   margin-bottom: 10px;
 }
-.blogDetails .contentWrapper h2 {
+.blogDetails .blogDetailsWrapper .contentWrapper h2 {
   font-size: 1.2rem;
   margin-bottom: 20px;
   color: #888;
 }
-.blogDetails .contentWrapper .content p {
+.blogDetails .blogDetailsWrapper .contentWrapper .content p {
   margin-bottom: 16px;
   line-height: 1.7;
 }

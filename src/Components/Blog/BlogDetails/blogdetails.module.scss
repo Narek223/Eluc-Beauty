@@ -13,8 +13,13 @@
       flex-direction: column;
       padding: 0 140px;
       color: rgba(61, 61, 61, 1);
+      [data-theme="dark"] & {
+        color:white ;
+      }
     }
   }
+.blogDetailsWrapper{
+
 
   .contentWrapper {
     padding: 40px 20px;
@@ -37,6 +42,7 @@
       line-height: 1.7;
     }
   }
+}
   .blognotfound {
     background-color: #fdfaf6;
 

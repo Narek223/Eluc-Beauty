@@ -134,8 +134,7 @@
   padding: 0 15px;
   font-size: 16px;
   font-weight: 600;
-  color: #333;
-  background-color: #faf7f2;
+  color: var(--color-text);
   position: relative;
   z-index: 1;
   white-space: nowrap;
@@ -159,14 +158,14 @@
   font-weight: 300;
   font-size: 32px;
   font-family: "Manrope", sans-serif;
-  color: rgb(41, 41, 41);
+  color: var(--color-text);
 }
 .expertsprofile .profileContent .profile .text p {
   margin: 48px 0;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   line-height: 28px;
-  color: rgb(124, 124, 124);
+  color: var(--color-text-secondary);
 }
 .expertsprofile .profileContent .worksConteiner {
   margin: 144px 0 90px 0;

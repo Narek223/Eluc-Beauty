@@ -27,6 +27,10 @@
 .contactBox h1 {
   font-size: 24px;
   font-weight: 400;
+  color: black;
+}
+.contactBox p {
+  color: black;
 }
 .contactBox div {
   margin: 8px 0;
@@ -53,14 +57,18 @@
   justify-content: center;
 }
 .footerBottom p {
-  color: rgb(124, 124, 124);
+  color: var(--color-text);
   width: 55%;
   text-align: center;
   padding: 25px 0;
   font-size: 14px;
 }
 .footerBottom p span {
-  color: #000;
+  color: var(--color-text-secondary);
   cursor: pointer;
   font-weight: 600;
+}
+
+[data-theme=dark] .mapSection {
+  filter: brightness(0.8) contrast(1.1);
 }/*# sourceMappingURL=footer.module.css.map */

@@ -121,7 +121,7 @@
   justify-content: flex-end;
 }
 .headerContainer .constacts .fixedScrolled nav {
-  border-bottom: 0.5px solid rgb(220, 220, 220);
+  border-bottom: 0.5px solid var(--color-border);
   position: fixed;
   z-index: 1200;
   top: 0;

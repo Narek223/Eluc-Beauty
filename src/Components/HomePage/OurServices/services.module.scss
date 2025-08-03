@@ -5,7 +5,9 @@
   background-image: url("../../../assets/HomePage/Vector.png");
   background-position: left;
   background-repeat: no-repeat;
-
+[data-theme="dark"] .img {
+  filter: brightness(0.8) contrast(1.1);
+}
   .servicesWrapper {
     padding: 45px 140px;
 
