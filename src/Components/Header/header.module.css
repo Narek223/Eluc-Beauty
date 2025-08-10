@@ -32,6 +32,26 @@
     top: 0px;
   }
 }
+.headerContainer .constacts .header nav .logo {
+  font-family: "Montserrat", sans-serif;
+}
+.headerContainer .constacts .header nav .logo p {
+  font-weight: 800;
+  font-size: 36px;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headerContainer .constacts .header nav .logo p span {
+  line-height: 1px;
+  color: rgb(41, 41, 41);
+  font-size: 11px;
+  font-weight: 400;
+}
+[data-theme=dark] .headerContainer .constacts .header nav .logo p span {
+  color: var(--color-text-secondary);
+}
 .headerContainer .constacts .header .navList {
   list-style: none;
   display: flex;

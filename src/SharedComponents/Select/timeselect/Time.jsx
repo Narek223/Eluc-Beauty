@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import { Button, Popover, Box } from "@mui/material";
 import timeicon from "../../../assets/HomePage/Vertical container.png";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 
 export default function Time({ value, onChange }) {
+    const [arrowIcon, setArrowIcon] = useState(true);
+
+
   const times = [
     { id: 1, label: "12:00" },
     { id: 2, label: "12:30" },
@@ -21,30 +26,35 @@ export default function Time({ value, onChange }) {
   const open = Boolean(anchorEl);
 
   const handleClick = (event) => {
-      event.preventDefault()
+    event.preventDefault();
     setAnchorEl(event.currentTarget);
-   
+    setArrowIcon(!arrowIcon);
   };
   const handleClose = () => {
     setAnchorEl(null);
+    setArrowIcon(true);
   };
 
   return (
     <div className={styles.timeSelect}>
-      <button
+      <div className={styles.timeSelectContainer}>
+ <button
         onClick={handleClick}
         variant="outlined"
         className={styles.timeButton}
       >
         <img className={styles.iconimg} src={timeicon} /> {value || "Any Time"}
       </button>
+      <p> {arrowIcon?<IoIosArrowDown/> :<IoIosArrowUp/>  } </p>
+      </div>
+     
       <Popover
         open={open}
         anchorEl={anchorEl}
         onClose={handleClose}
         disableScrollLock
-          disableAutoFocus={true}
-  disableEnforceFocus={true}
+        disableAutoFocus={true}
+        disableEnforceFocus={true}
         anchorOrigin={{
           vertical: "bottom",
           horizontal: "left",
@@ -53,11 +63,11 @@ export default function Time({ value, onChange }) {
           vertical: "top",
           horizontal: "left",
         }}
-         PaperProps={{
-    style: {
-      width: anchorEl ? anchorEl.offsetWidth : undefined,
-    },
-  }}
+        PaperProps={{
+          style: {
+            width: anchorEl ? anchorEl.offsetWidth : undefined,
+          },
+        }}
       >
         <Box
           sx={{
@@ -70,7 +80,7 @@ export default function Time({ value, onChange }) {
         >
           {times.map((elem, index) => (
             <Button
-            className={styles.btn}
+              className={styles.btn}
               key={index}
               variant="outlined"
               onClick={() => {
@@ -78,30 +88,22 @@ export default function Time({ value, onChange }) {
                 handleClose();
               }}
               sx={{
-               
-                        "& .MuiPaper-root": {
-                          width:
-                            open && anchorEl
-                              ? `${anchorEl.offsetWidth}px`
-                              : "auto",
-                        
-                              overflowY: "auto",
-                        },
- 
-                     fontSize: "16px",  
+                "& .MuiPaper-root": {
+                  width:
+                    open && anchorEl ? `${anchorEl.offsetWidth}px` : "auto",
+
+                  overflowY: "auto",
+                },
+
+                fontSize: "16px",
                 minWidth: 0,
                 border: " 1px solid rgba(189, 189, 189, 1)",
                 textTransform: "none",
                 height: "27px",
-             
 
-                              backgroundColor:
-                                elem.label === value
-                                  ? "rgb(212, 163, 115)"
-                                  : "",
-                         color:   elem.label === value
-                                  ? "white"
-                                  : "rgba(82, 82, 82, 1)",
+                backgroundColor:
+                  elem.label === value ? "rgb(212, 163, 115)" : "",
+                color: elem.label === value ? "white" : "rgba(82, 82, 82, 1)",
               }}
             >
               {elem.label}

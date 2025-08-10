@@ -15,9 +15,6 @@ export default function Header() {
   const boolean = useSelector((state) => state.verification.bool);
   const { t } = useTranslation();
 
-
-
-
   useEffect(() => {
     const handleScroll = () => {
       dispatch(headerSlice.setIsScrolled(window.scrollY > 0));
@@ -53,8 +50,11 @@ export default function Header() {
               ))}
             </ul>
             <NavLink to="/" style={{ textDecoration: "none" }}>
-              {" "}
-              <img src={logo} />
+              <div className={styles.logo}>
+                <p>
+                  elux <br/> <span>BEAUTY</span>
+                </p>
+              </div>
             </NavLink>
             {boolean ? (
               <Profile />

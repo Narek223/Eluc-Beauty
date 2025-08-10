@@ -3,28 +3,29 @@ import styles from "./Select.module.scss";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { IoIosArrowDown } from "react-icons/io";
-
-
+import { IoIosArrowUp } from "react-icons/io";
 import MenuItem from "@mui/material/MenuItem";
 
-export default function InputSelect({value,onChange,state,label,iconimg}) {
-
-
-
-
-  
+export default function InputSelect({
+  value,
+  onChange,
+  state,
+  label,
+  iconimg,
+  servicesobj,
+}) {
   return (
     <div>
       <FormControl fullWidth className={styles.formControl}>
         <Select
           className={styles.select}
           value={value}
-          onChange={ onChange}
+          onChange={onChange}
           IconComponent={IoIosArrowDown}
           displayEmpty
-           MenuProps={{
-    disableScrollLock: true,
-  }}
+          MenuProps={{
+            disableScrollLock: true,
+          }}
           renderValue={
             state !== ""
               ? undefined
@@ -48,7 +49,9 @@ export default function InputSelect({value,onChange,state,label,iconimg}) {
             },
           }}
         >
-          <MenuItem value="Hair">Hair</MenuItem>
+          {servicesobj.map((el) => (
+            <MenuItem value={el.name}>{el.name}</MenuItem>
+          ))}
         </Select>
       </FormControl>
     </div>
