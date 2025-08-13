@@ -4,34 +4,18 @@ import { useSelector, useDispatch } from "react-redux";
 import * as fastBooking from "../../../Redux/Slices/FastBooking/FastbookSlice";
 import iconimg from "../../../assets/HomePage/Container (1).png";
 import Select from "../../../SharedComponents/Select/InputSelect";
-import { IoPersonOutline } from "react-icons/io5";
-import icon from "../../../assets/HomePage/Icon.png";
 import Calendar from "../../../SharedComponents/Calendar/Calendar";
-import { experts } from "../../../Services/Date/ExpertsDate/experts";
 import { service } from "../../../Services/Date/ExpertsDate/services";
 import TimeSelect from "../../../SharedComponents/Select/timeselect/Time";
 import PopoveExperts from "./Popover/PopoveExperts";
 
 export default function FastBooking() {
   const dispatch = useDispatch();
-  const { services, experts, date, time } = useSelector(
+  const { services, expert, date, time } = useSelector(
     (state) => state.FastBook
   );
 
-  const fields = [
-    {
-      value: services,
-      action: fastBooking.setservice,
-      label: "Service",
-      icon: iconimg,
-    },
-    {
-      value: experts,
-      action: fastBooking.setexperts,
-      label: "Expert",
-      icon: icon,
-    },
-  ];
+
 
   return (
     <div className={styles.bookingCont}>
@@ -47,7 +31,7 @@ export default function FastBooking() {
               servicesobj={service}
             />
           </div>
-          <PopoveExperts value={services}  state={experts}      expert={(val) => dispatch(fastBooking.setexperts(val))}/>
+          <PopoveExperts value={services}  state={expert}      expert={(val) => dispatch(fastBooking.setexperts(val))}/>
           <Calendar
             setDate={(date) => dispatch(fastBooking.setdate(date))}
             value={date}

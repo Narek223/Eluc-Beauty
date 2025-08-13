@@ -7,6 +7,8 @@ import FastBooking from "../Slices/FastBooking/FastbookSlice";
 import  signinSlice  from "../Slices/SignIn/signinSlice";
 import verificationSlice from "../Slices/SignIn/verificationSlice";
 import profileSlice from "../Slices/Profile/profileSlice";
+import Popoverslice  from "../Slices/FastBooking/Popover";
+import TimeSlice from "../Slices/FastBooking/Time";
 
 export const store = configureStore({
   reducer: {
@@ -18,6 +20,8 @@ export const store = configureStore({
     signin:signinSlice,    
     verification: verificationSlice,
     profile: profileSlice,
+    popover: Popoverslice,
+    time: TimeSlice
 
   },
 });

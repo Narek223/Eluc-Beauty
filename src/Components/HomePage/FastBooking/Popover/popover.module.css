@@ -2,6 +2,7 @@
   width: 23%;
   position: relative;
   display: flex;
+  cursor: pointer;
 }
 .popoverContainer .popoverButton {
   width: 100%;

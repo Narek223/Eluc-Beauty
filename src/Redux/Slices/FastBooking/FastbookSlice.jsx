@@ -2,10 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   services: "",
-  experts: "",
+  expert: "",
   date:"",
-  time:""
-
+  time:"",
+ 
 };
 
 export const FastBookingSlice = createSlice({
@@ -16,7 +16,7 @@ export const FastBookingSlice = createSlice({
       state.services = action.payload;
     },
     setexperts: (state, action) => {
-      state.experts = action.payload;
+      state.expert = action.payload;
     },
     setdate: (state, action) => {
       state.date = action.payload;
