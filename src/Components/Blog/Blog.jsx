@@ -3,7 +3,7 @@ import styles from "./blog.module.scss";
 import { blogData } from "../../Services/Date/Blog/blog";
 import PathTrace from "../../SharedComponents/PathTrace/PathTrace";
 import { paginate } from "../../Utils/pagination";
-import PaginationComponent from "./Pagination/Pagination";
+import PaginationComponent from "../../SharedComponents/Pagination/Pagination";
 import { useSelector, useDispatch } from "react-redux";
 import * as blogslice from "../../Redux/Slices/Blog/blog";
 import { NavLink } from "react-router-dom";

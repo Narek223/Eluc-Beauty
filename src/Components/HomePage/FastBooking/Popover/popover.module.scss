@@ -58,3 +58,13 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .popoverContainer {
+    width: 100%;
+             border: 1px solid rgba(220, 220, 220, 1);
+                      border-radius: 0  16px 0  0;
+                      height:100%;
+  }
+}
+

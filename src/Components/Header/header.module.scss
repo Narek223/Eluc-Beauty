@@ -25,7 +25,12 @@
         width: 100%;
         border-color: var(--color-border);
         background-color: var(--color-bg);
-
+        .icons {
+          color: black;
+          [data-theme="dark"] & {
+            color: white;
+          }
+        }
         @keyframes scrollDown {
           from {
             top: 60px;
@@ -34,6 +39,7 @@
             top: 0px;
           }
         }
+
         .logo {
           font-family: "Montserrat", sans-serif;
           p {
@@ -44,7 +50,7 @@
             flex-direction: column;
             align-items: center;
             span {
-            line-height: 1px;
+              line-height: 1px;
               color: rgba(41, 41, 41, 1);
               font-size: 11px;
               font-weight: 400;
@@ -138,6 +144,9 @@
             width: 100%;
           }
         }
+        &.close {
+          display: none;
+        }
       }
 
       .login {
@@ -159,5 +168,106 @@
         animation: scrollDown 0.3s forwards;
       }
     }
+  }
+}
+@media screen and (max-width: 1510px) {
+  .headerContainer {
+    .constacts {
+      .header {
+        .login {
+          width: 250px;
+        }
+        .navList {
+          display: flex;
+          gap: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .headerContainer {
+    .constacts {
+      .header {
+        .login {
+          width: 234px;
+        }
+        nav {
+          padding: 0 120px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .headerContainer {
+    .constacts {
+      .header {
+        .login {
+          width: auto;
+        }
+        .login {
+          width: 200px;
+        }
+        .navList {
+          display: flex;
+          gap: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .headerContainer {
+    .constacts {
+      .header {
+        border: none;
+        .login {
+          width: auto;
+        }
+        .loginHeader {
+          background: rgba(255, 255, 255, 0);
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 20;
+          border: none;
+          color: white;
+          .logo {
+            p {
+              color: white;
+              span {
+                color: white;
+              }
+            }
+          }
+          .icons {
+            color: white;
+          }
+          p,
+          h1 {
+            color: white;
+          }
+        }
+        nav {
+          padding: 0 28px;
+          .navList {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .icons {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .icons {
+    display: none;
   }
 }

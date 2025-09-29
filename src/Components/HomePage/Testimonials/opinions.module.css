@@ -8,6 +8,8 @@
 .conteiner .textslide {
   display: flex;
   max-width: 1000px;
+  align-items: center;
+  justify-content: center;
 }
 .conteiner .textslide .text {
   width: 650px;
@@ -33,13 +35,25 @@
 .conteiner .textslide .text .textSlider {
   width: 100%;
 }
+.conteiner .textslide .text .textSlider .img {
+  display: flex;
+}
+.conteiner .textslide .text .textSlider .img .mySvg {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
 .conteiner .textslide .text .textSlider .textContent {
   height: 150px;
 }
 .conteiner .textslide .text .textSlider .textContent p {
-  color: var(--color-text--secondary);
+  font-family: "Manrope", sans-serif;
+  color: rgb(98, 94, 92);
   font-weight: 300;
   font-size: 18px;
+}
+[data-theme=dark] .conteiner .textslide .text .textSlider .textContent p {
+  color: white;
 }
 .conteiner .textslide .text .textSlider .textContent h2 {
   color: var(--color-text);
@@ -51,4 +65,41 @@
 .swiper-pagination {
   bottom: -30px !important;
   position: absolute;
+}
+
+@media screen and (max-width: 1200px) {
+  .conteiner {
+    height: auto;
+  }
+  .conteiner .textslide {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  .conteiner {
+    padding: 0 28px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .conteiner svg {
+    width: 100%;
+    height: auto;
+  }
+  .conteiner .textslide {
+    width: 100%;
+  }
+  .conteiner .textslide .text {
+    width: 100%;
+  }
+  .conteiner .textslide .text .title {
+    flex-direction: column;
+  }
+  .conteiner .textslide .text .title h1 {
+    font-size: 30px;
+  }
+  .conteiner .textslide .text .title h1:nth-child(2) {
+    font-size: 54px;
+    color: red;
+    font-family: "MyCustomFont", sans-serif;
+  }
 }/*# sourceMappingURL=opinions.module.css.map */

@@ -23,8 +23,8 @@ export default function BlogDetails() {
           </div>
           <div className={styles.blogDetailsWrapper}>
 
-       
-          <div className={styles.contentWrapper}>
+       <div className={styles.contactconteiner}>
+           <div className={styles.contentWrapper}>
             <h1>{blog.title}</h1>
             <h2>{blog.subtitle}</h2>
             <div className={styles.content}>
@@ -36,6 +36,9 @@ export default function BlogDetails() {
             </div>
      
           </div>
+       </div>
+
+       
                  <Popularposts />
              </div>
         </>

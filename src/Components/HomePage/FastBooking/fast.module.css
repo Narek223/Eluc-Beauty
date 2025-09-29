@@ -45,4 +45,54 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1300px) {
+  .bookingCont .boogkingWrapper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .bookingCont .boogkingWrapper {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .bookingCont .boogkingWrapper {
+    height: auto;
+    width: 95%;
+  }
+  .bookingCont .boogkingWrapper .inputPicker {
+    border-radius: 16px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .bookingCont .boogkingWrapper .inputPicker .inputWrapper,
+  .bookingCont .boogkingWrapper .inputPicker .time,
+  .bookingCont .boogkingWrapper .inputPicker .btnconteiner,
+  .bookingCont .boogkingWrapper .inputPicker > div {
+    width: 100%;
+    min-width: 0;
+  }
+  .bookingCont .boogkingWrapper .inputPicker .inputWrapper {
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 16px 0 0 0;
+  }
+  .bookingCont .boogkingWrapper .inputPicker .time {
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 0 0 16px 0;
+  }
+  .bookingCont .boogkingWrapper .inputPicker .btnconteiner {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .bookingCont .boogkingWrapper .inputPicker .btnconteiner button {
+    width: 90%;
+    height: 60px;
+    border-radius: 8px;
+  }
 }/*# sourceMappingURL=fast.module.css.map */

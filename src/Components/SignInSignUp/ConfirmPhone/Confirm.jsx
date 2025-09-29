@@ -11,9 +11,8 @@ export default function PhoneVerification() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const {code,bool} = useSelector((state) => state.verification);
-
-
+  const { code, bool } = useSelector((state) => state.verification);
+  const { values } = useSelector((state) => state.signin);
 
   const resendcode = () => {
     dispatch(verificationActions.resetCode());
@@ -23,7 +22,10 @@ export default function PhoneVerification() {
   const submitfunc = () => {
     navigate("/");
     dispatch(verificationActions.setbool(true));
-        dispatch(verificationActions.resetCode());
+    dispatch(verificationActions.resetCode());
+    localStorage.setItem("isLoggedIn", "true");
+    localStorage.setItem("FullName", values.FullName);
+    localStorage.setItem("Phonenumber", values.Phonenumber);
 
   };
 
@@ -39,7 +41,7 @@ export default function PhoneVerification() {
       <button
         onClick={submitfunc}
         className={styles.confirmbtn}
-        disabled={code.includes("")}
+        disabled={code.join("") !== "55555"}
       >
         {t("ConfirmPhone.submit")}
       </button>

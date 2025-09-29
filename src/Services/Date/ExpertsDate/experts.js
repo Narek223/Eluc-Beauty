@@ -2,7 +2,7 @@ import ava from "./../../../assets/Experts/2ddd34475af2616515a851c20c1c5b00b37fa
 
 export const experts = [
   {
-    id: 1,
+    id: 0,
     name: "Demi Wilkinson",
     avatar: ava,
     services: ["Hairstyle", "Manicure"],
@@ -12,33 +12,37 @@ export const experts = [
         times: [{ id: 1, label: "12:00" }],
       },
        {
-        date: "2025-08-13",
+        date: "2025-08-22",
+        times: [{ id: 1, label: "15:00" }],
+      },
+       {
+        date: "2025-08-24",
         times: [{ id: 1, label: "12:00" }],
       },
     ],
   },
   {
-    id: 2,
+    id: 1,
     name: "Candice Wu",
-    avatar: "/avatars/candice.jpg",
+    avatar: ava,
     services: ["Hairstyle"],
   },
   {
-    id: 3,
+    id: 2,
     name: "Natali Craig",
-    avatar: "/avatars/natali.jpg",
+    avatar: ava,
     services: ["Massage"],
   },
   {
-    id: 4,
+    id: 3,
     name: "Drew Cano",
-    avatar: "/avatars/drew.jpg",
+    avatar:ava,
     services: ["Manicure"],
   },
   {
-    id: 5,
+    id: 4,
     name: "Orlando Diggs",
-    avatar: "/avatars/orlando.jpg",
+    avatar: ava,
     services: ["Hairstyle"],
   },
 ];

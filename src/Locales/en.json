@@ -5,8 +5,20 @@
     "about": "About",
     "blog": "Blog",
     "contacts": "Contact Us",
-    "login": "Login",
-    "signUp": "SignUp"
+    "login": "Login"
+  
+  },
+  "Profile": {
+    "hi": "Hi",
+    "profile": "Profile",
+    "changeName": "Change Name",
+    "fullName": "Full Name",
+    "number": "Number",
+    "history": "History",
+    "changeNumber": "Confirm Your Phone Number",
+    "offNotifications": "Off Notifications",
+    "darkmode": "Dark Mode",
+    "logout": "Logout"
   },
   "headerinfo": {
     "address": "Address"
@@ -128,8 +140,6 @@
       "text4": "From the moment you step into our salon, you will be enveloped in an atmosphere of elegance and relaxation."
     }
   },
- 
-
 
   "experts": {
     "pathTitle": "EXPERT",
@@ -145,7 +155,7 @@
     "home": "Home",
     "expert": "Expert"
   },
-  
+
   "signin": {
     "title": "Sign In / Sign Up",
     "subtitle": "Enter your details below to continue!",
@@ -160,8 +170,70 @@
     "codeInput": "If you haven’t received the code within two minutes, click",
     "resendCode": "Resend Code",
     "submit": "Confirm"
+  },
+  "servicesData": {
+    "women": {
+      "title": "Women looking for hair extension and hair care services",
+      "items": [
+        "Customized Hair Extension Consultation / 35min.",
+        "Hair Care and Treatment Services / 35min.",
+        "Styling and Maintenance Packages / 35min."
+      ]
+    },
+    "brides": {
+      "title": "Brides-to-be are looking for wedding hairstyles",
+      "items": [
+        "Bridal Hair Consultation and Trial Runs / 35min.",
+        "Wedding Day Hair Styling Services / 35min.",
+        "Bridal Party Hair Styling Packages / 35min."
+      ]
+    },
+    "parents": {
+      "title": "Parents are looking for unique hair braids for their children",
+      "items": [
+        "Creative Braiding Custom Design / 35min.",
+        "Professional Braiding Services / 35min.",
+        "Braiding Maintenance and Care / 35min."
+      ]
+    },
+    "makeup": {
+      "title": "Individuals interested in makeup services",
+      "items": [
+        "Personalized Makeup Consultation / 35min.",
+        "Special Event Makeup Services / 35min.",
+        "Makeup Lessons and Workshops / 35min."
+      ]
+    }
+  },
+  "Cart": {
+    "Total": "Total",
+    "Cart": "Cart",
+    "booknow": "Book Now"
+  },
+  "Date": {
+    "chooseDate": "Choose Date",
+    "chooseExpert": "Choose Expert",
+    "changeDate": "Change Date"
+  },
+  "free": {
+    "Freetimetoday": "Free time today",
+    "Nofreetimetoday": "No free time today",
+    "add": "Add",
+    "Remove": "Remove",
+    "Change": "Change",
+    "Confirm": "Confirm",
+    "order": "Your Order"
+  },
+  "confirmation": {
+    "thankYou": "Thank You",
+    "forBooking": "for Booking with Us",
+    "appointmentSuccess": "Your appointment has been successfully scheduled. We can't wait to pamper you and help you look and feel your best!",
+    "rate": "Rate"
+  },
+  "Path": {
+    "Awesomeservices": "Awesome services",
+    "Bestofyourchoice": "Best of your choice",
+    "HISTORY": "HISTORY",
+    "NoBooked": "NO BOOKED"
   }
 }
-
-
-

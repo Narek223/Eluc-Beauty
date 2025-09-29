@@ -9,6 +9,8 @@ import ConfirmPhone from "./ConfirmPhone/Confirm";
 import { useTranslation } from "react-i18next";
 import { useSelector, useDispatch } from "react-redux";
 import * as signinActions from "../../Redux/Slices/SignIn/signinSlice";
+import Phone from "../../SharedComponents/PhoneComponent/Phone";
+
 
 export default function SignIn() {
   const dispatch = useDispatch();
@@ -21,94 +23,91 @@ export default function SignIn() {
     Phonenumber: "",
   };
 
-
   return (
     <div className={styles.Login}>
       <div className={styles.loginWrapper}>
         <div className={styles.FormConteiner}>
-          {isConfirmedStep ? (
-            <ConfirmPhone />
-          ) : (
-            <>
-              <h1>{t("signin.title")}</h1>
-              <div className={styles.LoginPart}>
-                <p>{t("signin.subtitle")}</p>
-                <Formik
-                  initialValues={initialValues}
-                  validationSchema={validation}
-                  onSubmit={(values)=>dispatch(signinActions.handleSubmit(values))}
-                >
-                  {({ isValid, dirty, isSubmitting, touched, errors }) => (
-                    <Form className={styles.form}>
-                      <div className={styles.formWrapper}>
-                        <Field
-                          type="text"
-                          name="FullName"
-                          id="username"
-                          placeholder={t("signin.fullName")}
-                          className={` ${
-                            touched.FullName && errors.FullName
-                              ? styles.inputError
-                              : ""
-                          }`}
-                        />
-                        <ErrorMessage
-                          name="FullName"
-                          component="div"
-                          className={styles.error}
-                        />
+          <div className={styles.formgroup}>
+            {isConfirmedStep ? (
+              <ConfirmPhone />
+            ) : (
+              <>
+                <h1>{t("signin.title")}</h1>
+                <div className={styles.LoginPart}>
+                  <p>{t("signin.subtitle")}</p>
+                  <Formik
+                    initialValues={initialValues}
+                    validationSchema={validation}
+                    onSubmit={(values) =>
+                      dispatch(signinActions.handleSubmit(values))
+                    }
+                  >
+                    {({ isValid, dirty, isSubmitting, touched, errors }) => (
+                      <Form className={styles.form}>
+                        <div className={styles.formWrapper}>
+                          <Field
+                            type="text"
+                            name="FullName"
+                            id="username"
+                            placeholder={t("signin.fullName")}
+                            className={` ${
+                              touched.FullName && errors.FullName
+                                ? styles.inputError
+                                : ""
+                            }`}
+                          />
+                          <ErrorMessage
+                            name="FullName"
+                            component="div"
+                            className={styles.error}
+                          />
+   <Field
+                    name="Phonenumber"
+                    component={Phone}
+                    placeholder={t("contact.phone")}
+                  />
+                       
+                          <ErrorMessage
+                            name="Phonenumber"
+                            component="div"
+                            className={styles.error}
+                          />
+                        </div>
 
-                        <Field
-                          type="tel"
-                          name="Phonenumber"
-                          id="password"
-                          placeholder={t("signin.phone")}
-                          className={` ${
-                            touched.Phonenumber && errors.Phonenumber
-                              ? styles.inputError
-                              : ""
-                          }`}
-                        />
-                        <ErrorMessage
-                          name="Phonenumber"
-                          component="div"
-                          className={styles.error}
-                        />
-                      </div>
+                        <FormGroup>
+                          <FormControlLabel
+                            control={<Checkbox />}
+                            label={t("signin.keepSignedIn")}
+                            sx={{
+                              "& .MuiFormControlLabel-label": {
+                                color: "#222",
+                                fontSize: "12px",
+                                fontFamily: "Manrope, sans-serif",
+                                fontWeight: 500,
+                                color: "rgba(124, 124, 124, 1)",
+                              },
+                            }}
+                          />
+                        </FormGroup>
 
-                      <FormGroup>
-                        <FormControlLabel
-                          control={<Checkbox />}
-                          label={t("signin.keepSignedIn")}
-                          sx={{
-                            "& .MuiFormControlLabel-label": {
-                              color: "#222",
-                              fontSize: "12px",
-                              fontFamily: "Manrope, sans-serif",
-                              fontWeight: 500,
-                              color: "rgba(124, 124, 124, 1)",
-                            },
-                          }}
-                        />
-                      </FormGroup>
-
-                      <button
-                        type="submit"
-                        className={
-                          !isValid || !dirty || isSubmitting
-                            ? styles.submitButtonDisabled
-                            : styles.submitButton
-                        }
-                        disabled={isSubmitting || !(isValid && dirty)}
-                      >
-                        {t("signin.submit")}
-                      </button>
-                    </Form>
-                  )}
-                </Formik>
-              </div>
-            </>
-          )}
+                        <button
+                          type="submit"
+                          className={
+                            !isValid || !dirty || isSubmitting
+                              ? styles.submitButtonDisabled
+                              : styles.submitButton
+                          }
+                          disabled={isSubmitting || !(isValid && dirty)}
+                        >
+                          {t("signin.submit")}
+                        </button>
+                      </Form>
+                    )}
+                  </Formik>
+                </div>
+              </>
+            )}
+          </div>
         </div>
 
         <div className={styles.imgbox}>

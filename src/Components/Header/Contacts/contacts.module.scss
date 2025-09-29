@@ -48,3 +48,16 @@
         }
     }
 }
+@media screen and (max-width: 1350px) {
+ .contactWrapper{
+    .contactDetails{
+        margin: 0 120px;
+    }
+
+ }
+}
+@media screen and (max-width: 1000px) {
+ .contactWrapper{
+    display: none;
+ }
+}

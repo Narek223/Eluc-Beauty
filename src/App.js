@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Homepage from "./Components/HomePage/Homepage";
@@ -22,10 +22,21 @@ import SignIn from "./Components/SignInSignUp/SignIn";
 import { links } from "./Services/Date/Header/links";
 import Services from "./Components/Services/Services";
 import History from "./Components/Header/Profile/History/History";
+import { useSelector } from "react-redux";
+import "react-phone-input-2/lib/style.css";
 
 
 function App() {
   const location = useLocation();
+
+
+  const { mode } = useSelector((state) => state.profile);
+
+  useEffect(() => {
+    document.body.setAttribute("data-theme", mode);
+    localStorage.setItem("theme", mode);
+  }, [mode]);
+
 
   const validPaths = ["/", ...links.map((item) => item.link), "/sign","/expert","/history"];
   const isValidPath = validPaths.includes(
@@ -39,18 +50,18 @@ function App() {
       <Scroll />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} /> 
         <Route path="/contacts" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path="/expert" element={<ExpertsPage />} />
         <Route path="/expert/:id" element={<ExpertsDetalis />} />
         <Route path="/sign" element={<SignIn />} />
-        <Route path="/services" element={<Services />} />
+       <Route path="/services" element={<Services />} />
          <Route path="/history" element={<History />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      {isValidPath && <Footer />}
+    {isValidPath && <Footer />} 
     </div>
   );
 }

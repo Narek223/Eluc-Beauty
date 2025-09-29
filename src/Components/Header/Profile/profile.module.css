@@ -1,3 +1,6 @@
+.profileContainer {
+  cursor: pointer;
+}
 .profileContainer button {
   width: 381px;
   display: flex;
@@ -5,11 +8,15 @@
   justify-content: flex-end;
   gap: 8px;
   font-size: 16px;
+  cursor: pointer;
   font-weight: 300;
   color: var(--color-text);
   border: none;
   background-color: transparent;
   font-family: "Manrope", sans-serif;
+}
+.profileContainer button:active {
+  transform: scale(1);
 }
 .profileContainer button .icon {
   width: 28px;
@@ -152,4 +159,33 @@
 .profilewrapper .log p .icon {
   color: var(--color-text);
   width: 24px;
+}
+
+@media screen and (max-width: 1510px) {
+  .profileContainer button {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .profileContainer button {
+    width: 273px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .profileContainer button {
+    width: 234px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .profileContainer button {
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profileContainer .profileBox {
+    width: 100%;
+  }
+  .profileContainer button {
+    width: auto;
+  }
 }/*# sourceMappingURL=profile.module.css.map */

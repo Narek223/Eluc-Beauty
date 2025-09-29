@@ -1,6 +1,8 @@
 .contactConteiner {
   width: 100%;
   height: auto;
+
+
   .ContactWrapper {
     padding: 0 140px 0 0;
     display: flex;
@@ -35,6 +37,7 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+        
         input {
           background-color: var(--input-color);
           border-radius: 4px;
@@ -50,9 +53,15 @@
             border: 2.5px solid #3a3b3c;
           }
           [data-theme="dark"] &:focus {
-            border: 2.5px solid #555;
+            border: 2.5px solid var(--color-border);
             background-color: #2c2c2c;
             outline: none;
+          }
+          &:nth-of-type(3){
+            padding: 0 45px 0 0;
+            &::placeholder{
+                 padding: 0 45px 0 0;
+            }
           }
         }
 
@@ -81,7 +90,7 @@
             border: 2.5px solid #3a3b3c;
           }
           [data-theme="dark"] &:focus {
-            border: 2.5px solid #555;;
+            border: 2.5px solid #555;
             outline: none;
             background-color: #2c2c2c;
           }
@@ -113,6 +122,79 @@
           &:active {
             transform: scale(1);
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .contactConteiner {
+    .ContactWrapper {
+      height: calc(100vh - 130px);
+      padding: 0;
+      .img {
+        display: none;
+      }
+      .formPart {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contactConteiner {
+    .ContactWrapper {
+      background-image: url("../../assets/ContactUs/Image.png");
+
+      height: calc(100vh);
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+      .formPart {
+        h1 {
+          margin: 0 0 30px 0;
+          color: white;
+        }
+        p {
+          color: white;
+        }
+        .formWrapper {
+          border-radius: 20px;
+          border: 1px solid #000;
+          background: rgba(0, 0, 0, 0.4);
+          backdrop-filter: blur(10px);
+          padding: 20px;
+          input,
+          textarea {
+            border: 1px solid #000;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            color: white;
+          }
+        }
+
+        z-index: 2;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .contactConteiner {
+    
+    .ContactWrapper {
+      padding: 0 28px;
+      .formPart {
+        .formWrapper {
+      
         }
       }
     }

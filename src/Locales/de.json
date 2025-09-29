@@ -8,6 +8,18 @@
     "login": "Login",
     "signUp": "Anmeldung"
   },
+  "Profile": {
+    "hi": "Hi",
+    "profile": "Profil",
+    "changeName": "Name ändern",
+    "fullName": "Vollständiger Name",
+    "number": "Anzahl",
+    "history": "Geschichte",
+    "changeNumber": "Bestätigen Sie Ihre Telefonnummer",
+    "offNotifications": "Benachrichtigungen aus",
+    "darkmode": "Dunkler Modus",
+    "logout": "Abmelden"
+  },
   "headerinfo": {
     "address": "Adresse"
   },
@@ -106,27 +118,28 @@
       "titleLine4": "Make-up-Dienste",
       "text4": "Ob für einen besonderen Anlass oder für den täglichen Glamour, unsere Visagisten unterstreichen Ihre natürliche Schönheit mit professionellen Techniken und hochwertigen Produkten."
     },
-     "counter": {
-    "title": "Jahre Erfahrung",
-    "text": "Haarverlängerungen",
-    "title2": "Qualitätssicherung",
-    "text2": "Erstklassiger Service",
-    "title3": "Zufriedene Kunden",
-    "text3": "Glückliche Kunden",
-    "title4": "Professionelles Personal",
-    "text4": "Zertifizierte Experten"
-  },  "choose":{
-      "title":"Fachwissen",
-      "text":" Unser Team besteht aus erfahrenen Fachleuten, die sich der Schönheit verschrieben haben und ihr Handwerk beherrschen.",
-      "title2":"Innovation",
-      "text2":"Wir halten uns über die neuesten Branchentrends und -technologien auf dem Laufenden, um Ihnen modernste Dienstleistungen anbieten zu können",
-      "title3":"Personalisierte Pflege",
+    "counter": {
+      "title": "Jahre Erfahrung",
+      "text": "Haarverlängerungen",
+      "title2": "Qualitätssicherung",
+      "text2": "Erstklassiger Service",
+      "title3": "Zufriedene Kunden",
+      "text3": "Glückliche Kunden",
+      "title4": "Professionelles Personal",
+      "text4": "Zertifizierte Experten"
+    },
+    "choose": {
+      "title": "Fachwissen",
+      "text": " Unser Team besteht aus erfahrenen Fachleuten, die sich der Schönheit verschrieben haben und ihr Handwerk beherrschen.",
+      "title2": "Innovation",
+      "text2": "Wir halten uns über die neuesten Branchentrends und -technologien auf dem Laufenden, um Ihnen modernste Dienstleistungen anbieten zu können",
+      "title3": "Personalisierte Pflege",
       "text3": "Wir glauben an maßgeschneiderte Behandlungen, die auf Ihre spezifischen Bedürfnisse und Vorlieben abgestimmt sind.",
-      "title4":"Luxuriöses Erlebnis",
+      "title4": "Luxuriöses Erlebnis",
       "text4": "Von dem Moment an, in dem Sie unseren Salon betreten, werden Sie von einer Atmosphäre der Eleganz und Entspannung umhüllt sein."
-  }
+    }
   },
-    "experts": {
+  "experts": {
     "pathTitle": "EXPERTE",
     "pathSubtitle": "Erstaunliches Team",
     "mainTitle1": "SCHÖNHEIT BEGINNT HIER, LERNEN SIE DAS TEAM KENNEN",
@@ -140,7 +153,7 @@
     "home": "Startseite",
     "expert": "Experte"
   },
-  
+
   "signin": {
     "title": "Anmelden / Registrieren",
     "subtitle": "Geben Sie unten Ihre Daten ein, um fortzufahren!",
@@ -149,18 +162,76 @@
     "keepSignedIn": "Angemeldet bleiben",
     "submit": "Anmelden"
   },
-  
+
   "ConfirmPhone": {
     "title": "Bestätigen Sie Ihre Rufnummer",
     "subtitle": "Um die Registrierung abzuschließen, geben Sie bitte den 5-stelligen Code ein, der an Ihre Telefonnummer gesendet wird.",
     "codeInput": "*Wenn Sie den Code innerhalb von zwei Minuten nicht erhalten haben, klicken Sie auf",
     "resendCode": "Code erneut senden",
     "submit": "Bestätigen"
+  },
+  "servicesData": {
+    "women": {
+      "title": "Frauen suchen nach Haarverlängerungs- und Haarpflegediensten",
+      "items": [
+        "Individuelle Beratung zu Haarverlängerungen / 35 Min.",
+        "Haarpflege- und Behandlungsdienste / 35 Min.",
+        "Styling- und Pflegepakete / 35 Min."
+      ]
+    },
+    "brides": {
+      "title": "Bräute in spe suchen nach Hochzeitsfrisuren",
+      "items": [
+        "Brautfrisuren-Beratung und Probeläufe / 35 Min.",
+        "Hochzeitsfrisuren am Hochzeitstag / 35 Min.",
+        "Styling-Pakete für Brautjungfern / 35 Min."
+      ]
+    },
+    "parents": {
+      "title": "Eltern suchen nach einzigartigen Flechtfrisuren für ihre Kinder",
+      "items": [
+        "Kreatives Flecht-Design nach Wunsch / 35 Min.",
+        "Professionelle Flechtdienste / 35 Min.",
+        "Flechtpflege und -erhaltung / 35 Min."
+      ]
+    },
+    "makeup": {
+      "title": "Personen, die an Make-up-Diensten interessiert sind",
+      "items": [
+        "Personalisierte Make-up-Beratung / 35 Min.",
+        "Make-up-Dienste für besondere Anlässe / 35 Min.",
+        "Make-up-Lektionen und Workshops / 35 Min."
+      ]
+    }
+  },
+  "Cart": {
+    "Total": "Gesamt ",
+    "Cart": "Warenkorb",
+    "booknow": "Jetzt buchen"
+  },
+  "Date": {
+    "chooseDate": "Datum auswählen",
+    "chooseExpert": "Experten auswählen"
+  },
+  "free": {
+    "Freetimetoday": "Freizeit heute",
+    "Nofreetimetoday": "Heute keine Freizeit",
+    "add": "Hinzufügen",
+    "Remove": "Entfernen",
+    "Change": "Änderung",
+    "Confirm": "Bestätigen",
+    "order": "Ihre Bestellung"
+  },
+  "confirmation": {
+    "thankYou": "Danke",
+    "forBooking": "für Ihre Buchung bei uns",
+    "appointmentSuccess": "Ihr Termin wurde erfolgreich vereinbart. Wir können es kaum erwarten, Sie zu verwöhnen und Ihnen zu helfen, Ihr bestes Aussehen und Wohlbefinden zu erreichen!",
+    "rate": "Bewerten"
+  },
+  "Path": {
+    "Awesomeservices": "Großartige Dienstleistungen",
+    "Best of your choice": "Das Beste Ihrer Wahl",
+    "HISTORY": " GESCHICHTE",
+    "NoBooked": "NICHT GEBUCHT"
   }
-
-
 }
-
-
- 
-

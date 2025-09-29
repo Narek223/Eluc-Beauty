@@ -14,3 +14,17 @@
     }
   }
 }
+
+
+@media screen and (max-width: 1300px) {
+.popularPosts {
+  margin: 64px 120px;
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+.popularPosts {
+  margin: 64px 28px;
+}
+}

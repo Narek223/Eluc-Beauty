@@ -1,3 +1,397 @@
-.container {
-  height: calc(100vh - 132px);
+.container .body {
+  display: grid;
+  justify-items: end;
+  grid-template-columns: 2fr 1fr;
+  padding: 155px 140px;
+}
+.container .body .services {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.container .body .services .service {
+  display: flex;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid rgba(70, 70, 70, 0.45);
+  height: 100%;
+  margin: 0 20px 22px 0;
+  flex-direction: column;
+}
+.container .body .services .service .servicewrapper {
+  width: 100%;
+  display: flex;
+}
+.container .body .services .service .servicewrapper .text {
+  padding: 0 20px 0 20px;
+  width: 100%;
+}
+.container .body .services .service .servicewrapper .text h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--color-text);
+  margin: 0 0 12px 0;
+}
+.container .body .services .service .servicewrapper .text .buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .body .services .service .servicewrapper .text .buy p {
+  font-family: "Manrope", sans-serif;
+  color: rgb(124, 124, 124);
+  font-size: 16px;
+}
+.container .body .services .service .servicewrapper .text .buy .buyservice {
+  display: flex;
+  align-items: center;
+}
+[data-theme=dark] .container .body .services .service .servicewrapper .text .buy .buyservice p {
+  color: var(--color-text-secondary);
+}
+.container .body .services .extra {
+  border-top: 1px solid rgb(189, 189, 189);
+  margin: 24px 0 24px 0;
+}
+.container .body .services .extra .wrapper {
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+.container .body .services .extra .wrapper p {
+  margin: 20px 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.container .body .services .extra .wrapper .chooseExperts {
+  display: flex;
+  margin: 28px 0;
+}
+.container .body .services .extra .wrapper .chooseExperts .chooseExpertsCheckbox {
+  color: var(--color-text);
+}
+.container .body .services .extra .wrapper .chooseExperts .expertWrapper {
+  display: flex;
+  margin: 0 0 0 20px;
+  width: 100%;
+  height: 89px;
+}
+.container .body .services .extra .wrapper .chooseExperts .expertWrapper .experts {
+  margin: 0 0 0 20px;
+}
+.container .body .services .extra .wrapper .chooseExperts .expertWrapper .experts p {
+  margin: 0;
+  color: var(--color-text);
+}
+.container .body .services .extra .wrapper .chooseExperts .expertWrapper .experts p:nth-of-type(1) {
+  font-family: "Manrope", sans-serif;
+  color: var(--color-text);
+  font-size: 14px;
+  margin: 10px 0;
+}
+.container .body .services .extra .wrapper .chooseExperts .expertWrapper .experts p:nth-of-type(2),
+.container .body .services .extra .wrapper .chooseExperts .expertWrapper .experts span {
+  font-family: initial;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  font-weight: 500;
+}
+.container .body .services .extra .wrapper .chooseExperts .expertWrapper .experts h1 {
+  color: rgb(41, 41, 41);
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+}
+[data-theme=dark] .container .body .services .extra .wrapper .chooseExperts .expertWrapper .experts h1 {
+  color: white;
+}
+.container .body .services .extra .wrapper .chooseExperts .expertWrapper img {
+  width: 89px;
+  height: 89px;
+  border-radius: 9px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .body .services .extra .dateConteiner .dateWrapper .choosedate {
+  color: rgb(41, 41, 41);
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  margin: 20px 0;
+}
+[data-theme=dark] .container .body .services .extra .dateConteiner .dateWrapper .choosedate {
+  color: var(--color-text);
+}
+.container .body .services .extra .dateConteiner .dateWrapper .bookingContent {
+  display: flex;
+  flex-direction: column;
+}
+.container .body .services .extra .dateConteiner .dateWrapper .bookingContent .bookingWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.container .body .services .extra .dateConteiner .dateWrapper .bookingContent .bookingWrapper .Calendar {
+  border-radius: 8px;
+  border: 1px solid rgb(189, 189, 189);
+  width: 34%;
+}
+.container .body .services .extra .dateConteiner .dateWrapper .bookingContent .bookingWrapper .date {
+  width: 60%;
+  height: auto;
+}
+.container .body .services .extra .dateConteiner .buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 20px 0;
+}
+.container .body .services .extra .dateConteiner .buttons button {
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 110px;
+  height: 40px;
+  background-color: rgb(212, 163, 115);
+  border-radius: 4px;
+}
+.container .body .cart {
+  width: 373px;
+  max-height: 700px;
+  border: 1px solid rgba(70, 70, 70, 0.45);
+  border-radius: 8px;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.container .body .cart .emptycart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.container .body .cart .emptycart svg {
+  color: black;
+}
+[data-theme=dark] .container .body .cart .emptycart svg {
+  color: white;
+}
+.container .body .cart .cartConteiner {
+  height: 100%;
+}
+.container .body .cart .cartConteiner .cartWrapper {
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+.container .body .cart .cartConteiner .cartWrapper .expertName {
+  display: flex;
+}
+.container .body .cart .cartConteiner .cartWrapper .expertName img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 0 5px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .body .cart .cartConteiner .cartWrapper .expertName p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(41, 41, 41);
+  font-family: "Manrope", sans-serif;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.container .body .cart .cartConteiner .cartWrapper .expertName p svg {
+  color: black;
+}
+[data-theme=dark] .container .body .cart .cartConteiner .cartWrapper .expertName p svg {
+  color: white;
+}
+.container .body .cart .cartConteiner .cartWrapper .expertName p svg {
+  cursor: pointer;
+}
+[data-theme=dark] .container .body .cart .cartConteiner .cartWrapper .expertName p {
+  color: white;
+}
+.container .body .cart .cartConteiner .cartWrapper .serviceNamEndPrice {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+}
+.container .body .cart .cartConteiner .cartWrapper .serviceNamEndPrice span {
+  font-size: 16px;
+}
+.container .body .cart .cartConteiner .cartWrapper .date {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+}
+.container .body .cart .cartConteiner .cartWrapper .removebtn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .body .cart .cartConteiner .cartWrapper .removebtn .button {
+  margin: 8px 0 0 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: red;
+  height: auto;
+  width: auto;
+}
+.container .body .cart .totalcont {
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .body .cart .totalcont p {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-text);
+  margin: 0 0 40px 0;
+}
+.container .body .cart .totalcont .total {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.container .body .cart .cartcont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .body .cart .cartcont [data-theme=dark] svg {
+  color: white;
+}
+.container .body .cart .cartcont p {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-text);
+  margin: 0 0 20px 0;
+}
+.container .body .cart .cartcont p:nth-child(2) {
+  font-size: 14px;
+}
+.container .body .cart .disabled {
+  border: none;
+  height: 56px;
+  width: 100%;
+  cursor: not-allowed;
+  border-radius: 4px;
+  background-color: rgb(224, 224, 224);
+  color: rgb(152, 152, 152);
+}
+[data-theme=dark] .container .body .cart .disabled {
+  background-color: rgb(55, 55, 55);
+  color: white;
+}
+.container .body .cart button:not(:disabled) {
+  border-radius: 4px;
+  background-color: rgb(212, 163, 115);
+  color: white;
+  width: 100%;
+  height: 56px;
+  cursor: pointer;
+  border: none;
+}
+.container .body .cart svg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+[data-theme=dark] .container .checkbox {
+  color: white;
+}
+
+@media screen and (max-width: 1350px) {
+  .container .body {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 155px 120px;
+  }
+  .container .body .cart {
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+  }
+  .container .body .services .extra .dateConteiner .dateWrapper .bookingContent .bookingWrapper .Calendar {
+    width: 40%;
+  }
+  .container .body .services .extra .dateConteiner .dateWrapper .bookingContent .bookingWrapper .date {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container .body {
+    padding: 155px 28px;
+  }
+  .container .body .services .service {
+    margin: 0 0 22px 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container .body {
+    padding: 50px 28px;
+  }
+  .container .body .services .extra .dateConteiner .dateWrapper .bookingContent .bookingWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .body .services .extra .dateConteiner .dateWrapper .bookingContent .bookingWrapper .Calendar {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .container .body .services .extra .dateConteiner .dateWrapper .bookingContent .bookingWrapper .date {
+    width: 100%;
+  }
+  .container .body .services .service {
+    padding: 10px;
+    margin: 0 0 22px 0;
+  }
+  .container .body .services .service .servicewrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .body .services .service .servicewrapper img {
+    width: 100%;
+    height: 280px;
+    min-width: 100px;
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 6px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container .body .services .service .servicewrapper .text {
+    padding: 15px 0 0 0;
+  }
+  .container .body .services .service .servicewrapper .text h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container .body .services .cart {
+    padding: 20px 16px;
+  }
+  .container .body .services .service .servicewrapper .text .buy {
+    align-items: center;
+  }
+  .container .body .services .service .servicewrapper .text .buy .buyservice {
+    width: 90%;
+  }
+  .container .body .services .service .servicewrapper .text .buy .buyservice p {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=services.module.css.map */

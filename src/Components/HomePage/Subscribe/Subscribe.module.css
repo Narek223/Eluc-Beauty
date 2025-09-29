@@ -37,12 +37,12 @@
   font-family: "Manrope", sans-serif;
   font-weight: 300;
   font-size: 14px;
-  color: #E8E8E8;
+  color: #e8e8e8;
   line-height: 35px;
 }
 .subscribeContainer .subscribeWrapper .subscribeContent button {
   border: none;
-  background-color: #D4A373;
+  background-color: #d4a373;
   color: white;
   border-radius: 4px;
   height: 56px;
@@ -58,20 +58,55 @@
   font-family: "Manrope", sans-serif;
   font-weight: 300;
   font-size: 14px;
-  color: #E8E8E8;
+  color: #e8e8e8;
   background-color: rgba(255, 255, 255, 0.1);
   margin-bottom: 16px;
   outline: none;
 }
 .subscribeContainer .subscribeWrapper .subscribeContent input::-moz-placeholder {
-  color: #E8E8E8;
+  color: #e8e8e8;
   opacity: 0.7;
 }
 .subscribeContainer .subscribeWrapper .subscribeContent input::placeholder {
-  color: #E8E8E8;
+  color: #e8e8e8;
   opacity: 0.7;
 }
 
 [data-theme=dark] .subscribeContainer {
   filter: brightness(0.8) contrast(1.1);
+}
+
+@media screen and (max-width: 700px) {
+  .subscribeContainer .subscribeWrapper {
+    padding: 0;
+    align-items: center;
+  }
+  .subscribeContainer .subscribeWrapper .subscribeContent {
+    height: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subscribeContainer .subscribeWrapper {
+    padding: 0 20px;
+    align-items: baseline;
+  }
+  .subscribeContainer .subscribeWrapper .subscribeContent {
+    width: 100%;
+  }
+  .subscribeContainer .subscribeWrapper .subscribeContent input {
+    width: 100%;
+  }
+  .subscribeContainer .subscribeWrapper .subscribeContent button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .subscribeContainer {
+    background-position: right;
+  }
+  .subscribeContainer .subscribeWrapper .subscribeContent p {
+    line-height: normal;
+    margin: 16px 0;
+  }
 }/*# sourceMappingURL=Subscribe.module.css.map */

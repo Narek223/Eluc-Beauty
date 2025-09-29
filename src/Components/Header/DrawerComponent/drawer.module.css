@@ -1,0 +1,72 @@
+.drawer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.drawer .boxConteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.drawer .boxConteiner .box .navtext .link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.drawer .boxConteiner .box .navtext .link .btn {
+  border-bottom: 0.5px solid rgb(189, 189, 189);
+  font-weight: 500;
+  font-size: 0px;
+  font-family: Manrope, sans-serif;
+  padding: 8px 0;
+  color: rgb(41, 41, 41);
+}
+[data-theme=dark] .drawer .boxConteiner .box .navtext .link .btn {
+  color: white;
+}
+.drawer .boxConteiner .box .navtext .link .btn p {
+  color: rgb(82, 82, 82);
+  font-size: 15px;
+  min-width: 0px;
+}
+[data-theme=dark] .drawer .boxConteiner .box .navtext .link .btn p svg {
+  color: var(--color-text);
+}
+.drawer .boxConteiner .ContactsandLang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.drawer .boxConteiner .ContactsandLang .contactIcons {
+  display: flex;
+  padding: 0 16px;
+  margin: 10px 0;
+}
+.drawer .boxConteiner .ContactsandLang .contactIcons ul {
+  display: flex;
+  gap: 16px;
+}
+.drawer .boxConteiner .ContactsandLang .contactIcons ul li {
+  cursor: pointer;
+  list-style: none;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drawer .boxConteiner .ContactsandLang .contactIcons ul li .icons {
+  color: rgb(82, 82, 82);
+  width: 24px;
+  height: 24px;
+}
+.drawer .boxConteiner .ContactsandLang .contactIcons ul li .icons:hover {
+  color: rgb(234, 225, 225);
+}
+[data-theme=dark] .drawer .boxConteiner .ContactsandLang .contactIcons ul li .icons {
+  color: var(--color-text-secondary);
+}
+[data-theme=dark] .drawer .boxConteiner .ContactsandLang .contactIcons ul li .icons:hover {
+  color: var(--color-primary);
+}/*# sourceMappingURL=drawer.module.css.map */

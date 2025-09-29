@@ -13,11 +13,11 @@
   font-weight: normal;
   font-style: normal;
 }
+button:not(:disabled):active {
+  
+ transform: scale(0.9);
+}
 
-/* button:active {
-  transform: scale(0.9);
-
-} */
 
 @import './styles/theme.css';
 
@@ -25,4 +25,23 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   transition: background 0.3s, color 0.3s;
+}
+.react-tel-input .flag-dropdown {
+background-color: var(--input-color) !important;  
+
+        border: 2.5px solid var(  --color-border)  !important;
+    border-right: none !important;
+      transition: none !important; 
+    
+}
+
+  
+
+
+.react-tel-input .form-control {
+  padding-left: 45px !important; 
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+    background-color: var(--input-color) !important;  
 }

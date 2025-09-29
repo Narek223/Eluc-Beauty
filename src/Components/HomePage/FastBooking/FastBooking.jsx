@@ -15,8 +15,6 @@ export default function FastBooking() {
     (state) => state.FastBook
   );
 
-
-
   return (
     <div className={styles.bookingCont}>
       <div className={styles.boogkingWrapper}>
@@ -31,7 +29,12 @@ export default function FastBooking() {
               servicesobj={service}
             />
           </div>
-          <PopoveExperts value={services}  state={expert}      expert={(val) => dispatch(fastBooking.setexperts(val))}/>
+          <PopoveExperts
+            value={services}
+            state={expert}
+            expert={(val) => dispatch(fastBooking.setexperts(val))}
+          />
+
           <Calendar
             setDate={(date) => dispatch(fastBooking.setdate(date))}
             value={date}
@@ -40,13 +43,11 @@ export default function FastBooking() {
             <TimeSelect
               value={time}
               onChange={(val) => dispatch(fastBooking.settime(val))}
-              // state={time}
-              // label="Any time"
-              // iconimg={timeicon}
             />
           </div>
-
-          <button className={styles.bookbutton}>Book</button>
+          <div className={styles.btnconteiner}>
+            <button className={styles.bookbutton}>Book</button>
+          </div>
         </div>
       </div>
     </div>

@@ -7,14 +7,13 @@
   .textslide {
     display: flex;
     max-width: 1000px;
+    align-items: center;
+    justify-content: center;
 
-    .img {
-    }
     .text {
-   
       width: 650px;
       height: 400px;
-       padding: 10px;
+      padding: 10px;
       .title {
         font-weight: 400;
         display: flex;
@@ -33,18 +32,32 @@
       }
       .textSlider {
         width: 100%;
+        .img {
+  display: flex;
+
+
+  .mySvg {
+    width: 100%;      
+    height: auto;      
+    max-width: 300px;  
+  }
+}
         .textContent {
-       height: 150px;
+          height: 150px;
           p {
-          
-            color: var(--color-text--secondary);
+          font-family: "Manrope", sans-serif;
+
+        color: rgba(98, 94, 92, 1);
             font-weight: 300;
             font-size: 18px;
+              [data-theme="dark"] &{
+                color:white;
+              }
           }
           h2 {
             color: var(--color-text);
             padding: 14px 0 0 0;
-    
+
             font-weight: 400;
             font-size: 18px;
           }
@@ -56,4 +69,46 @@
 .swiper-pagination {
   bottom: -30px !important;
   position: absolute;
+}
+@media screen and (max-width: 1200px) {
+  .conteiner {
+    height: auto;
+    .textslide {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .conteiner {
+ padding: 0 28px ;
+   
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .conteiner {
+svg{
+  width: 100%;
+  height: auto;
+}
+    .textslide {
+      width: 100%;
+      .text {
+   width: 100%;
+
+        .title {
+          flex-direction: column;
+          h1 {
+            font-size: 30px;
+          }
+          h1:nth-child(2) {
+            font-size: 54px;
+            color: red;
+            font-family: "MyCustomFont", sans-serif;
+          }
+        }
+      }
+    }
+  }
 }

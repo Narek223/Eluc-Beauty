@@ -28,13 +28,12 @@
 
     gap: 14px;
     .expertsProfil {
-   
       display: flex;
       align-items: flex-end;
       justify-content: center;
       padding: 20px;
-      width: 300px;
-      height: 354px;
+      width: auto;
+      height: auto;
       border-radius: 12px;
       background-repeat: no-repeat;
       background-size: cover;
@@ -46,10 +45,41 @@
         }
       }
     }
-
   }
 }
 
-      [data-theme="dark"]  .expertsProfil {
+[data-theme="dark"] .expertsProfil {
   filter: brightness(0.8) contrast(1.1);
+}
+
+@media screen and (max-width: 1350px) {
+  .expertsConteiner {
+    .ExpertsTitle {
+      padding: 120px 0 56px 120px;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .expertsConteiner {
+    .ExpertsTitle {
+      padding: 120px 0 56px 28px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .expertsConteiner {
+    .ExpertsTitle {
+      h1 {
+        font-size: 30px;
+        &:nth-child(1) {
+        width: 200px;
+          font-size: 30px;
+        }
+        &:nth-child(2) {
+          font-size: 50px;
+        }
+      }
+      padding: 120px 0 16px 28px;
+    }
+  }
 }

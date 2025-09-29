@@ -31,4 +31,48 @@
   font-size: 128px;
   font-weight: 300;
   font-family: "Manrope", sans-serif;
+}
+
+@media screen and (max-width: 1300px) {
+  .experienceCounterContainer .experienceCounterWrapper {
+    padding: 30px 120px;
+  }
+  .experienceCounterContainer .experienceCounterWrapper div {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .experienceCounterContainer {
+    height: auto;
+  }
+  .experienceCounterContainer .experienceCounterWrapper {
+    flex-direction: column;
+  }
+  .experienceCounterContainer .experienceCounterWrapper div h1 {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .experienceCounterContainer {
+    height: auto;
+  }
+  .experienceCounterContainer .experienceCounterWrapper {
+    padding: 0;
+    flex-direction: column;
+  }
+  .experienceCounterContainer .experienceCounterWrapper div h1 {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .experienceCounterContainer {
+    height: auto;
+  }
+  .experienceCounterContainer .experienceCounterWrapper {
+    padding: 0;
+    flex-direction: column;
+  }
+  .experienceCounterContainer .experienceCounterWrapper div h1 {
+    width: 25%;
+  }
 }/*# sourceMappingURL=ExperienceCounter.module.css.map */

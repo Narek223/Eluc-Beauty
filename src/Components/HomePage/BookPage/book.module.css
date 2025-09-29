@@ -31,11 +31,11 @@
 }
 .bookContainer .bookWrapper .bookContent p {
   margin: 20px 0;
-  color: #dcdcdc;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  color: white;
+  color: rgb(239, 239, 239);
+  font-family: Manrope, sans-serif;
 }
 .bookContainer .bookWrapper button {
   cursor: pointer;
@@ -57,4 +57,27 @@
 
 [data-theme=dark] .bookContainer {
   filter: brightness(0.8) contrast(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .bookContainer .bookWrapper {
+    gap: 30px;
+  }
+  .bookContainer .bookWrapper .bookContent {
+    width: 80%;
+  }
+  .bookContainer .bookWrapper .bookContent p {
+    font-size: 18px;
+  }
+  .bookContainer .bookWrapper .bookContent h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .bookContainer .bookWrapper {
+    gap: 30px;
+  }
+  .bookContainer .bookWrapper .bookContent {
+    width: 90%;
+  }
 }/*# sourceMappingURL=book.module.css.map */

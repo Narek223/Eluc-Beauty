@@ -67,4 +67,49 @@
 .confirmContainer .confirmbtn:not(:disabled) {
   background-color: rgb(212, 163, 115);
   cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .confirmContainer {
+    margin: 0;
+    width: 100%;
+  }
+  .confirmContainer h2 {
+    color: white;
+  }
+  .confirmContainer p {
+    color: rgb(239, 239, 239);
+  }
+  .confirmContainer .resendtext {
+    margin: 0 0 25px 0;
+    color: rgb(239, 239, 239);
+  }
+  .confirmContainer .codeinputs {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .confirmContainer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .confirmContainer .codeinputs {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .confirmContainer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .confirmContainer .codeinputs {
+    gap: 15px;
+  }
+  .confirmContainer .codeinputs input {
+    background: transparent;
+    border: 1px solid white;
+    width: 45px;
+  }
 }/*# sourceMappingURL=Confirm.module.css.map */

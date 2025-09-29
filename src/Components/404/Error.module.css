@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 .errorConteiner .errorWrapper h1:nth-child(1) {
   font-size: 140px;
@@ -26,11 +26,17 @@
   font-size: 40px;
   color: rgb(70, 70, 70);
 }
-.errorConteiner .errorWrapper P {
+.errorConteiner .errorWrapper p {
   color: rgb(124, 124, 124);
   font-size: 20px;
   font-weight: 400;
   font-family: "Manrope", sans-serif;
+  max-width: 600px;
+}
+.errorConteiner .errorWrapper img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
 }
 .errorConteiner .errorWrapper button {
   border: 1px solid rgb(137, 110, 88);
@@ -43,7 +49,7 @@
   height: 48px;
   position: relative;
   border-radius: 4px;
-  cursor: pointer;
+  transition: 0.3s ease;
 }
 .errorConteiner .errorWrapper button::before {
   content: "";
@@ -64,4 +70,44 @@
 }
 .errorConteiner .errorWrapper button:active {
   transform: scale(0.97);
+}
+
+@media (max-width: 768px) {
+  .errorWrapper h1:nth-child(1) {
+    font-size: 90px;
+  }
+  .errorWrapper h1:nth-child(2) {
+    font-size: 26px;
+  }
+  .errorWrapper p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+  .errorWrapper img {
+    max-width: 300px;
+  }
+  .errorWrapper button {
+    width: 160px;
+    height: 44px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .errorWrapper h1:nth-child(1) {
+    font-size: 70px;
+  }
+  .errorWrapper h1:nth-child(2) {
+    font-size: 20px;
+  }
+  .errorWrapper p {
+    font-size: 14px;
+  }
+  .errorWrapper img {
+    max-width: 220px;
+  }
+  .errorWrapper button {
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Error.module.css.map */

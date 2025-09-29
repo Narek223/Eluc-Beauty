@@ -9,7 +9,7 @@ import verificationSlice from "../Slices/SignIn/verificationSlice";
 import profileSlice from "../Slices/Profile/profileSlice";
 import Popoverslice  from "../Slices/FastBooking/Popover";
 import TimeSlice from "../Slices/FastBooking/Time";
-
+import serviceSlice  from "../Slices/Services/services";
 export const store = configureStore({
   reducer: {
     language: languageSlice,
@@ -21,7 +21,8 @@ export const store = configureStore({
     verification: verificationSlice,
     profile: profileSlice,
     popover: Popoverslice,
-    time: TimeSlice
+    time: TimeSlice,
+    service:serviceSlice
 
   },
 });

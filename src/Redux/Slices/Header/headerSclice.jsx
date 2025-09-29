@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   isScrolled: false,
+  showNavbar: false,
 };
 
 export const headerSlice = createSlice({
@@ -11,9 +12,11 @@ export const headerSlice = createSlice({
     setIsScrolled: (state, action) => {
       state.isScrolled = action.payload;
     },
+    setShowNavbar: (state, action) => {
+      state.showNavbar = action.payload;
+    },
   },
 });
 
-
-export const { setIsScrolled } = headerSlice.actions;
+export const { setIsScrolled, setShowNavbar } = headerSlice.actions;
 export default headerSlice.reducer;

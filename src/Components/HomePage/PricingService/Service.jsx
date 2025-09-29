@@ -26,8 +26,11 @@ export default function Service() {
               <p>{t(item.descKey)}</p>
             </div>
             <span className={styles.dots}></span>
-            {item.newPrice && <span className={styles.newprice}>{item.newPrice}</span>}
+            <div className={styles.prices}>
+   {item.newPrice && <span className={styles.newprice}>{item.newPrice}</span>}
             <span className={styles.price}>{item.price}</span>
+            </div>
+         
           </div>
         ))}
       </div>

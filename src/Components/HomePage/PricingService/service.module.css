@@ -75,6 +75,45 @@
   border-radius: 4px;
   background-color: red;
 }
-.serviceContainer .service .price:first-of-type {
+.serviceContainer .prices span:nth-of-type(2) {
   text-decoration: line-through;
+}
+
+@media screen and (max-width: 1000px) {
+  .serviceContainer {
+    height: 100%;
+  }
+  .serviceContainer .serviceWrapper {
+    height: 100%;
+    padding: 45px 28px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .serviceContainer .serviceWrapper .service {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .serviceContainer .serviceWrapper .service .serviceItem h1 {
+    margin: 5px 0;
+  }
+  .serviceContainer .serviceWrapper .service .prices {
+    display: flex;
+  }
+  .serviceContainer .serviceWrapper .service .prices span {
+    margin: 0 10px 0 0;
+  }
+  .serviceContainer .serviceWrapper .service .dots {
+    margin: 5px 0;
+  }
+  .serviceContainer .serviceWrapper .service .newprice {
+    margin: 0 0 10px 0;
+  }
+  .serviceContainer .serviceWrapper .serviceHeader h1 {
+    margin: 5px 0;
+    font-size: 30px;
+  }
+  .serviceContainer .serviceWrapper .serviceHeader h1 span {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=service.module.css.map */

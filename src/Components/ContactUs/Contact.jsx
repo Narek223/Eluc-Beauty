@@ -4,10 +4,11 @@ import ContactImg from "../../assets/ContactUs/Image.png";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { validationSchema } from "../Utils/validation";
 import { useTranslation } from "react-i18next";
+import Phone from "../../SharedComponents/PhoneComponent/Phone";
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
 
   const initialValues = {
     FullName: "",
@@ -71,22 +72,10 @@ export default function Contact() {
                     component="div"
                     className={styles.error}
                   />
-
                   <Field
-                    type="tel"
                     name="Phonenumber"
-                    id="password"
+                    component={Phone}
                     placeholder={t("contact.phone")}
-                    className={` ${
-                      touched.Phonenumber && errors.Phonenumber
-                        ? styles.inputError
-                        : ""
-                    }`}
-                  />
-                  <ErrorMessage
-                    name="Phonenumber"
-                    component="div"
-                    className={styles.error}
                   />
                   <Field
                     as="textarea"

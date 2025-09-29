@@ -34,3 +34,56 @@
     }
   }
 }
+
+@media screen and (max-width: 1300px) {
+  .experienceCounterContainer {
+    .experienceCounterWrapper {
+      padding: 30px 120px;
+      // flex-direction: column;
+      div {
+        width: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1150px) {
+  .experienceCounterContainer {
+    height: auto;
+    .experienceCounterWrapper {
+      flex-direction: column;
+      div{
+        h1{
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .experienceCounterContainer {
+    height: auto;
+    .experienceCounterWrapper {
+      padding:0;
+      flex-direction: column;
+      div{
+        h1{
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .experienceCounterContainer {
+    height: auto;
+    .experienceCounterWrapper {
+      padding:0;
+      flex-direction: column;
+      div{
+        h1{
+          width: 25%;
+        }
+      }
+    }
+  }
+}

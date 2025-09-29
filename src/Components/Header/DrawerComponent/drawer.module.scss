@@ -1,0 +1,91 @@
+.drawer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .boxConteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .box {
+      .navtext {
+        .link {
+          width: 100%;
+          display: flex;
+          align-items: center;
+
+          .btn {
+            border-bottom: 0.5px solid rgba(189, 189, 189, 1);
+            font-weight: 500;
+            font-size: 0px;
+            font-family: Manrope, sans-serif;
+            padding: 8px 0;
+            color: rgba(41, 41, 41, 1);
+
+            [data-theme="dark"] & {
+              color: white;
+            }
+
+            p {
+              color: rgba(82, 82, 82, 1);
+              font-size: 15px;
+              min-width: 0px;
+
+              svg {
+                [data-theme="dark"] & {
+                  color: var(--color-text);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .ContactsandLang{
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+.contactIcons {
+      display: flex;
+      padding: 0 16px;
+      margin: 10px 0;
+
+      ul {
+        display: flex;
+        gap: 16px;
+
+        li {
+          cursor: pointer;
+          list-style: none;
+          width: 44px;
+          height: 44px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .icons {
+            color: rgba(82, 82, 82, 1);
+            width: 24px;
+            height: 24px;
+
+            &:hover {
+              color: rgba(234, 225, 225);
+            }
+            [data-theme="dark"] & {
+              color: var(--color-text-secondary);
+              
+              &:hover {
+                color: var(--color-primary);
+              }
+            }
+          }
+        }
+      }
+    }
+    }
+    
+  }
+}
+

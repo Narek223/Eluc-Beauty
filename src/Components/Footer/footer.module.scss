@@ -76,3 +76,63 @@
   [data-theme="dark"] .mapSection{
   filter: brightness(0.8) contrast(1.1);
 }
+
+
+@media screen and (max-width:1150px) {
+  .contactBox{
+    left: 120px;
+  }
+.footerBottom{
+  p{
+    width: 65%;
+  }
+}
+}
+@media screen and (max-width:1000px) {
+  .contactBox{
+    left: 100px;
+  }
+.footerBottom{
+  p{
+    width: 70%;
+  }
+}
+}
+@media screen and (max-width:900px) {
+  .contactBox{
+    left: 80px;
+  }
+.footerBottom{
+  p{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:750px) {
+
+.footerBottom{
+  p{
+    width: 90%;
+  }
+}
+}
+
+}
+@media screen and (max-width:750px) {
+
+.footerBottom{
+  p{
+    width: 98%;
+  }
+}
+}
+@media screen and (max-width:500px) {
+  .contactBox{
+    left: 60px;
+  }
+.footerBottom{
+  p{
+    width: 98%;
+  }
+}
+}

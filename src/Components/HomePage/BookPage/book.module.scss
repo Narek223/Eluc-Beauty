@@ -28,11 +28,12 @@
       }
       p {
         margin: 20px 0;
-        color: #dcdcdc;
+
         font-size: 24px;
         font-weight: 300;
         text-align: center;
-        color: white;
+        color: rgba(239, 239, 239, 1);
+        font-family: Manrope, sans-serif;
       }
     }
     button {
@@ -49,12 +50,39 @@
       }
     }
   }
-  .bookimg{
-    img{
-       object-fit: cover;
+  .bookimg {
+    img {
+      object-fit: cover;
     }
   }
 }
-  [data-theme="dark"] .bookContainer{
+[data-theme="dark"] .bookContainer {
   filter: brightness(0.8) contrast(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .bookContainer {
+    .bookWrapper {
+      gap: 30px;
+      .bookContent {
+        width: 80%;
+        p {
+          font-size: 18px;
+        }
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .bookContainer {
+    .bookWrapper {
+      gap: 30px;
+      .bookContent {
+        width: 90%;
+      }
+    }
+  }
 }

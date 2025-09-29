@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
+import { breakpoints } from "../../../Services/Date/HomePage/breakpoints";
 
 
 export default function Experts() {
@@ -31,8 +31,9 @@ export default function Experts() {
             pauseOnMouseEnter: true,
           }}
           speed={3000}
-          loop={true}
+          loop={false}
           allowTouchMove={true}
+          breakpoints={breakpoints}
         >
           {ExpertsObj.map((elem) => (
          

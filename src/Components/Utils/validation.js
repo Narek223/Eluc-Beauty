@@ -14,7 +14,7 @@ import * as Yup from "yup";
       ),
     Phonenumber: Yup.string()
       .required("Please enter your phone number")
-      .matches(/^(\+49|0)[1-9][0-9\s\-()]{7,}$/, "Enter a valid phone number"),
+      .matches(/^[1-9][0-9\s\-()]{7,}$/, "Enter a valid phone number"),
     message: Yup.string()
       .required("Please enter your message")
       .min(10, "Message must be at least 10 characters"),
@@ -27,7 +27,7 @@ const validation = Yup.object({
       .max(20, "Name must be at most 20 characters"),
     Phonenumber: Yup.string()
       .required("Please enter your phone number")
-      .matches(/^(\+49|0)[1-9][0-9\s\-()]{7,}$/, "Enter a valid phone number"),
+      .matches(/[1-9][0-9\s\-()]{7,}$/, "Enter a valid phone number"),
  
   });
 

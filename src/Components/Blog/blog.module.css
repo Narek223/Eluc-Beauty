@@ -135,4 +135,59 @@
   font-weight: 400;
   font-size: 32px;
   color: var(--color-text);
+}
+
+@media screen and (max-width: 1350px) {
+  .conteiner .blog {
+    margin: 0 120px;
+  }
+  .conteiner .recentPost .postsConteiner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .conteiner .path {
+    display: none;
+  }
+  .conteiner .blog {
+    margin: 0 28px;
+  }
+  .conteiner .blog .conteinerWrapper {
+    margin: 50px 0 0 0;
+  }
+  .conteiner .blog .conteinerWrapper .newPost .BlogContent h1 {
+    font-size: 20px;
+  }
+  .conteiner .recentPost .postsConteiner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .conteiner .recentPost .postsConteiner .posts {
+    margin: 30px 0 0 0;
+  }
+  .conteiner .recentPost .postsConteiner .posts a h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .conteiner .recentPost .postsConteiner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .conteiner .recentPost .postsConteiner .posts {
+    margin: 30px 0 0 0;
+  }
+  .conteiner .recentPost .postsConteiner .posts a img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .conteiner .blog .conteinerWrapper .newPost {
+    border-radius: 20px;
+    height: 500px;
+  }
+  .conteiner .recentPost .postsConteiner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .conteiner .recentPost .postsConteiner .posts {
+    margin: 30px 0 0 0;
+  }
 }/*# sourceMappingURL=blog.module.css.map */

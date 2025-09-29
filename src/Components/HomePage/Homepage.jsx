@@ -45,19 +45,19 @@ export default function Homepage() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div>
+      <div>
             <FastBooking />
           </div>
         </div>
         <Services />
         <Service />
-        <ExperienceCounter />
+     <ExperienceCounter />
         <About />
 
         <Book />
-        <Experts />
-        <Testimonials />
-        <Subscribe />
+         <Experts />
+     <Testimonials />
+        <Subscribe />  
       </div>
     </div>
   );

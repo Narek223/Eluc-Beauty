@@ -1,4 +1,5 @@
 .profileContainer {
+  cursor: pointer;
   button {
     width: 381px;
     display: flex;
@@ -6,12 +7,17 @@
     justify-content: flex-end;
     gap: 8px;
     font-size: 16px;
+    cursor: pointer;
     font-weight: 300;
-     color: var( --color-text);
+    color: var(--color-text);
     border: none;
     background-color: transparent;
-
     font-family: "Manrope", sans-serif;
+
+    &:active {
+      transform: scale(1);
+    }
+
     .icon {
       width: 28px;
       height: 28px;
@@ -58,7 +64,7 @@
     border-bottom: 1px solid var(--color-text);
     padding: 30px 0;
     p:nth-of-type(1) {
-    color: var(--color-text);
+      color: var(--color-text);
       font-size: 14px;
       font-weight: 400;
       font-family: "Manrope", sans-serif;
@@ -66,7 +72,7 @@
 
     p {
       font-size: 16px;
-          color: var(--color-text-secondary);
+      color: var(--color-text-secondary);
     }
     .icon {
       width: 18px;
@@ -132,14 +138,13 @@
       display: flex;
       justify-content: space-between;
       margin: 0 0 24px 0;
-            color:var(--color-text)
+      color: var(--color-text);
     }
     .darkmode {
       display: flex;
       justify-content: space-between;
-      color:var(--color-text)
+      color: var(--color-text);
     }
-
   }
   .log {
     cursor: pointer;
@@ -151,7 +156,7 @@
       font-weight: 500;
       font-size: 15px;
       display: flex;
-    align-items: center;
+      align-items: center;
       color: rgba(189, 189, 189, 1);
       [data-theme="dark"] & {
         color: white;
@@ -160,6 +165,45 @@
         color: var(--color-text);
         width: 24px;
       }
+    }
+  }
+}
+@media screen and (max-width: 1510px) {
+  .profileContainer {
+    button {
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .profileContainer {
+    button {
+      width: 273px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .profileContainer {
+    button {
+      width: 234px;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .profileContainer {
+    button {
+      width: auto;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .profileContainer {
+    .profileBox {
+      width: 100%;
+    }
+    button {
+      width: auto;
     }
   }
 }

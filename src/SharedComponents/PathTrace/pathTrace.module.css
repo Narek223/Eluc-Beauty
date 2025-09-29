@@ -40,4 +40,23 @@
   cursor: pointer;
   list-style: none;
   color: var(--color-text);
+}
+
+@media screen and (max-width: 1300px) {
+  .pathConteiner .pathWrapper {
+    padding: 0 120px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .pathConteiner .pathWrapper {
+    padding: 0 28px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .pathConteiner {
+    display: none;
+  }
+  .pathConteiner .pathWrapper {
+    padding: 0 28px;
+  }
 }/*# sourceMappingURL=pathTrace.module.css.map */

@@ -25,13 +25,12 @@
         margin: 24px 0;
         font-size: 18px;
         font-weight: 500;
-   
-  color: var(--pricing-text-color);
 
+        color: var(--pricing-text-color);
       }
     }
     .service {
-      margin: 24px 0 ;
+      margin: 24px 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -49,11 +48,11 @@
           margin-right: 10px;
           font-family: "Manrope", sans-serif;
         }
-        p{
-               font-family: "Manrope", sans-serif;
-               font-size: 14px;
-                font-weight: 300;
-                color: var(--pricing-text-color);
+        p {
+          font-family: "Manrope", sans-serif;
+          font-size: 14px;
+          font-weight: 300;
+          color: var(--pricing-text-color);
         }
       }
     }
@@ -72,21 +71,69 @@
       color: white;
       padding: 3px 8px;
       border-radius: 4px;
-     
- 
-   
     }
- 
-    .newprice{
-          white-space: nowrap;
+
+    .newprice {
+      white-space: nowrap;
       margin: 0 10px;
-    color: white;
+      color: white;
       padding: 3px 8px;
       border-radius: 4px;
       background-color: red;
     }
   }
-  .service .price:first-of-type {
-  text-decoration: line-through;
+ .prices span:nth-of-type(2) {
+    text-decoration: line-through;
+  }
 }
+
+@media screen and (max-width: 1000px) {
+  .serviceContainer {
+    height: 100%;
+    .serviceWrapper {
+height: 100%;
+      padding: 45px 28px;
+    }
+  }
 }
+@media screen and (max-width: 600px) {
+  .serviceContainer {
+    .serviceWrapper {
+
+     
+      .service {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+     
+        .serviceItem {
+          h1 {
+            margin: 5px 0;
+          }
+        }
+        .prices{
+          display: flex;
+          span{
+            margin: 0 10px 0 0;
+          }
+        }
+        .dots {
+          margin: 5px 0;
+        }
+          .newprice {
+          margin: 0 0 10px 0;
+        }
+      }
+      .serviceHeader {
+        h1 {
+          margin: 5px 0;
+          font-size: 30px;
+          span {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+

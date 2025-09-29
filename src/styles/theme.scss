@@ -9,6 +9,7 @@
   --header-bg: #856957;
   --pricing-text-color: #525252;
   --pricing-second-text: #7c7c7c;
+  --calendarDisabledDay: rgba(0,0,0,0.3);
 }
 
 [data-theme="dark"] {
@@ -22,4 +23,5 @@
   --header-bg: #121212;
   --pricing-text-color: #e4e6eb;
   --pricing-second-text: #b0b3b8;
+   --calendarDisabledDay:rgba(255,255,255,0.3);
 }

@@ -23,10 +23,16 @@ export default function CodeInput({styl}) {
     inputsRef.current[0]?.focus();
   }, []);
 
+  const isFullCodeEntered = code.every((digit) => digit !== "");
+  const isError = isFullCodeEntered && code.join("") !== "55555";
+
   return (
-    <div className={styl}>
+    <div className={styl} >
       {code.map((digit, index) => (
+
         <input
+        style={{border: isError ? '2px solid red' : '1px solid #030303ff'}}
+          className={`${styles.input} ${isError ? styles.error : ""}`}
           key={index}
           ref={(el) => (inputsRef.current[index] = el)}
           onChange={(e) => handleChange(e, index)}

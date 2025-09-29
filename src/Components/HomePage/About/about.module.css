@@ -12,6 +12,9 @@
   align-items: center;
   justify-content: center;
 }
+.aboutContainer .aboutWrapper .aboutContent svg {
+  margin: 0 100px;
+}
 .aboutContainer .aboutText {
   padding: 0 10px;
   width: 600px;
@@ -77,4 +80,67 @@
 .aboutContainer .aboutImages img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media screen and (max-width: 1150px) {
+  .aboutContainer .aboutWrapper {
+    flex-direction: column;
+  }
+  .aboutContainer .aboutWrapper .aboutText {
+    gap: 15px;
+  }
+  .aboutContainer .aboutWrapper p {
+    line-height: 20px;
+  }
+  .aboutContainer .aboutImages {
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .aboutContainer {
+    padding: 0 28px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .aboutContainer .aboutWrapper {
+    flex-direction: column;
+  }
+  .aboutContainer .aboutWrapper .aboutText .aboutTitle h1:nth-child(1) {
+    font-size: 40px;
+  }
+  .aboutContainer .aboutWrapper .aboutText .aboutTitle h1:nth-child(2) {
+    font-size: 52px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .aboutContainer .aboutWrapper {
+    width: 100%;
+  }
+  .aboutContainer .aboutWrapper .aboutText {
+    width: 100%;
+  }
+  .aboutContainer .aboutWrapper .aboutText .aboutTitle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .aboutContainer .aboutWrapper .aboutText .aboutTitle h1:nth-child(1) {
+    font-size: 30px;
+    line-height: 50px;
+    margin: 0 0 15px 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .aboutContainer .aboutWrapper .aboutContent svg {
+    margin: 0;
+  }
+  .aboutContainer .aboutWrapper .aboutText {
+    padding: 0;
+  }
+  .aboutContainer .aboutWrapper .aboutText .aboutTitle h1:nth-child(1) {
+    margin: 0;
+  }
+  .aboutContainer .aboutWrapper .aboutText .aboutTitle h1:nth-child(2) {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=about.module.css.map */

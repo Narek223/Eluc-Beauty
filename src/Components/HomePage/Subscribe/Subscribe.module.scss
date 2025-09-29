@@ -1,5 +1,4 @@
 .subscribeContainer {
-   
   height: 455px;
   width: 100%;
   background-image: url("../../../assets/HomePage/4135d7c1c10979b437d8bfdd7936b197d3f4a622.png");
@@ -8,51 +7,54 @@
   background-size: cover;
 
   .subscribeWrapper {
-       box-sizing: border-box;
+    box-sizing: border-box;
     padding: 104px 0 104px 120px;
     display: flex;
     flex-direction: column;
-gap: 20px;
+    gap: 20px;
     width: 100%;
     height: 100%;
-background: linear-gradient(95.48deg, rgba(6, 6, 6, 0.288) 10.6%, rgba(89, 72, 1, 0.2025) 97.01%);
+    background: linear-gradient(
+      95.48deg,
+      rgba(6, 6, 6, 0.288) 10.6%,
+      rgba(89, 72, 1, 0.2025) 97.01%
+    );
 
-// height: 247px;
+    // height: 247px;
 
-.subscribeContent{
-display: flex;
-flex-direction: column;
- h1{
+    .subscribeContent {
+      display: flex;
+      flex-direction: column;
+      h1 {
         font-family: "Italiana", sans-serif;
         font-weight: 400;
         font-size: 32px;
         color: white;
-        span{
-            font-family: "MyCustomFont", sans-serif;
-            font-weight: 400;
-            line-height: 35px;
-            font-size: 64px;
-            color: red;
+        span {
+          font-family: "MyCustomFont", sans-serif;
+          font-weight: 400;
+          line-height: 35px;
+          font-size: 64px;
+          color: red;
         }
-    }
-    p{
+      }
+      p {
         font-family: "Manrope", sans-serif;
         font-weight: 300;
         font-size: 14px;
-        color: #E8E8E8;
+        color: #e8e8e8;
         line-height: 35px;
-    }
-    button{
+      }
+      button {
         border: none;
-        background-color: #D4A373;
-        color:white;
+        background-color: #d4a373;
+        color: white;
         border-radius: 4px;
         height: 56px;
         width: 469px;
         cursor: pointer;
-
-    }
-    input{
+      }
+      input {
         width: 469px;
         height: 45px;
         border-radius: 4px;
@@ -61,21 +63,63 @@ flex-direction: column;
         font-family: "Manrope", sans-serif;
         font-weight: 300;
         font-size: 14px;
-        color: #E8E8E8;
+        color: #e8e8e8;
         background-color: rgba(255, 255, 255, 0.1);
         margin-bottom: 16px;
-outline: none;
+        outline: none;
         &::placeholder {
-            color: #E8E8E8;
-            opacity: 0.7; 
+          color: #e8e8e8;
+          opacity: 0.7;
         }
+      }
     }
-
-
-}
-   
   }
 }
-  [data-theme="dark"] .subscribeContainer {
+[data-theme="dark"] .subscribeContainer {
   filter: brightness(0.8) contrast(1.1);
+}
+
+@media screen and (max-width:700px) {
+  .subscribeContainer {
+    .subscribeWrapper{
+     padding: 0;
+          align-items: center;
+      .subscribeContent {
+        height: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media screen and (max-width:600px) {
+  .subscribeContainer {
+    .subscribeWrapper{
+padding: 0 20px;
+align-items: baseline;
+      .subscribeContent {
+        width: 100%;
+      input{
+        width: 100%;
+      }
+      button{
+        width: 100%;
+      }
+      }
+    }
+  }
+}
+@media screen and (max-width:450px) {
+  .subscribeContainer {
+      background-position: right;
+    .subscribeWrapper{
+
+      .subscribeContent {
+p{
+  line-height: normal;
+  margin: 16px 0;
+}
+   
+      }
+    }
+  }
 }

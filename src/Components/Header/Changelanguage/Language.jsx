@@ -48,6 +48,7 @@ export default function Language() {
               sx: {
                 backgroundColor: "#98896c",
                 color: "white !important",
+                
               },
             },
           }}
