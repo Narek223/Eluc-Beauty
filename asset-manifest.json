@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Eluc-Beauty/static/css/main.3f4982ff.css",
-    "main.js": "/Eluc-Beauty/static/js/main.5c6cb0e0.js",
+    "main.js": "/Eluc-Beauty/static/js/main.1de067f1.js",
     "static/js/453.68693753.chunk.js": "/Eluc-Beauty/static/js/453.68693753.chunk.js",
     "static/media/f05a93ff.png": "/Eluc-Beauty/static/media/c2672e91aab7b8fcf98747a80bb19520f05a93ff.f7332564534b167268dd.png",
     "static/media/d967c7d7.png": "/Eluc-Beauty/static/media/560781eaa3add70183aaf7b8e34eb7f7d967c7d7.b377ead6a9e45619cd1b.png",
@@ -30,11 +30,11 @@
     "static/media/Vector (1).svg": "/Eluc-Beauty/static/media/Vector (1).ee9da169882e9884e09b5a2789f4e527.svg",
     "index.html": "/Eluc-Beauty/index.html",
     "main.3f4982ff.css.map": "/Eluc-Beauty/static/css/main.3f4982ff.css.map",
-    "main.5c6cb0e0.js.map": "/Eluc-Beauty/static/js/main.5c6cb0e0.js.map",
+    "main.1de067f1.js.map": "/Eluc-Beauty/static/js/main.1de067f1.js.map",
     "453.68693753.chunk.js.map": "/Eluc-Beauty/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3f4982ff.css",
-    "static/js/main.5c6cb0e0.js"
+    "static/js/main.1de067f1.js"
   ]
 }
