@@ -30,7 +30,7 @@ Demo: *(coming soon — add deployment URL here when available)*
 - Reusable and testable components
 
 ---
-# Project structure (short)
+# Project structure 
 
 - src/
   - assets/ — images, icons
