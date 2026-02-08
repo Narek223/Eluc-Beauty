@@ -47,9 +47,17 @@ Demo: *(coming soon — add deployment URL here when available)*
 ---
 
 ## 📸 Screenshots
-<img src="src/assets/Screenshots/HomePage.png" width="600" />
-<img src="src/assets/Screenshots/SignIn.jpg" width="600" />
-<img src="src/assets/Screenshots/blog.png" width="600" />
+
+<div align="center">
+<p float="left">
+  <img src="src/assets/Screenshots/HomePage.png" height="260" />
+  <img src="src/assets/Screenshots/SignIn.jpg" height="260" />
+</p>
+
+<p float="left">
+  <img src="src/assets/Screenshots/blog.png" width="820" />
+</p>
+</div>
 
 ---
 
