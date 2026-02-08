@@ -47,7 +47,6 @@ Demo: *(coming soon — add deployment URL here when available)*
 ---
 
 ## 📸 Screenshots
-
 <div align="center">
 <p float="left">
   <img src="src/assets/Screenshots/HomePage.png" height="260" />
