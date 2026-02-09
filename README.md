@@ -47,22 +47,14 @@ Demo: *(coming soon — add deployment URL here when available)*
 ---
 
 ## 📸 Screenshots
-<div  align="center" objectFit="contein">
-<div>
-  <img src="src/assets/Screenshots/HomePage.png" alt="HomePage" width="400" height="280"/>
-  <img src="src/assets/Screenshots/Contact%20Us%20Sended.png" alt="Contact Sent" width="400" height="280"/>
-  <img src="src/assets/Screenshots/Services.png" alt="Services" width="400"  height="280"/>
+<div align="center">
+  
+
+| | | |
+|---|---|---|
+| <img src="src/assets/Screenshots/HomePage.png" width="400" height="280"/> | <img src="src/assets/Screenshots/Contact%20Us%20Sended.png" width="400" height="280" /> | <img src="src/assets/Screenshots/Services.png" width="400" height="280" /> |
+| <img src="src/assets/Screenshots/blog.png" width="400" height="280" /> | <img src="src/assets/Screenshots/order.png" width="400" height="280" /> | <img src="src/assets/Screenshots/SignIn.jpg" width="400" height="280" /> |
 </div>
-
-<div>
-  <img src="src/assets/Screenshots/blog.png" alt="Blog" width="400"  height="280"/>
-  <img src="src/assets/Screenshots/order.png" alt="Order" width="400"  height="280"/>
-  <img src="src/assets/Screenshots/SignIn.jpg" alt="SignIn" width="400" height="280"/>
-</div>
-
-</div>
-
-
 ---
 
 
